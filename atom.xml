@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Zhiyuan Chen</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://zc.int.xyz/"/>
+  <updated>2017-08-10T05:58:39.979Z</updated>
+  <id>http://zc.int.xyz/</id>
+  
+  <author>
+    <name>Zhiyuan Chen</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>欢迎 -- Welcome</title>
+    <link href="http://zc.int.xyz/uncategorized/Welcome/cj661kd4r0000qw4ln52nzunb/"/>
+    <id>http://zc.int.xyz/uncategorized/Welcome/cj661kd4r0000qw4ln52nzunb/</id>
+    <published>2017-08-10T05:58:39.978Z</published>
+    <updated>2017-08-10T05:58:39.979Z</updated>
+    
+    <content type="html"><![CDATA[<p>您好，欢迎您访问陈陟原的网站。</p>
+<p>Hello, Welcome to access Zhiyuan Chen’s website.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;您好，欢迎您访问陈陟原的网站。&lt;/p&gt;
+&lt;p&gt;Hello, Welcome to access Zhiyuan Chen’s website.&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
