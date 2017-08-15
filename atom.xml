@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zc.int.xyz/"/>
-  <updated>2017-08-10T06:47:29.990Z</updated>
+  <updated>2017-08-15T02:27:28.665Z</updated>
   <id>http://zc.int.xyz/</id>
   
   <author>
@@ -16,9 +16,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>INT黑名单通告</title>
+    <link href="http://zc.int.xyz/zh-cn/policy/bl-cn/cj6cyxbb100078s4lnxgj5ndu/"/>
+    <id>http://zc.int.xyz/zh-cn/policy/bl-cn/cj6cyxbb100078s4lnxgj5ndu/</id>
+    <published>2017-08-15T02:14:36.000Z</published>
+    <updated>2017-08-15T02:27:28.665Z</updated>
+    
+    <content type="html"><![CDATA[<p>######本通告页依据《INT黑名单管理条例》开设，旨在为INT用户提供最近三个月的黑名单变更情况。</p>
+<p>####INTC管理通告——有关黑名单限制变更的通告<br>自2017年09月01日起，INT黑名单（CAT I、CAT II）将不再禁止访问INT参与制作的产盘（但享有著作权的除外）。</p>
+<p>####INT黑名单通告——有关川普黑名单的通告<br>自2017年08月15日起，任何法西斯主义支持者（包含种族主义者、纳粹主义者等）将被列入INT川普黑名单（CAT III.a）。</p>
+<p>####INT黑名单通告——有关杭黑名单的补充通告<br>自2017年07月22日起，浙江省居民将不再被列入INT杭黑名单（CAT III.c）。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;######本通告页依据《INT黑名单管理条例》开设，旨在为INT用户提供最近三个月的黑名单变更情况。&lt;/p&gt;
+&lt;p&gt;####INTC管理通告——有关黑名单限制变更的通告&lt;br&gt;自2017年09月01日起，INT黑名单（CAT I、CAT II）将不再禁止访问INT参与制作
+    
+    </summary>
+    
+      <category term="zh-cn" scheme="http://zc.int.xyz/categories/zh-cn/"/>
+    
+      <category term="policy" scheme="http://zc.int.xyz/categories/zh-cn/policy/"/>
+    
+    
+      <category term="policy" scheme="http://zc.int.xyz/tags/policy/"/>
+    
+  </entry>
+  
+  <entry>
     <title>欢迎 -- Welcome</title>
-    <link href="http://zc.int.xyz/uncategorized/Welcome/cj6cwfqvl0002x84lnns7wl5q/"/>
-    <id>http://zc.int.xyz/uncategorized/Welcome/cj6cwfqvl0002x84lnns7wl5q/</id>
+    <link href="http://zc.int.xyz/uncategorized/Welcome/cj6cyxbav00028s4lnhxqt3fv/"/>
+    <id>http://zc.int.xyz/uncategorized/Welcome/cj6cyxbav00028s4lnhxqt3fv/</id>
     <published>2017-08-15T01:00:44.455Z</published>
     <updated>2017-08-10T06:47:29.990Z</updated>
     
@@ -38,45 +67,9 @@
   </entry>
   
   <entry>
-    <title>Beginning</title>
-    <link href="http://zc.int.xyz/en-au/master/Beginning_en/cj6cxhvbp0000gk4lijurqnc1/"/>
-    <id>http://zc.int.xyz/en-au/master/Beginning_en/cj6cxhvbp0000gk4lijurqnc1/</id>
-    <published>2017-08-10T15:01:06.000Z</published>
-    <updated>2017-08-15T01:47:41.770Z</updated>
-    
-    <content type="html"><![CDATA[<p>At the very first of all articles, I’d like to say:</p>
-<p>If you don’t know how to do some things, do some things.</p>
-<p>This website may contain a lot of things, but the most should be variety documents I wrote. If you are one of the user of these documents, I hope you can remember this sentence and, if possible, practice this sentence.</p>
-<p>Practicing rather than papers makes the master. Whether it is the document written by me or other people on the Internet, or even the documents written by software developer, maintenance personnel and other documents written, are not comprehensive in a certain extent.</p>
-<p>Which means: that you may encounter more in the actual environment. More complex situation.</p>
-<p>Very often, this represents wasting hours to solve a very small problem, perhaps even because of the lack of a period. This may be very frustrating, but I think it is also surprising. Because in the process of solving the problem, we usually can learn more things.</p>
-<p>Of course, if you really can not solve the problem, you can also choose to <a href="mailto:zc@int.ac.cn" target="_blank" rel="external">send me an email</a>. I will try my best to help you solve the problem. But I hope you have tried all the possible solutions to the problem before asking for help. At the same time, I also hope that you can understand that I am not a panacea, and there is no obligation to provide you answers.</p>
-<p>I always think that curiosity is mandatory for a person to become a master from a beginner. For example, when you know i ++ == i + = 1 == i = i + 1, have you ever think about what if i is a String or any other type?</p>
-<p>Searching to this site, I believe you have such a curiosity. I hope the content I wrote can help you, but also hope that you can rely on your own earnings to achieve one after another success.</p>
-<p>Zhiyuan Chen<br>Early Morning, 2017-08-11<br>At Wake Up! Youth Hostel, Sydney</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;At the very first of all articles, I’d like to say:&lt;/p&gt;
-&lt;p&gt;If you don’t know how to do some things, do some things.&lt;/p&gt;
-&lt;p&gt;This website m
-    
-    </summary>
-    
-      <category term="en-au" scheme="http://zc.int.xyz/categories/en-au/"/>
-    
-      <category term="master" scheme="http://zc.int.xyz/categories/en-au/master/"/>
-    
-    
-      <category term="master" scheme="http://zc.int.xyz/tags/master/"/>
-    
-  </entry>
-  
-  <entry>
     <title>开始</title>
-    <link href="http://zc.int.xyz/zh-cn/master/Beginning_zh/cj6cxhvc10001gk4l2q7ejqwt/"/>
-    <id>http://zc.int.xyz/zh-cn/master/Beginning_zh/cj6cxhvc10001gk4l2q7ejqwt/</id>
+    <link href="http://zc.int.xyz/zh-cn/master/Beginning_zh/cj6cyxbaq00008s4l155m4nrb/"/>
+    <id>http://zc.int.xyz/zh-cn/master/Beginning_zh/cj6cyxbaq00008s4l155m4nrb/</id>
     <published>2017-08-10T15:01:06.000Z</published>
     <updated>2017-08-15T01:46:20.078Z</updated>
     
@@ -103,6 +96,42 @@
       <category term="zh-cn" scheme="http://zc.int.xyz/categories/zh-cn/"/>
     
       <category term="master" scheme="http://zc.int.xyz/categories/zh-cn/master/"/>
+    
+    
+      <category term="master" scheme="http://zc.int.xyz/tags/master/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Beginning</title>
+    <link href="http://zc.int.xyz/en-au/master/Beginning_en/cj6cyxbb000068s4lkusnvhak/"/>
+    <id>http://zc.int.xyz/en-au/master/Beginning_en/cj6cyxbb000068s4lkusnvhak/</id>
+    <published>2017-08-10T15:01:06.000Z</published>
+    <updated>2017-08-15T01:51:16.485Z</updated>
+    
+    <content type="html"><![CDATA[<p>At the very first of all articles, I’d like to say:</p>
+<p>If you don’t know how to do some things, do some things.</p>
+<p>This website may contain a lot of things, but the most should be varieties of documents I wrote. If you are one of the user of these documents, I hope you can remember this sentence and, if possible, practice this sentence.</p>
+<p>Practicing rather than papers makes the master. Whether it is the document written by me or other people on the Internet, or even the documents written by software developer, maintenance personnel and other documents written, are not comprehensive in a certain extent.</p>
+<p>Which means: that you may encounter more in the actual environment. More complex situation.</p>
+<p>Very often, this represents wasting hours to solve a very small problem, perhaps even because of the lack of a period. This may be very frustrating, but I think it is also surprising. Because in the process of solving the problem, we usually can learn more things.</p>
+<p>Of course, if you really can not solve the problem, you can also choose to <a href="mailto:zc@int.ac.cn" target="_blank" rel="external">send me an email</a>. I will try my best to help you solve the problem. But I hope you have tried all the possible solutions to the problem before asking for help. At the same time, I also hope that you can understand that I am not a panacea, and there is no obligation to provide you answers.</p>
+<p>I always think that curiosity is mandatory for a person to become a master from a beginner. For example, when you know i ++ == i + = 1 == i = i + 1, have you ever think about what if i is a String or any other type?</p>
+<p>Searching to this site, I believe you have such a curiosity. I hope the content I wrote can help you, but also hope that you can rely on your own earnings to achieve one after another success.</p>
+<p>Zhiyuan Chen<br>Early Morning, 2017-08-11<br>At Wake Up! Youth Hostel, Sydney</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;At the very first of all articles, I’d like to say:&lt;/p&gt;
+&lt;p&gt;If you don’t know how to do some things, do some things.&lt;/p&gt;
+&lt;p&gt;This website m
+    
+    </summary>
+    
+      <category term="en-au" scheme="http://zc.int.xyz/categories/en-au/"/>
+    
+      <category term="master" scheme="http://zc.int.xyz/categories/en-au/master/"/>
     
     
       <category term="master" scheme="http://zc.int.xyz/tags/master/"/>
