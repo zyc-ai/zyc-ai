@@ -39,10 +39,10 @@
   
   <entry>
     <title>Beginning</title>
-    <link href="http://zc.int.xyz/master-zh-cn/Beginning/cj6cwfqvg0000x84la09d58g4/"/>
-    <id>http://zc.int.xyz/master-zh-cn/Beginning/cj6cwfqvg0000x84la09d58g4/</id>
+    <link href="http://zc.int.xyz/zh-cn/master/Beginning/cj6cwfqvg0000x84la09d58g4/"/>
+    <id>http://zc.int.xyz/zh-cn/master/Beginning/cj6cwfqvg0000x84la09d58g4/</id>
     <published>2017-08-10T15:01:06.000Z</published>
-    <updated>2017-08-15T01:05:11.893Z</updated>
+    <updated>2017-08-15T01:20:28.969Z</updated>
     
     <content type="html"><![CDATA[<p>在所有文章的最开始，我想说：</p>
 <p>If you don’t know how to do some things, do some things.<br>如果你不知道如何做些什么，做些什么。</p>
@@ -64,7 +64,9 @@
     
     </summary>
     
-      <category term="master zh-cn" scheme="http://zc.int.xyz/categories/master-zh-cn/"/>
+      <category term="zh-cn" scheme="http://zc.int.xyz/categories/zh-cn/"/>
+    
+      <category term="master" scheme="http://zc.int.xyz/categories/zh-cn/master/"/>
     
     
       <category term="master" scheme="http://zc.int.xyz/tags/master/"/>
