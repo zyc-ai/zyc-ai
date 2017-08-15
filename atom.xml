@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zc.int.xyz/"/>
-  <updated>2017-08-10T15:37:42.854Z</updated>
+  <updated>2017-08-10T06:47:29.990Z</updated>
   <id>http://zc.int.xyz/</id>
   
   <author>
@@ -16,11 +16,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>欢迎 -- Welcome</title>
+    <link href="http://zc.int.xyz/uncategorized/Welcome/cj6cw4idl0002y84l7c5lo3un/"/>
+    <id>http://zc.int.xyz/uncategorized/Welcome/cj6cw4idl0002y84l7c5lo3un/</id>
+    <published>2017-08-15T01:00:44.455Z</published>
+    <updated>2017-08-10T06:47:29.990Z</updated>
+    
+    <content type="html"><![CDATA[<p>您好，欢迎您访问陈陟原的网站。</p>
+<p>Hello, Welcome to access Zhiyuan Chen’s website.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;您好，欢迎您访问陈陟原的网站。&lt;/p&gt;
+&lt;p&gt;Hello, Welcome to access Zhiyuan Chen’s website.&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Beginning</title>
-    <link href="http://zc.int.xyz/master/Beginning/cj66lxhs00000v04llb4q07ek/"/>
-    <id>http://zc.int.xyz/master/Beginning/cj66lxhs00000v04llb4q07ek/</id>
+    <link href="http://zc.int.xyz/master-zh-cn/Beginning/cj6cw4idg0000y84l37dp8nlh/"/>
+    <id>http://zc.int.xyz/master-zh-cn/Beginning/cj6cw4idg0000y84l37dp8nlh/</id>
     <published>2017-08-10T15:01:06.000Z</published>
-    <updated>2017-08-10T15:37:42.854Z</updated>
+    <updated>2017-08-15T01:05:11.893Z</updated>
     
     <content type="html"><![CDATA[<p>在所有文章的最开始，我想说：</p>
 <p>If you don’t know how to do some things, do some things.<br>如果你不知道如何做些什么，做些什么。</p>
@@ -42,30 +64,10 @@
     
     </summary>
     
-      <category term="master" scheme="http://zc.int.xyz/categories/master/"/>
+      <category term="master zh-cn" scheme="http://zc.int.xyz/categories/master-zh-cn/"/>
     
     
-  </entry>
-  
-  <entry>
-    <title>欢迎 -- Welcome</title>
-    <link href="http://zc.int.xyz/uncategorized/Welcome/cj66lxhs50002v04lri83r886/"/>
-    <id>http://zc.int.xyz/uncategorized/Welcome/cj66lxhs50002v04lri83r886/</id>
-    <published>2017-08-10T06:47:29.990Z</published>
-    <updated>2017-08-10T06:47:29.990Z</updated>
-    
-    <content type="html"><![CDATA[<p>您好，欢迎您访问陈陟原的网站。</p>
-<p>Hello, Welcome to access Zhiyuan Chen’s website.</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;您好，欢迎您访问陈陟原的网站。&lt;/p&gt;
-&lt;p&gt;Hello, Welcome to access Zhiyuan Chen’s website.&lt;/p&gt;
-
-    
-    </summary>
-    
+      <category term="master" scheme="http://zc.int.xyz/tags/master/"/>
     
   </entry>
   
