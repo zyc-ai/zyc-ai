@@ -39,20 +39,56 @@
   
   <entry>
     <title>Beginning</title>
-    <link href="http://zc.int.xyz/zh-cn/master/Beginning/cj6cwfqvg0000x84la09d58g4/"/>
-    <id>http://zc.int.xyz/zh-cn/master/Beginning/cj6cwfqvg0000x84la09d58g4/</id>
+    <link href="http://zc.int.xyz/en-au/master/Beginning_en/cj6cxhvbp0000gk4lijurqnc1/"/>
+    <id>http://zc.int.xyz/en-au/master/Beginning_en/cj6cxhvbp0000gk4lijurqnc1/</id>
     <published>2017-08-10T15:01:06.000Z</published>
-    <updated>2017-08-15T01:20:28.969Z</updated>
+    <updated>2017-08-15T01:47:41.770Z</updated>
+    
+    <content type="html"><![CDATA[<p>At the very first of all articles, I’d like to say:</p>
+<p>If you don’t know how to do some things, do some things.</p>
+<p>This website may contain a lot of things, but the most should be variety documents I wrote. If you are one of the user of these documents, I hope you can remember this sentence and, if possible, practice this sentence.</p>
+<p>Practicing rather than papers makes the master. Whether it is the document written by me or other people on the Internet, or even the documents written by software developer, maintenance personnel and other documents written, are not comprehensive in a certain extent.</p>
+<p>Which means: that you may encounter more in the actual environment. More complex situation.</p>
+<p>Very often, this represents wasting hours to solve a very small problem, perhaps even because of the lack of a period. This may be very frustrating, but I think it is also surprising. Because in the process of solving the problem, we usually can learn more things.</p>
+<p>Of course, if you really can not solve the problem, you can also choose to <a href="mailto:zc@int.ac.cn" target="_blank" rel="external">send me an email</a>. I will try my best to help you solve the problem. But I hope you have tried all the possible solutions to the problem before asking for help. At the same time, I also hope that you can understand that I am not a panacea, and there is no obligation to provide you answers.</p>
+<p>I always think that curiosity is mandatory for a person to become a master from a beginner. For example, when you know i ++ == i + = 1 == i = i + 1, have you ever think about what if i is a String or any other type?</p>
+<p>Searching to this site, I believe you have such a curiosity. I hope the content I wrote can help you, but also hope that you can rely on your own earnings to achieve one after another success.</p>
+<p>Zhiyuan Chen<br>Early Morning, 2017-08-11<br>At Wake Up! Youth Hostel, Sydney</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;At the very first of all articles, I’d like to say:&lt;/p&gt;
+&lt;p&gt;If you don’t know how to do some things, do some things.&lt;/p&gt;
+&lt;p&gt;This website m
+    
+    </summary>
+    
+      <category term="en-au" scheme="http://zc.int.xyz/categories/en-au/"/>
+    
+      <category term="master" scheme="http://zc.int.xyz/categories/en-au/master/"/>
+    
+    
+      <category term="master" scheme="http://zc.int.xyz/tags/master/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开始</title>
+    <link href="http://zc.int.xyz/zh-cn/master/Beginning_zh/cj6cxhvc10001gk4l2q7ejqwt/"/>
+    <id>http://zc.int.xyz/zh-cn/master/Beginning_zh/cj6cxhvc10001gk4l2q7ejqwt/</id>
+    <published>2017-08-10T15:01:06.000Z</published>
+    <updated>2017-08-15T01:46:20.078Z</updated>
     
     <content type="html"><![CDATA[<p>在所有文章的最开始，我想说：</p>
 <p>If you don’t know how to do some things, do some things.<br>如果你不知道如何做些什么，做些什么。</p>
 <p>这个网站可能包含很多东西，但最多的应该是我写的各种教程。如果你是这些教程的使用者的话，我希望你能记住这句话，并在可能的情况下实践这句话。</p>
-<p>纸上得来终觉浅，绝知此事要躬行。无论是我所写的教程抑或是互联网上其他人所写的教程，甚至是软件的开发、维护人员等编写的文档，在很大程度上都是不全面的。</p>
+<p>纸上得来终觉浅，绝知此事要躬行。无论是我抑或是互联网上其他人所写的教程，甚至是软件的开发、维护人员等编写的文档，在一定程度上都是不全面的。</p>
 <p>这代表着：在实际环境当中你可能会遇到更多情况。更多，更复杂的情况。</p>
 <p>很多时候，这代表着浪费数个小时时间去解决一个很小的问题，或许，甚至只因为缺少一个句号。这可能很令人沮丧，但我觉得这也很令人惊喜。因为在解决问题的过程当中，我们往往能学到更多东西。</p>
 <p>当然，如果你实在无法解决，也可以选择向我<a href="mailto:zc@int.ac.cn" target="_blank" rel="external">发送邮件</a>。我会尽我所能协助你解决问题。但我希望你在向我求助前已经尝试过所有可能的解决问题的方式。同时，我也希望你能明白，我并不是万能的，也没有任何义务为你提供解答。</p>
 <p>我一向认为，怀有一颗好奇之心是一个人从初学者走向大师所必备的。比如说，当你知道 i++ == i+=1 == i=i+1的时候，你有没有想过i如果是String或者其他类型，会怎么样？</p>
-<p>能自己搜索到这个网站，我相信你也是具有这样的求知心的。希望我所写的内容能帮助到你，也更希望你能依靠自己所得走向一个又一个成功。</p>
+<p>能搜索到这个网站，我相信你也是具有这样的求知心的。希望我所写的内容能帮助到你，也更希望你能依靠自己所得走向一个又一个成功。</p>
 <p>陈陟原<br>2017年08月11日凌晨<br>于悉尼Wake Up!青年旅舍</p>
 ]]></content>
     
