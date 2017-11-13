@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zc.int.xyz/"/>
-  <updated>2017-11-13T10:41:12.971Z</updated>
+  <updated>2017-11-13T11:01:07.390Z</updated>
   <id>http://zc.int.xyz/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh99/cj9y21p7b0000cc4l9we7i6tt/"/>
     <id>http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh99/cj9y21p7b0000cc4l9we7i6tt/</id>
     <published>2017-11-13T09:38:46.000Z</published>
-    <updated>2017-11-13T10:41:12.971Z</updated>
+    <updated>2017-11-13T11:01:07.390Z</updated>
     
     <content type="html"><![CDATA[<h5 id="由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。"><a href="#由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。" class="headerlink" title="由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。"></a>由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。</h5><h6 id="这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。"><a href="#这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。" class="headerlink" title="这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。"></a>这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。</h6><h6 id="This-is-an-INT-Project-To-use-this-document-you-MUST-agree-the-INT-User-Agreement-and-other-relative-license-agreements-Unauthorised-use-prohibited"><a href="#This-is-an-INT-Project-To-use-this-document-you-MUST-agree-the-INT-User-Agreement-and-other-relative-license-agreements-Unauthorised-use-prohibited" class="headerlink" title="This is an INT Project. To use this document, you MUST agree the INT User Agreement and other relative license agreements. Unauthorised use prohibited."></a>This is an INT Project. To use this document, you MUST agree the INT User Agreement and other relative license agreements. Unauthorised use prohibited.</h6><h2 id="惯例性废话"><a href="#惯例性废话" class="headerlink" title="惯例性废话"></a>惯例性废话</h2><p>额，突然意识到已经好久没有更新过博客了，想来大家应该都快忘了吧？</p>
 <p>最近比较忙，再加上一些个人问题，很多事情都荒废了…………抱歉orz（等我键盘到了应该会更新很多东西，笔记本键盘敲起来实在是不舒服</p>
@@ -36,11 +36,54 @@
 <p>· 哈希表（Hashtable）</p>
 <p>· 属性（Properties）</p>
 <p>当然，这里面没有一个是我们今天要讨论的。我们要讨论的是Java2当中“新”添加的部分–</p>
-<h4 id="·-集合框架（Collection）"><a href="#·-集合框架（Collection）" class="headerlink" title="· 集合框架（Collection）"></a>· <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/collections/" target="_blank" rel="external">集合框架（Collection）</a></h4><h1 id="集合框架（Collection-Framework）"><a href="#集合框架（Collection-Framework）" class="headerlink" title="集合框架（Collection Framework）"></a>集合框架（Collection Framework）</h1><p>集合框架当中包含两个主要的接口，<a href="https://docs.oracle.com/javase/9/docs/api/java/util/Collection.html" target="_blank" rel="external">java.util.Collection</a>以及<a href="https://docs.oracle.com/javase/9/docs/api/java/util/Map.html" target="_blank" rel="external">java.util.Map</a>。</p>
+<h4 id="·-集合框架（Collection-Framework）"><a href="#·-集合框架（Collection-Framework）" class="headerlink" title="· 集合框架（Collection Framework）"></a>· <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/collections/" target="_blank" rel="external">集合框架（Collection Framework）</a></h4><h1 id="集合框架（Collection-Framework）"><a href="#集合框架（Collection-Framework）" class="headerlink" title="集合框架（Collection Framework）"></a>集合框架（Collection Framework）</h1><p>集合框架当中包含两个主要的接口，<a href="https://docs.oracle.com/javase/9/docs/api/java/util/Collection.html" target="_blank" rel="external">java.util.Collection</a>以及<a href="https://docs.oracle.com/javase/9/docs/api/java/util/Map.html" target="_blank" rel="external">java.util.Map</a>。</p>
 <p>其中Collection接口（注意这里和Collection框架是有区别的）有八个子继承–java.util.Set、java.util.SortedSet、java.util.NavigableSet、java.util.Queue、java.util.concurrent.BlockingQueue、java.util.concurrent.TransferQueue、java.util.Deque、java.util.concurrent.BlockingDeque，而Map则只有四个子继承–java.util.SortedMap、java.util.NavigableMap、java.util.concurrent.ConcurrentMap、java.util.concurrent.ConcurrentNavigableMap。</p>
-<p>//抱歉这里应该有张<a href="https://d1b10bmlvqabco.cloudfront.net/attach/j57yzo1o6wb7jp/iz5jlrbk6u741t/j97bdxjhe3sj/JavaCollectionHierarchy.png" target="_blank" rel="external">图</a>，但我实在没有时间放上来，看看以后还会不会记得吧。</p>
+<p>这里面的关系过于复杂（其实一点儿也不复杂只是讲起来要花太多时间)，这里暂时放过，等假期补上。<br>//抱歉这里应该有张<a href="https://d1b10bmlvqabco.cloudfront.net/attach/j57yzo1o6wb7jp/iz5jlrbk6u741t/j97bdxjhe3sj/JavaCollectionHierarchy.png" target="_blank" rel="external">图</a>，但我实在没有时间放上来，看看以后还会不会记得吧。</p>
 <p>嗯，理解了他们之间的关系之后我们就可以开始了。</p>
-]]></content>
+<h1 id="集合接口（Collection-Interface）"><a href="#集合接口（Collection-Interface）" class="headerlink" title="集合接口（Collection Interface）"></a>集合接口（Collection Interface）</h1><p>集合接口有以下四种实现：</p>
+<h2 id="ArrayList"><a href="#ArrayList" class="headerlink" title="ArrayList"></a>ArrayList</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+</pre></td><td class="code"><pre><span class="line">public class ArrayList&lt;E&gt;</span>
+<span class="line">extends AbstractList&lt;E&gt;</span>
+<span class="line">implements List&lt;E&gt;, RandomAccess, Cloneable, Serializable</span>
+</pre></td></tr></table></figure>
+<h2 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+</pre></td><td class="code"><pre><span class="line">public class LinkedList&lt;E&gt;</span>
+<span class="line">extends AbstractSequentialList&lt;E&gt;</span>
+<span class="line">implements List&lt;E&gt;, Deque&lt;E&gt;, Cloneable, Serializable</span>
+</pre></td></tr></table></figure>
+<h2 id="HashSet"><a href="#HashSet" class="headerlink" title="HashSet"></a>HashSet</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+</pre></td><td class="code"><pre><span class="line">public class HashSet&lt;E&gt;</span>
+<span class="line">extends AbstractSet&lt;E&gt;</span>
+<span class="line">implements Set&lt;E&gt;, Cloneable, Serializable</span>
+</pre></td></tr></table></figure>
+<h2 id="LinkedHashSet"><a href="#LinkedHashSet" class="headerlink" title="LinkedHashSet"></a>LinkedHashSet</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+</pre></td><td class="code"><pre><span class="line">public class LinkedHashSet&lt;E&gt;</span>
+<span class="line">extends HashSet&lt;E&gt;</span>
+<span class="line">implements Set&lt;E&gt;, Cloneable, Serializable</span>
+</pre></td></tr></table></figure>
+<h1 id="映射接口（Map-Interface）"><a href="#映射接口（Map-Interface）" class="headerlink" title="映射接口（Map Interface）"></a>映射接口（Map Interface）</h1><p>相对来说，映射接口要寒酸不少，只有两种实现：</p>
+<h2 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+</pre></td><td class="code"><pre><span class="line">public class HashMap&lt;K,V&gt;</span>
+<span class="line">extends AbstractMap&lt;K,V&gt;</span>
+<span class="line">implements Map&lt;K,V&gt;, Cloneable, Serializable</span>
+</pre></td></tr></table></figure>
+<h2 id="LinkedHashMap"><a href="#LinkedHashMap" class="headerlink" title="LinkedHashMap"></a>LinkedHashMap</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
+<span class="line">2</span>
+<span class="line">3</span>
+</pre></td><td class="code"><pre><span class="line">public class LinkedHashMap&lt;K,V&gt;</span>
+<span class="line">extends HashMap&lt;K,V&gt;</span>
+<span class="line">implements Map&lt;K,V&gt;</span>
+</pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
