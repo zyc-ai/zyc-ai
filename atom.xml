@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zc.int.xyz/"/>
-  <updated>2017-11-13T11:01:07.390Z</updated>
+  <updated>2017-11-13T11:04:42.891Z</updated>
   <id>http://zc.int.xyz/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java 教程 ** -- 集合类型-集合框架</title>
+    <title>Java 教程 ** -- 数据结构-集合框架</title>
     <link href="http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh99/cj9y21p7b0000cc4l9we7i6tt/"/>
     <id>http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh99/cj9y21p7b0000cc4l9we7i6tt/</id>
     <published>2017-11-13T09:38:46.000Z</published>
-    <updated>2017-11-13T11:01:07.390Z</updated>
+    <updated>2017-11-13T11:04:42.891Z</updated>
     
     <content type="html"><![CDATA[<h5 id="由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。"><a href="#由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。" class="headerlink" title="由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。"></a>由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。</h5><h6 id="这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。"><a href="#这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。" class="headerlink" title="这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。"></a>这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。</h6><h6 id="This-is-an-INT-Project-To-use-this-document-you-MUST-agree-the-INT-User-Agreement-and-other-relative-license-agreements-Unauthorised-use-prohibited"><a href="#This-is-an-INT-Project-To-use-this-document-you-MUST-agree-the-INT-User-Agreement-and-other-relative-license-agreements-Unauthorised-use-prohibited" class="headerlink" title="This is an INT Project. To use this document, you MUST agree the INT User Agreement and other relative license agreements. Unauthorised use prohibited."></a>This is an INT Project. To use this document, you MUST agree the INT User Agreement and other relative license agreements. Unauthorised use prohibited.</h6><h2 id="惯例性废话"><a href="#惯例性废话" class="headerlink" title="惯例性废话"></a>惯例性废话</h2><p>额，突然意识到已经好久没有更新过博客了，想来大家应该都快忘了吧？</p>
 <p>最近比较忙，再加上一些个人问题，很多事情都荒废了…………抱歉orz（等我键盘到了应该会更新很多东西，笔记本键盘敲起来实在是不舒服</p>
