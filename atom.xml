@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zc.int.xyz/"/>
-  <updated>2017-11-14T13:16:10.525Z</updated>
+  <updated>2017-11-14T13:19:29.545Z</updated>
   <id>http://zc.int.xyz/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>Java 教程 ** -- Hash冲突处理</title>
-    <link href="http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9zn5vsc00002k4l22pxd6ux/"/>
-    <id>http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9zn5vsc00002k4l22pxd6ux/</id>
+    <link href="http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9znaa1600078g4lzjg0vzar/"/>
+    <id>http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9znaa1600078g4lzjg0vzar/</id>
     <published>2017-11-14T12:28:07.000Z</published>
-    <updated>2017-11-14T13:16:10.525Z</updated>
+    <updated>2017-11-14T13:19:29.545Z</updated>
     
     <content type="html"><![CDATA[<h5 id="由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。"><a href="#由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。" class="headerlink" title="由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。"></a>由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。</h5><h6 id="这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。"><a href="#这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。" class="headerlink" title="这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。"></a>这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。</h6><h6 id="This-is-an-INT-Project-To-use-this-document-you-MUST-agree-the-INT-User-Agreement-and-other-relative-license-agreements-Unauthorised-use-prohibited"><a href="#This-is-an-INT-Project-To-use-this-document-you-MUST-agree-the-INT-User-Agreement-and-other-relative-license-agreements-Unauthorised-use-prohibited" class="headerlink" title="This is an INT Project. To use this document, you MUST agree the INT User Agreement and other relative license agreements. Unauthorised use prohibited."></a>This is an INT Project. To use this document, you MUST agree the INT User Agreement and other relative license agreements. Unauthorised use prohibited.</h6><h2 id="惯例性废话"><a href="#惯例性废话" class="headerlink" title="惯例性废话"></a>惯例性废话</h2><p>本身不想写这个的–我又不考Hash在这个时候浪费时间在上面干嘛…………但是考虑到有好多漂亮妹子（划掉）都问了这个问题，还是简单介绍一下吧。</p>
 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文通过通俗易懂的方式简要介绍了Hash冲突处理当中的线性探测与二次探测，旨在为COMP1110同学的复习提供帮助。</p>
@@ -78,7 +78,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="二次探测"><a href="#二次探测" class="headerlink" title="二次探测"></a>二次探测</h1><p>二次探测听这名字都要比线性探测高端一些啦。嗯，与线性探测傻傻的查找k+1+…+1不同，二次探测首先看k+1^2，然后是k-1^2，再然后是k+2^2。随后这么方一下再加加减减下去，嗯……看上去是不是平均了很多？没有像线性一样挤在一起。但这有个更大的问题–有很多地方扫不到啊喂！其实也没有很多啦……至少还是能扫一半的。不过这些都是小事情啦，反正我们将来不会用得到的……</p>
+<h1 id="二次探测"><a href="#二次探测" class="headerlink" title="二次探测"></a>二次探测</h1><p>二次探测听这名字都要比线性探测高端一些啦。嗯，与线性探测傻傻的查找k+1+…+1不同，二次探测首先看k+1^2，然后是k-1^2，再然后是k+2^2。随后这么平方一下再加加减减下去，嗯……看上去有木有平均了很多（并没有）？但这有个更大的问题–有很多地方扫不到啊喂！其实也没有很多啦……至少还是能扫一半的。不过这些都是小事情啦，反正我们将来不会用得到的……</p>
 <table>
 <thead>
 <tr>
@@ -158,8 +158,8 @@
   
   <entry>
     <title>Java 教程 ** -- 数据结构-集合框架</title>
-    <link href="http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh99/cj9y21p7b0000cc4l9we7i6tt/"/>
-    <id>http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh99/cj9y21p7b0000cc4l9we7i6tt/</id>
+    <link href="http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh99/cj9znaa1700088g4l0o9igm9c/"/>
+    <id>http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh99/cj9znaa1700088g4l0o9igm9c/</id>
     <published>2017-11-13T09:38:46.000Z</published>
     <updated>2017-11-13T11:04:42.891Z</updated>
     
@@ -257,8 +257,8 @@
   
   <entry>
     <title>我与小米</title>
-    <link href="http://zc.int.xyz/zh-cn/essay/MiAndIZh/cj7ampe7p00061o4l9n42rlsm/"/>
-    <id>http://zc.int.xyz/zh-cn/essay/MiAndIZh/cj7ampe7p00061o4l9n42rlsm/</id>
+    <link href="http://zc.int.xyz/zh-cn/essay/MiAndIZh/cj9znaa1g000d8g4lyyf4p76t/"/>
+    <id>http://zc.int.xyz/zh-cn/essay/MiAndIZh/cj9znaa1g000d8g4lyyf4p76t/</id>
     <published>2017-09-07T14:46:16.000Z</published>
     <updated>2017-09-07T15:49:37.466Z</updated>
     
@@ -300,8 +300,8 @@
   
   <entry>
     <title>欢迎 -- Welcome</title>
-    <link href="http://zc.int.xyz/uncategorized/Welcome/cj7ampe7s00081o4l0qi89v9j/"/>
-    <id>http://zc.int.xyz/uncategorized/Welcome/cj7ampe7s00081o4l0qi89v9j/</id>
+    <link href="http://zc.int.xyz/uncategorized/Welcome/cj9znaa1e000c8g4l70wr4gc6/"/>
+    <id>http://zc.int.xyz/uncategorized/Welcome/cj9znaa1e000c8g4l70wr4gc6/</id>
     <published>2017-08-28T20:46:58.319Z</published>
     <updated>2017-08-28T20:46:58.321Z</updated>
     
@@ -318,8 +318,8 @@
   
   <entry>
     <title>Java 教程 01 -- 认识Java</title>
-    <link href="http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh01/cj7ampe7r00071o4lrqd0ebz5/"/>
-    <id>http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh01/cj7ampe7r00071o4lrqd0ebz5/</id>
+    <link href="http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh01/cj9znaa1500068g4luxk6olps/"/>
+    <id>http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh01/cj9znaa1500068g4luxk6olps/</id>
     <published>2017-08-17T08:58:25.000Z</published>
     <updated>2017-08-28T20:41:43.828Z</updated>
     
@@ -408,45 +408,9 @@
   </entry>
   
   <entry>
-    <title>开始</title>
-    <link href="http://zc.int.xyz/zh-cn/master/BeginningZh/cj7ampe7g00011o4lt8ggnr0t/"/>
-    <id>http://zc.int.xyz/zh-cn/master/BeginningZh/cj7ampe7g00011o4lt8ggnr0t/</id>
-    <published>2017-08-10T15:01:06.000Z</published>
-    <updated>2017-08-15T01:46:20.078Z</updated>
-    
-    <content type="html"><![CDATA[<p>在所有文章的最开始，我想说：</p>
-<p>If you don’t know how to do some things, do some things.<br>如果你不知道如何做些什么，做些什么。</p>
-<p>这个网站可能包含很多东西，但最多的应该是我写的各种教程。如果你是这些教程的使用者的话，我希望你能记住这句话，并在可能的情况下实践这句话。</p>
-<p>纸上得来终觉浅，绝知此事要躬行。无论是我抑或是互联网上其他人所写的教程，甚至是软件的开发、维护人员等编写的文档，在一定程度上都是不全面的。</p>
-<p>这代表着：在实际环境当中你可能会遇到更多情况。更多，更复杂的情况。</p>
-<p>很多时候，这代表着浪费数个小时时间去解决一个很小的问题，或许，甚至只因为缺少一个句号。这可能很令人沮丧，但我觉得这也很令人惊喜。因为在解决问题的过程当中，我们往往能学到更多东西。</p>
-<p>当然，如果你实在无法解决，也可以选择向我<a href="mailto:zc@int.ac.cn" target="_blank" rel="external">发送邮件</a>。我会尽我所能协助你解决问题。但我希望你在向我求助前已经尝试过所有可能的解决问题的方式。同时，我也希望你能明白，我并不是万能的，也没有任何义务为你提供解答。</p>
-<p>我一向认为，怀有一颗好奇之心是一个人从初学者走向大师所必备的。比如说，当你知道 i++ == i+=1 == i=i+1的时候，你有没有想过i如果是String或者其他类型，会怎么样？</p>
-<p>能搜索到这个网站，我相信你也是具有这样的求知心的。希望我所写的内容能帮助到你，也更希望你能依靠自己所得走向一个又一个成功。</p>
-<p>陈陟原<br>2017年08月11日凌晨<br>于悉尼Wake Up!青年旅舍</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在所有文章的最开始，我想说：&lt;/p&gt;
-&lt;p&gt;If you don’t know how to do some things, do some things.&lt;br&gt;如果你不知道如何做些什么，做些什么。&lt;/p&gt;
-&lt;p&gt;这个网站可能包含很多东西，但最多的应该是我写的各种教程。如
-    
-    </summary>
-    
-      <category term="zh-cn" scheme="http://zc.int.xyz/categories/zh-cn/"/>
-    
-      <category term="master" scheme="http://zc.int.xyz/categories/zh-cn/master/"/>
-    
-    
-      <category term="master" scheme="http://zc.int.xyz/tags/master/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Beginning</title>
-    <link href="http://zc.int.xyz/en-au/master/BeginningEn/cj7ampe7k00031o4lz4mgeeyo/"/>
-    <id>http://zc.int.xyz/en-au/master/BeginningEn/cj7ampe7k00031o4lz4mgeeyo/</id>
+    <link href="http://zc.int.xyz/en-au/master/BeginningEn/cj9znaa0t00008g4lut3mlowv/"/>
+    <id>http://zc.int.xyz/en-au/master/BeginningEn/cj9znaa0t00008g4lut3mlowv/</id>
     <published>2017-08-10T15:01:06.000Z</published>
     <updated>2017-08-15T01:51:16.485Z</updated>
     
@@ -473,6 +437,42 @@
       <category term="en-au" scheme="http://zc.int.xyz/categories/en-au/"/>
     
       <category term="master" scheme="http://zc.int.xyz/categories/en-au/master/"/>
+    
+    
+      <category term="master" scheme="http://zc.int.xyz/tags/master/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开始</title>
+    <link href="http://zc.int.xyz/zh-cn/master/BeginningZh/cj9znaa0z00028g4lql9kem7e/"/>
+    <id>http://zc.int.xyz/zh-cn/master/BeginningZh/cj9znaa0z00028g4lql9kem7e/</id>
+    <published>2017-08-10T15:01:06.000Z</published>
+    <updated>2017-08-15T01:46:20.078Z</updated>
+    
+    <content type="html"><![CDATA[<p>在所有文章的最开始，我想说：</p>
+<p>If you don’t know how to do some things, do some things.<br>如果你不知道如何做些什么，做些什么。</p>
+<p>这个网站可能包含很多东西，但最多的应该是我写的各种教程。如果你是这些教程的使用者的话，我希望你能记住这句话，并在可能的情况下实践这句话。</p>
+<p>纸上得来终觉浅，绝知此事要躬行。无论是我抑或是互联网上其他人所写的教程，甚至是软件的开发、维护人员等编写的文档，在一定程度上都是不全面的。</p>
+<p>这代表着：在实际环境当中你可能会遇到更多情况。更多，更复杂的情况。</p>
+<p>很多时候，这代表着浪费数个小时时间去解决一个很小的问题，或许，甚至只因为缺少一个句号。这可能很令人沮丧，但我觉得这也很令人惊喜。因为在解决问题的过程当中，我们往往能学到更多东西。</p>
+<p>当然，如果你实在无法解决，也可以选择向我<a href="mailto:zc@int.ac.cn" target="_blank" rel="external">发送邮件</a>。我会尽我所能协助你解决问题。但我希望你在向我求助前已经尝试过所有可能的解决问题的方式。同时，我也希望你能明白，我并不是万能的，也没有任何义务为你提供解答。</p>
+<p>我一向认为，怀有一颗好奇之心是一个人从初学者走向大师所必备的。比如说，当你知道 i++ == i+=1 == i=i+1的时候，你有没有想过i如果是String或者其他类型，会怎么样？</p>
+<p>能搜索到这个网站，我相信你也是具有这样的求知心的。希望我所写的内容能帮助到你，也更希望你能依靠自己所得走向一个又一个成功。</p>
+<p>陈陟原<br>2017年08月11日凌晨<br>于悉尼Wake Up!青年旅舍</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在所有文章的最开始，我想说：&lt;/p&gt;
+&lt;p&gt;If you don’t know how to do some things, do some things.&lt;br&gt;如果你不知道如何做些什么，做些什么。&lt;/p&gt;
+&lt;p&gt;这个网站可能包含很多东西，但最多的应该是我写的各种教程。如
+    
+    </summary>
+    
+      <category term="zh-cn" scheme="http://zc.int.xyz/categories/zh-cn/"/>
+    
+      <category term="master" scheme="http://zc.int.xyz/categories/zh-cn/master/"/>
     
     
       <category term="master" scheme="http://zc.int.xyz/tags/master/"/>
