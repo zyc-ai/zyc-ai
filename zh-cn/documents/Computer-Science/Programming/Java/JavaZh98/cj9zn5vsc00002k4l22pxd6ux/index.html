@@ -12,7 +12,7 @@
     
     <title>
         
-            وسم: master | 
+            Java 教程 ** -- Hash冲突处理 | 
         
         Zhiyuan Chen
     </title>
@@ -38,7 +38,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="Zhiyuan Chen">
     <meta name="description" itemprop="description" content="Zhiyuan Chen&#39;s Website">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",Documents,Computer Science,Programming,Java,COMP1140">
 
     <!-- Site Verification -->
     <meta name="google-site-verification" content="PgOVMMN_lqOPP1ZzK-eUvUzo6tqbY0jpDzwkAnVQdjw" />
@@ -67,15 +67,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://zc.int.xyz">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="وسم: master | Zhiyuan Chen">
+    <meta property="og:title" content="Java 教程 ** -- Hash冲突处理 | Zhiyuan Chen">
     <meta property="og:image" content="/img/favicon.png" />
     <meta property="og:description" content="Zhiyuan Chen&#39;s Website">
-    
+    <meta property="og:article:tag" content="Documents"> <meta property="og:article:tag" content="Computer Science"> <meta property="og:article:tag" content="Programming"> <meta property="og:article:tag" content="Java"> <meta property="og:article:tag" content="COMP1140"> 
 
+    
+        <meta property="article:published_time" content="Nov 14, 2017" />
+        <meta property="article:modified_time" content="Nov 15, 2017" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="وسم: master | Zhiyuan Chen">
+    <meta name="twitter:title" content="Java 教程 ** -- Hash冲突处理 | Zhiyuan Chen">
     <meta name="twitter:description" content="Zhiyuan Chen&#39;s Website">
     <meta name="twitter:image" content="/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -83,13 +86,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://zc.int.xyz/tags/master/index.html" />
+        <link rel="canonical" href="http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9zn5vsc00002k4l22pxd6ux/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Zhiyuan Chen",
+        "logo": "/img/favicon.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Zhiyuan Chen",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/favicon.png"
+        },
+        "description": "自强不息，厚德载物。"
+    },
+    "headline": "Java 教程 ** -- Hash冲突处理",
+    "url": "http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9zn5vsc00002k4l22pxd6ux/index.html",
+    "datePublished": "Nov 14, 2017",
+    "dateModified": "Nov 15, 2017",
+    "description": "Zhiyuan Chen&#39;s Website",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://zc.int.xyz"
+    }
+}
+</script>
 
 
     
@@ -283,157 +316,369 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。"><span class="post-toc-number">1.</span> <span class="post-toc-text">由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#This-is-an-INT-Project-To-use-this-document-you-MUST-agree-the-INT-User-Agreement-and-other-relative-license-agreements-Unauthorised-use-prohibited"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">This is an INT Project. To use this document, you MUST agree the INT User Agreement and other relative license agreements. Unauthorised use prohibited.</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#惯例性废话"><span class="post-toc-number"></span> <span class="post-toc-text">惯例性废话</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#前言"><span class="post-toc-number"></span> <span class="post-toc-text">前言</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Hash冲突处理"><span class="post-toc-number"></span> <span class="post-toc-text">Hash冲突处理</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#·-线性探测"><span class="post-toc-number">1.</span> <span class="post-toc-text">· 线性探测</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#·-二次探测"><span class="post-toc-number">2.</span> <span class="post-toc-text">· 二次探测</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#线性探测"><span class="post-toc-number"></span> <span class="post-toc-text">线性探测</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#二次探测"><span class="post-toc-number"></span> <span class="post-toc-text">二次探测</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#后记"><span class="post-toc-number"></span> <span class="post-toc-text">后记</span></a>
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/zh-cn/master/BeginningZh/cj7ampe7g00011o4lt8ggnr0t/">开始</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            在所有文章的最开始，我想说：
-If you don’t know how to do some things, do some thi...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/zh-cn/master/BeginningZh/cj7ampe7g00011o4lt8ggnr0t/" target="_self">واصل القراءة</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Zhiyuan Chen's avatar">
-            </div>
-            <div>
-                <strong>Zhiyuan Chen</strong>
-                <span>Aug 11, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/zh-cn/">zh-cn</a>, <a class="post_category-link" href="/categories/zh-cn/master/">master</a>
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/en-au/master/BeginningEn/cj7ampe7k00031o4lz4mgeeyo/">Beginning</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            At the very first of all articles, I’d like to say:
-If you don’t kn...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/en-au/master/BeginningEn/cj7ampe7k00031o4lz4mgeeyo/" target="_self">واصل القراءة</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Zhiyuan Chen's avatar">
-            </div>
-            <div>
-                <strong>Zhiyuan Chen</strong>
-                <span>Aug 11, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/en-au/">en-au</a>, <a class="post_category-link" href="/categories/en-au/master/">master</a>
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                Java 教程 ** -- Hash冲突处理
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Zhiyuan Chen</strong>
+        <span>Nov 14, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/COMP1140/">COMP1140</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Computer-Science/">Computer Science</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Documents/">Documents</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Java/">Java</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Programming/">Programming</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Java 教程 ** -- Hash冲突处理&url=http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9zn5vsc00002k4l22pxd6ux/index.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                شارك على Weibo
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Java 教程 ** -- Hash冲突处理&url=http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9zn5vsc00002k4l22pxd6ux/index.html&via=Zhiyuan Chen" target="_blank">
+            <li class="mdl-menu__item">
+                شارك على Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9zn5vsc00002k4l22pxd6ux/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                شارك على Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9zn5vsc00002k4l22pxd6ux/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                شارك على Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9zn5vsc00002k4l22pxd6ux/index.html&title=Java 教程 ** -- Hash冲突处理" target="_blank">
+            <li class="mdl-menu__item">
+                شارك على LinkedIn
+            </li>
+        </a>
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=Zhiyuan Chen&title=Java 教程 ** -- Hash冲突处理&summary=Zhiyuan Chen&#39;s Website&pics=http://zc.int.xyz/img/favicon.png&url=http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9zn5vsc00002k4l22pxd6ux/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                شارك على QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9zn5vsc00002k4l22pxd6ux/index.html&text=Java 教程 ** -- Hash冲突处理" target="_blank">
+            <li class="mdl-menu__item">
+                شارك على Telegram
+            </li>
+        </a>
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h5 id="由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。"><a href="#由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。" class="headerlink" title="由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。"></a>由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。</h5><h6 id="这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。"><a href="#这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。" class="headerlink" title="这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。"></a>这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。</h6><h6 id="This-is-an-INT-Project-To-use-this-document-you-MUST-agree-the-INT-User-Agreement-and-other-relative-license-agreements-Unauthorised-use-prohibited"><a href="#This-is-an-INT-Project-To-use-this-document-you-MUST-agree-the-INT-User-Agreement-and-other-relative-license-agreements-Unauthorised-use-prohibited" class="headerlink" title="This is an INT Project. To use this document, you MUST agree the INT User Agreement and other relative license agreements. Unauthorised use prohibited."></a>This is an INT Project. To use this document, you MUST agree the INT User Agreement and other relative license agreements. Unauthorised use prohibited.</h6><h2 id="惯例性废话"><a href="#惯例性废话" class="headerlink" title="惯例性废话"></a>惯例性废话</h2><p>本身不想写这个的–我又不考Hash在这个时候浪费时间在上面干嘛…………但是考虑到有好多漂亮妹子（划掉）都问了这个问题，还是简单介绍一下吧。</p>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文通过通俗易懂的方式简要介绍了Hash冲突处理当中的线性探测与二次探测，旨在为COMP1110同学的复习提供帮助。</p>
+<h1 id="Hash冲突处理"><a href="#Hash冲突处理" class="headerlink" title="Hash冲突处理"></a>Hash冲突处理</h1><p>首先简要复习一下Hash的定义。对于一个值为n的元素，对其进行Hash运算即可得到该元素的关键码值k，即Hash(n) = k。</p>
+<p>在理想情况下，任何一个值都有且有唯一的一个关键码值与其对应。即∀n, ∃! k so that Hash(n) = k。</p>
+<p>（我也不清楚你有没有理解，这里就假设你已经理解了，我们继续（如果你不理解的话现在转专业还来得及）。</p>
+<p>但令人遗憾的是，这样的理想情况并不存在于地球上。就跟你往小滑块上抹再多的油都不会让它的摩擦力等于0一样。</p>
+<p>不好不好，这大大的违反了一个萝卜一个坑的设计思想，大大的不好。</p>
+<p>所以，我们要想想办法干他一炮，解决掉这些重复的萝卜，啊不，值。</p>
+<p>嗯，怎么做呢？与Hash算法一样，冲突处理也有很多种方式。受限于篇幅（其实就是因为懒（雾），这里我们只介绍两种：</p>
+<h5 id="·-线性探测"><a href="#·-线性探测" class="headerlink" title="· 线性探测"></a>· 线性探测</h5><h5 id="·-二次探测"><a href="#·-二次探测" class="headerlink" title="· 二次探测"></a>· 二次探测</h5><p>为了方便讲解，以下我们假设有五个萝卜，他们的值分别为1、11、21、31、41，以及十个坑。算法即为最简单的Hash(n) = n % 10。</p>
+<h1 id="线性探测"><a href="#线性探测" class="headerlink" title="线性探测"></a>线性探测</h1><p>简单来说，线性探测探测就是在发现这个坑有萝卜之后去看下一个坑，还有就再看下一个坑。通常这会导致一个大问题–聚集。不过我们不用考虑这么多啦。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">-</th>
+<th style="text-align:center">k0</th>
+<th style="text-align:center">k1</th>
+<th style="text-align:center">k2</th>
+<th style="text-align:center">k3</th>
+<th style="text-align:center">k4</th>
+<th style="text-align:center">k5</th>
+<th style="text-align:center">k6</th>
+<th style="text-align:center">k7</th>
+<th style="text-align:center">k8</th>
+<th style="text-align:center">k9</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Hash</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">n0、n1、n2、n3、n4</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">线性</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">n0</td>
+<td style="text-align:center">n1</td>
+<td style="text-align:center">n2</td>
+<td style="text-align:center">n3</td>
+<td style="text-align:center">n4</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+</tbody>
+</table>
+<h1 id="二次探测"><a href="#二次探测" class="headerlink" title="二次探测"></a>二次探测</h1><p>二次探测听这名字都要比线性探测高端一些啦。嗯，与线性探测傻傻的查找k+1+…+1不同，二次探测首先看k+1^2，然后是k-1^2，再然后是k+2^2。随后这么方一下再加加减减下去，嗯……看上去是不是平均了很多？没有像线性一样挤在一起。但这有个更大的问题–有很多地方扫不到啊喂！其实也没有很多啦……至少还是能扫一半的。不过这些都是小事情啦，反正我们将来不会用得到的……</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">-</th>
+<th style="text-align:center">k0</th>
+<th style="text-align:center">k1</th>
+<th style="text-align:center">k2</th>
+<th style="text-align:center">k3</th>
+<th style="text-align:center">k4</th>
+<th style="text-align:center">k5</th>
+<th style="text-align:center">k6</th>
+<th style="text-align:center">k7</th>
+<th style="text-align:center">k8</th>
+<th style="text-align:center">k9</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Hash</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">n0、n1、n2、n3、n4</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+<tr>
+<td style="text-align:center">二次</td>
+<td style="text-align:center">n2</td>
+<td style="text-align:center">n0</td>
+<td style="text-align:center">n1</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">n3</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+</tr>
+</tbody>
+</table>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>OK，今天的渣渣小课堂就到这里，祝愿大家考试顺利~</p>
+
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9zn5vsc00002k4l22pxd6ux/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9zn5vsc00002k4l22pxd6ux/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//intzc.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/zh-cn/documents/Computer-Science/Programming/Java/JavaZh99/cj9y21p7b0000cc4l9we7i6tt/" id="post_nav-older" class="next-content">
+            أقدم
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -606,6 +851,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 
