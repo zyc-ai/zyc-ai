@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zc.int.xyz/"/>
-  <updated>2017-11-14T13:19:29.545Z</updated>
+  <updated>2017-11-18T21:55:24.237Z</updated>
   <id>http://zc.int.xyz/</id>
   
   <author>
@@ -16,9 +16,57 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>HTML教程00 - 认识HTML</title>
+    <link href="http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/HTML/HTMLZh00/cja5vhhng0000vs4ls7k63un8/"/>
+    <id>http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/HTML/HTMLZh00/cja5vhhng0000vs4ls7k63un8/</id>
+    <published>2017-11-18T21:11:53.000Z</published>
+    <updated>2017-11-18T21:55:24.237Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="由于博客引擎更新，段落排版较乱。我们将尽快更新以解决此问题。"><a href="#由于博客引擎更新，段落排版较乱。我们将尽快更新以解决此问题。" class="headerlink" title="由于博客引擎更新，段落排版较乱。我们将尽快更新以解决此问题。"></a>由于博客引擎更新，段落排版较乱。我们将尽快更新以解决此问题。</h5><h6 id="这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。"><a href="#这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。" class="headerlink" title="这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。"></a>这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。</h6><h6 id="This-is-an-INT-Project-To-use-this-document-you-MUST-agree-the-INT-User-Agreement-and-other-relative-license-agreements-Unauthorised-use-prohibited"><a href="#This-is-an-INT-Project-To-use-this-document-you-MUST-agree-the-INT-User-Agreement-and-other-relative-license-agreements-Unauthorised-use-prohibited" class="headerlink" title="This is an INT Project. To use this document, you MUST agree the INT User Agreement and other relative license agreements. Unauthorised use prohibited."></a>This is an INT Project. To use this document, you MUST agree the INT User Agreement and other relative license agreements. Unauthorised use prohibited.</h6><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这是本系列的第二组教程，对象是HTML，当然也会包括CSS。</p>
+<p>之所以是这HTML而不是C、Pyhton或者其他更常用的语言是因为 1. 我最近得把这个网站重新收拾好。 2. CSIRO在招网页工程师，我需要复习一下。</p>
+<p>在这个假期当中，我希望能完成Java系列教程的基础部分（当然这其实应该再发一篇博客，我未来应该会加一个动态栏来进行这种消息的展示），至于HTML就看到时候的进度吧。</p>
+<p>无论如何，这都注定是一个忙碌的假期。求知若饥，虚心若愚。与大家共勉。</p>
+<h1 id="HTML简介"><a href="#HTML简介" class="headerlink" title="HTML简介"></a>HTML简介</h1><p>HTML的历史可以追溯到1980年代CERN第一代互联网的原型中的ENQUIRE系统。但第一代HTML直到1993年才从IETF手中呱呱坠地。随后在1997年，W3C接手并完成了HTML 3.2的开发。在这之后，我们现在仍在大量使用的HTML 4.0.1于2000年作为ISO/IEC国际标准发布。</p>
+<p>在这之后，HTML 5的长跑开始了。WHATWG加入了HTML 5的开发，W3C后宣布HTML 5正式版本将于2022年颁布。除了W3C低下的效率之外，其实更主要的是因为资本的博弈。</p>
+<p>WHATWG认为HTML应该成为一个动态的标准–如Windows 10那样。但W3C的老顽固却坚信标准一定要是固定的。</p>
+<p>很难想象，在这个日新月异的今天，就连金融这种传统市场都在大量追求最新潮的科技技术，而HTML居然还死守着静态标准。这让人无法不担忧HTML的未来。</p>
+<p>在过去的十年之间，人们对互联网的使用已经产生了巨大的变化。此前红极一时的黄页被Google这样的搜索引擎所取代。互联网社群也从论坛转向了Facebook的熟人社交。领英等公司曾对HTML 5寄予厚望，但他们也不得不承认App更好使。</p>
+<p>额，似乎扯得有些远……那这个简介就先到此结束吧。以后我看情况要不要再写点儿，咱们教程01见。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;由于博客引擎更新，段落排版较乱。我们将尽快更新以解决此问题。&quot;&gt;&lt;a href=&quot;#由于博客引擎更新，段落排版较乱。我们将尽快更新以解决此问题。&quot; class=&quot;headerlink&quot; title=&quot;由于博客引擎更新，段落排版较乱。我们将尽快更新以解决此问题。&quot;&gt;
+    
+    </summary>
+    
+      <category term="zh-cn" scheme="http://zc.int.xyz/categories/zh-cn/"/>
+    
+      <category term="documents" scheme="http://zc.int.xyz/categories/zh-cn/documents/"/>
+    
+      <category term="Computer Science" scheme="http://zc.int.xyz/categories/zh-cn/documents/Computer-Science/"/>
+    
+      <category term="Programming" scheme="http://zc.int.xyz/categories/zh-cn/documents/Computer-Science/Programming/"/>
+    
+      <category term="HTML" scheme="http://zc.int.xyz/categories/zh-cn/documents/Computer-Science/Programming/HTML/"/>
+    
+    
+      <category term="Documents" scheme="http://zc.int.xyz/tags/Documents/"/>
+    
+      <category term="Computer Science" scheme="http://zc.int.xyz/tags/Computer-Science/"/>
+    
+      <category term="Programming" scheme="http://zc.int.xyz/tags/Programming/"/>
+    
+      <category term="HTML" scheme="http://zc.int.xyz/tags/HTML/"/>
+    
+      <category term="master" scheme="http://zc.int.xyz/tags/master/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java 教程 ** -- Hash冲突处理</title>
-    <link href="http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9znaa1600078g4lzjg0vzar/"/>
-    <id>http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cj9znaa1600078g4lzjg0vzar/</id>
+    <link href="http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cja5vhho2000bvs4ldkdzk62n/"/>
+    <id>http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh98/cja5vhho2000bvs4ldkdzk62n/</id>
     <published>2017-11-14T12:28:07.000Z</published>
     <updated>2017-11-14T13:19:29.545Z</updated>
     
@@ -158,8 +206,8 @@
   
   <entry>
     <title>Java 教程 ** -- 数据结构-集合框架</title>
-    <link href="http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh99/cj9znaa1700088g4l0o9igm9c/"/>
-    <id>http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh99/cj9znaa1700088g4l0o9igm9c/</id>
+    <link href="http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh99/cja5vhhnw0008vs4lytn1iafc/"/>
+    <id>http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh99/cja5vhhnw0008vs4lytn1iafc/</id>
     <published>2017-11-13T09:38:46.000Z</published>
     <updated>2017-11-13T11:04:42.891Z</updated>
     
@@ -257,8 +305,8 @@
   
   <entry>
     <title>我与小米</title>
-    <link href="http://zc.int.xyz/zh-cn/essay/MiAndIZh/cj9znaa1g000d8g4lyyf4p76t/"/>
-    <id>http://zc.int.xyz/zh-cn/essay/MiAndIZh/cj9znaa1g000d8g4lyyf4p76t/</id>
+    <link href="http://zc.int.xyz/zh-cn/essay/MiAndIZh/cja5vhho6000fvs4ldprwal2z/"/>
+    <id>http://zc.int.xyz/zh-cn/essay/MiAndIZh/cja5vhho6000fvs4ldprwal2z/</id>
     <published>2017-09-07T14:46:16.000Z</published>
     <updated>2017-09-07T15:49:37.466Z</updated>
     
@@ -300,8 +348,8 @@
   
   <entry>
     <title>欢迎 -- Welcome</title>
-    <link href="http://zc.int.xyz/uncategorized/Welcome/cj9znaa1e000c8g4l70wr4gc6/"/>
-    <id>http://zc.int.xyz/uncategorized/Welcome/cj9znaa1e000c8g4l70wr4gc6/</id>
+    <link href="http://zc.int.xyz/uncategorized/Welcome/cja5vhho4000cvs4lpo3o5gxd/"/>
+    <id>http://zc.int.xyz/uncategorized/Welcome/cja5vhho4000cvs4lpo3o5gxd/</id>
     <published>2017-08-28T20:46:58.319Z</published>
     <updated>2017-08-28T20:46:58.321Z</updated>
     
@@ -317,13 +365,13 @@
   </entry>
   
   <entry>
-    <title>Java 教程 01 -- 认识Java</title>
-    <link href="http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh01/cj9znaa1500068g4luxk6olps/"/>
-    <id>http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh01/cj9znaa1500068g4luxk6olps/</id>
+    <title>Java 教程 01 -- 你好，世界</title>
+    <link href="http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh01/cja5vhhnt0007vs4lz8x9iyfw/"/>
+    <id>http://zc.int.xyz/zh-cn/documents/Computer-Science/Programming/Java/JavaZh01/cja5vhhnt0007vs4lz8x9iyfw/</id>
     <published>2017-08-17T08:58:25.000Z</published>
-    <updated>2017-08-28T20:41:43.828Z</updated>
+    <updated>2017-11-18T21:24:23.652Z</updated>
     
-    <content type="html"><![CDATA[<h5 id="由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。"><a href="#由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。" class="headerlink" title="由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。"></a>由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。</h5><h6 id="这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。"><a href="#这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。" class="headerlink" title="这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。"></a>这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。</h6><h6 id="This-is-an-INT-Project-To-use-this-document-you-MUST-agree-the-INT-User-Agreement-and-other-relative-license-agreements-Unauthorised-use-prohibited"><a href="#This-is-an-INT-Project-To-use-this-document-you-MUST-agree-the-INT-User-Agreement-and-other-relative-license-agreements-Unauthorised-use-prohibited" class="headerlink" title="This is an INT Project. To use this document, you MUST agree the INT User Agreement and other relative license agreements. Unauthorised use prohibited."></a>This is an INT Project. To use this document, you MUST agree the INT User Agreement and other relative license agreements. Unauthorised use prohibited.</h6><p>首先，遵循惯例，我们来接触你的第一段Java代码，hello, world。</p>
+    <content type="html"><![CDATA[<h5 id="由于博客引擎更新，段落排版较乱。我们将尽快更新以解决此问题。"><a href="#由于博客引擎更新，段落排版较乱。我们将尽快更新以解决此问题。" class="headerlink" title="由于博客引擎更新，段落排版较乱。我们将尽快更新以解决此问题。"></a>由于博客引擎更新，段落排版较乱。我们将尽快更新以解决此问题。</h5><h6 id="这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。"><a href="#这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。" class="headerlink" title="这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。"></a>这是一个INT作品。使用本教程必须遵守INT用户协议及其他相关许可协议。严禁未经授权的使用。</h6><h6 id="This-is-an-INT-Project-To-use-this-document-you-MUST-agree-the-INT-User-Agreement-and-other-relative-license-agreements-Unauthorised-use-prohibited"><a href="#This-is-an-INT-Project-To-use-this-document-you-MUST-agree-the-INT-User-Agreement-and-other-relative-license-agreements-Unauthorised-use-prohibited" class="headerlink" title="This is an INT Project. To use this document, you MUST agree the INT User Agreement and other relative license agreements. Unauthorised use prohibited."></a>This is an INT Project. To use this document, you MUST agree the INT User Agreement and other relative license agreements. Unauthorised use prohibited.</h6><p>首先，遵循惯例，我们来接触你的第一段Java代码，hello, world。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span>
 <span class="line">2</span>
 <span class="line">3</span>
@@ -380,7 +428,7 @@
     
     <summary type="html">
     
-      &lt;h5 id=&quot;由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。&quot;&gt;&lt;a href=&quot;#由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。&quot; class=&quot;headerlink&quot; title=&quot;由于博客引擎更新，段落排版较乱。我们将尽快更新已解决此问题。&quot;&gt;
+      &lt;h5 id=&quot;由于博客引擎更新，段落排版较乱。我们将尽快更新以解决此问题。&quot;&gt;&lt;a href=&quot;#由于博客引擎更新，段落排版较乱。我们将尽快更新以解决此问题。&quot; class=&quot;headerlink&quot; title=&quot;由于博客引擎更新，段落排版较乱。我们将尽快更新以解决此问题。&quot;&gt;
     
     </summary>
     
@@ -408,45 +456,9 @@
   </entry>
   
   <entry>
-    <title>Beginning</title>
-    <link href="http://zc.int.xyz/en-au/master/BeginningEn/cj9znaa0t00008g4lut3mlowv/"/>
-    <id>http://zc.int.xyz/en-au/master/BeginningEn/cj9znaa0t00008g4lut3mlowv/</id>
-    <published>2017-08-10T15:01:06.000Z</published>
-    <updated>2017-08-15T01:51:16.485Z</updated>
-    
-    <content type="html"><![CDATA[<p>At the very first of all articles, I’d like to say:</p>
-<p>If you don’t know how to do some things, do some things.</p>
-<p>This website may contain a lot of things, but the most should be varieties of documents I wrote. If you are one of the user of these documents, I hope you can remember this sentence and, if possible, practice this sentence.</p>
-<p>Practicing rather than papers makes the master. Whether it is the document written by me or other people on the Internet, or even the documents written by software developer, maintenance personnel and other documents written, are not comprehensive in a certain extent.</p>
-<p>Which means: that you may encounter more in the actual environment. More complex situation.</p>
-<p>Very often, this represents wasting hours to solve a very small problem, perhaps even because of the lack of a period. This may be very frustrating, but I think it is also surprising. Because in the process of solving the problem, we usually can learn more things.</p>
-<p>Of course, if you really can not solve the problem, you can also choose to <a href="mailto:zc@int.ac.cn" target="_blank" rel="external">send me an email</a>. I will try my best to help you solve the problem. But I hope you have tried all the possible solutions to the problem before asking for help. At the same time, I also hope that you can understand that I am not a panacea, and there is no obligation to provide you answers.</p>
-<p>I always think that curiosity is mandatory for a person to become a master from a beginner. For example, when you know i ++ == i + = 1 == i = i + 1, have you ever think about what if i is a String or any other type?</p>
-<p>Searching to this site, I believe you have such a curiosity. I hope the content I wrote can help you, but also hope that you can rely on your own earnings to achieve one after another success.</p>
-<p>Zhiyuan Chen<br>Early Morning, 2017-08-11<br>At Wake Up! Youth Hostel, Sydney</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;At the very first of all articles, I’d like to say:&lt;/p&gt;
-&lt;p&gt;If you don’t know how to do some things, do some things.&lt;/p&gt;
-&lt;p&gt;This website m
-    
-    </summary>
-    
-      <category term="en-au" scheme="http://zc.int.xyz/categories/en-au/"/>
-    
-      <category term="master" scheme="http://zc.int.xyz/categories/en-au/master/"/>
-    
-    
-      <category term="master" scheme="http://zc.int.xyz/tags/master/"/>
-    
-  </entry>
-  
-  <entry>
     <title>开始</title>
-    <link href="http://zc.int.xyz/zh-cn/master/BeginningZh/cj9znaa0z00028g4lql9kem7e/"/>
-    <id>http://zc.int.xyz/zh-cn/master/BeginningZh/cj9znaa0z00028g4lql9kem7e/</id>
+    <link href="http://zc.int.xyz/zh-cn/master/BeginningZh/cja5vhhnn0002vs4lvfalfnt0/"/>
+    <id>http://zc.int.xyz/zh-cn/master/BeginningZh/cja5vhhnn0002vs4lvfalfnt0/</id>
     <published>2017-08-10T15:01:06.000Z</published>
     <updated>2017-08-15T01:46:20.078Z</updated>
     
@@ -473,6 +485,42 @@
       <category term="zh-cn" scheme="http://zc.int.xyz/categories/zh-cn/"/>
     
       <category term="master" scheme="http://zc.int.xyz/categories/zh-cn/master/"/>
+    
+    
+      <category term="master" scheme="http://zc.int.xyz/tags/master/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Beginning</title>
+    <link href="http://zc.int.xyz/en-au/master/BeginningEn/cja5vhhns0006vs4le0zf7y7v/"/>
+    <id>http://zc.int.xyz/en-au/master/BeginningEn/cja5vhhns0006vs4le0zf7y7v/</id>
+    <published>2017-08-10T15:01:06.000Z</published>
+    <updated>2017-08-15T01:51:16.485Z</updated>
+    
+    <content type="html"><![CDATA[<p>At the very first of all articles, I’d like to say:</p>
+<p>If you don’t know how to do some things, do some things.</p>
+<p>This website may contain a lot of things, but the most should be varieties of documents I wrote. If you are one of the user of these documents, I hope you can remember this sentence and, if possible, practice this sentence.</p>
+<p>Practicing rather than papers makes the master. Whether it is the document written by me or other people on the Internet, or even the documents written by software developer, maintenance personnel and other documents written, are not comprehensive in a certain extent.</p>
+<p>Which means: that you may encounter more in the actual environment. More complex situation.</p>
+<p>Very often, this represents wasting hours to solve a very small problem, perhaps even because of the lack of a period. This may be very frustrating, but I think it is also surprising. Because in the process of solving the problem, we usually can learn more things.</p>
+<p>Of course, if you really can not solve the problem, you can also choose to <a href="mailto:zc@int.ac.cn" target="_blank" rel="external">send me an email</a>. I will try my best to help you solve the problem. But I hope you have tried all the possible solutions to the problem before asking for help. At the same time, I also hope that you can understand that I am not a panacea, and there is no obligation to provide you answers.</p>
+<p>I always think that curiosity is mandatory for a person to become a master from a beginner. For example, when you know i ++ == i + = 1 == i = i + 1, have you ever think about what if i is a String or any other type?</p>
+<p>Searching to this site, I believe you have such a curiosity. I hope the content I wrote can help you, but also hope that you can rely on your own earnings to achieve one after another success.</p>
+<p>Zhiyuan Chen<br>Early Morning, 2017-08-11<br>At Wake Up! Youth Hostel, Sydney</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;At the very first of all articles, I’d like to say:&lt;/p&gt;
+&lt;p&gt;If you don’t know how to do some things, do some things.&lt;/p&gt;
+&lt;p&gt;This website m
+    
+    </summary>
+    
+      <category term="en-au" scheme="http://zc.int.xyz/categories/en-au/"/>
+    
+      <category term="master" scheme="http://zc.int.xyz/categories/en-au/master/"/>
     
     
       <category term="master" scheme="http://zc.int.xyz/tags/master/"/>
