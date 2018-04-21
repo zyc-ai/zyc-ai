@@ -1,0 +1,103 @@
+article, aside, figure, figcaption, footer, header, hgroup, nav, section, summary
+{ display: block; }
+
+body
+{
+  font-size: medium;
+  font-family: Arial, Consolas, Monaco, "Microsoft Yahei";
+}
+
+header.Header
+{
+  padding: 10px;
+  background: #333333; 
+}
+
+header.Article
+{
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+header.Article h3
+{
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+aside.Sidebar
+{ 
+  padding: 5px 15px 5px 15px;
+  width: 200px;
+  background-color:#F9F9F9;
+  font-size: small;
+  float:left;
+}
+
+aside.Sidebar h2
+{
+  color: #9B0000;
+  border-bottom: thin #9B0000 solid;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+aside.Sidebar ul
+{ padding-left: 15px; }
+
+aside.Sidebar li
+{ padding-bottom: 10px; }
+
+aside.Sidebar img
+{
+  margin-top: 20px;
+  border: white solid 5px;
+}
+
+.Content
+{
+	  padding: 20px;
+	  margin-left:280px;
+	margin-right:80px;
+}
+
+.Content .LeadIn
+{
+  font-weight: bold;
+  font-size: large;
+  font-variant: small-caps;
+}
+
+.Content h1
+{
+  color: #004098;
+  margin-bottom: 5px;
+  font-size: xx-large;
+}
+
+.Content h3
+{
+  color: #6F327B;
+  margin-bottom: 2px;
+  font-size: medium;
+}
+
+.Content p
+{ margin-top: 0px; }
+
+footer
+{
+  background: #333333;
+  color:#C0C0C0;
+  padding: 10px;
+  text-align: center;
+  font-size: x-small;  
+  clear:both;
+}
+
+footer .Disclaimer
+{ font-style: italic; }
+
+footer p
+{ margin: 5px; }
