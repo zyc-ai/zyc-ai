@@ -55,6 +55,7 @@ side.sidebar img
 	padding: 20px;
 	margin-left: 280px;
 	margin-right: 80px;
+	position: relative;
 	min-height: 100%;
 }
 .content h1
@@ -74,12 +75,12 @@ footer
 {
 	background: #333333;
 	color: #D0D0D0;
+	bottom: 0px;
 	position: fixed;
 	padding: 10px;
 	text-align: center;
 	font-size: x-small;  
 	clear: both;
-	bottom: 0px;
 	width: 100%;
 }
 footer .disclaimer
