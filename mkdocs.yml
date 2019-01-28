@@ -1,17 +1,28 @@
 site_name: Zhiyuan Chen
+site_url: https://zc.int.xyz
+site_author: Zhiyuan Chen
+site_description: The website of Zhiyuan Chen
+copyright: All rights reserved © Zhiyuan Chen 2019
+
+repo_url: https://github.com/int-zc/web
 
 nav:
-    - 首页: index.md
-    #- 联想研究院实习总结: lenovo_research.md
-    #- Kubernetes部署教程: kubernetes_deploy_guide.md
-    - 关于: about.md
+  - 首页: index.md
+  - 关于: master/about.md
+  # - 联想研究院:
+  #   - 联想研究院实习总结: lenovo_research.md
+  - Kubernetes:
+    - Kubernetes导论: kubernetes/introduction_to_kubernetes.md
+    - Kubernetes部署教程: kubernetes/kubernetes_deploy_guide.md
 
 theme:
   name: material
   palette:
     primary: 'teal'
     accent: 'teal'
-  logo: 'images/zc.png'
+  logo: 'img/zc.png'
+  feature:
+    tabs: true
 
 extra:
   social:
@@ -19,7 +30,10 @@ extra:
       link: 'https://github.com/int-zc'
     - type: 'linkedin'
       link: 'https://www.linkedin.com/in/%E9%99%9F%E5%8E%9F-%E9%99%88-0b473aa9/'
-  disqus: 'zhiyuan_chen'
+  disqus: 'intzc'
+
+extra_css:
+    - css/css.css
 
 google_analytics:
   - 'UA-104387513-1'
@@ -29,12 +43,9 @@ markdown_extensions:
   - admonition
   - codehilite:
       guess_lang: false
-      linenums: false
-  - toc:
-      permalink: true
+  - def_list
   - footnotes
   - meta
-  - def_list
   - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
@@ -44,9 +55,13 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_generator: !!python/name:pymdownx.emoji.to_png
   - pymdownx.inlinehilite
+  - pymdownx.keys
   - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences
-  - pymdownx.tasklist
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.tilde
+  - toc:
+      permalink: true
