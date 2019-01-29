@@ -26,10 +26,17 @@ Kuberenetes由五层结构构成。
 
 ## Kubernetes组件
 基础的kubernetes由七个组件构成，他们是：
+
     - etcd                  集群信息保存（集群）
+
     - apiserver             集群操作入口（主机）
+
     - scheduler             集群资源调度（主机）
+
     - controller manager    集群状态维护（主机）
+
     - kubelet               镜像、容器、数据卷（CVI）、网络（CNI）等的管理（从机）
+
     - container runtime     镜像和Pod（CRI）的管理（从机）
+
     - kube-proxy            集群的服务发现和负载均衡（从机）

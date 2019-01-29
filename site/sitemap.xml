@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://zc.int.xyz/</loc>
-     <lastmod>2019-01-28</lastmod>
+     <lastmod>2019-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://zc.int.xyz/master/about/</loc>
-     <lastmod>2019-01-28</lastmod>
+     <lastmod>2019-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://zc.int.xyz/kubernetes/introduction_to_kubernetes/</loc>
-     <lastmod>2019-01-28</lastmod>
+     <lastmod>2019-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://zc.int.xyz/kubernetes/kubernetes_deploy_guide/</loc>
-     <lastmod>2019-01-28</lastmod>
+     <lastmod>2019-01-29</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
