@@ -9,6 +9,7 @@ repo_url: https://github.com/int-zc/web
 nav:
   - 首页: index.md
   - 关于: master/about.md
+  - 简历: master/curriculum_vitae.md
   # - 联想研究院:
   #   - 联想研究院实习总结: lenovo_research.md
   - Kubernetes:

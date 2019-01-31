@@ -40,7 +40,7 @@ tags:
         stable"
 
     # 添加kubernetes仓库
-    # 不要问我为什么添加仓库的方式不一样，他们官方文档就是这么写的，再问自杀（手动白眼
+    # 不要问我为什么添加仓库的方式不一样，他们官方文档就是这么写的，再问自杀🙄
     curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
     cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
         deb https://apt.kubernetes.io/ kubernetes-xenial main
