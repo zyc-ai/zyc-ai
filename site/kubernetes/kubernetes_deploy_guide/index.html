@@ -224,6 +224,8 @@
         
       
         
+      
+        
   
   
     <li class="md-tabs__item">
@@ -309,18 +311,30 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../../master/curriculum_vitae/" title="简历" class="md-nav__link">
+      简历
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-4">
       Kubernetes
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-4">
         Kubernetes
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -688,7 +702,7 @@ add-apt-repository \
     stable&quot;
 
 # 添加kubernetes仓库
-# 不要问我为什么添加仓库的方式不一样，他们官方文档就是这么写的，再问自杀（手动白眼
+# 不要问我为什么添加仓库的方式不一样，他们官方文档就是这么写的，再问自杀🙄
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
 cat &amp;lt;&amp;lt;EOF &amp;gt;/etc/apt/sources.list.d/kubernetes.list
     deb https://apt.kubernetes.io/ kubernetes-xenial main
@@ -914,7 +928,7 @@ kubectl create -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/v1.
 
 
 <p>检视所有pod的运行情况</p>
-<p>在下一篇教程当中，我们将会介绍身份认证机制。</p>
+<p>在下一篇教程当中，我们将会介绍如何部署第一个应用。</p>
                 
                   
                 
