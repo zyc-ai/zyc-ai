@@ -13,7 +13,7 @@
         <meta name="description" content="The website of Zhiyuan Chen">
       
       
-        <link rel="canonical" href="https://zc.int.xyz/kubernetes/introduction_to_kubernetes/">
+        <link rel="canonical" href="https://zc.int.xyz/kubernetes/pods/">
       
       
         <meta name="author" content="Zhiyuan Chen">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Introduciton To Kubernetes</title>
+        <title>Kubernetes Deploy Guide</title>
       
     
     
@@ -107,7 +107,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#kubernetes" tabindex="1" class="md-skip">
+      <a href="#pods" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -133,7 +133,7 @@
                 Zhiyuan Chen
               </span>
               <span class="md-header-nav__topic">
-                Kubernetes导论
+                Pods
               </span>
             
           
@@ -230,7 +230,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="./" title="Kubernetes" class="md-tabs__link md-tabs__link--active">
+        <a href="../introduction_to_kubernetes/" title="Kubernetes" class="md-tabs__link md-tabs__link--active">
           Kubernetes
         </a>
       
@@ -344,62 +344,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Kubernetes导论
-      </label>
-    
-    <a href="./" title="Kubernetes导论" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../introduction_to_kubernetes/" title="Kubernetes导论" class="md-nav__link">
       Kubernetes导论
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#kubernetes_1" title="Kubernetes架构" class="md-nav__link">
-    Kubernetes架构
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kubernetes_2" title="Kubernetes组件" class="md-nav__link">
-    Kubernetes组件
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-        <li class="md-nav__item">
-          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
-            Comments
-          </a>
-        </li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -419,11 +368,62 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../pods/" title="Pods" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Pods
+      </label>
+    
+    <a href="./" title="Pods" class="md-nav__link md-nav__link--active">
       Pods
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="部署文件" class="md-nav__link">
+    部署文件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="完成部署" class="md-nav__link">
+    完成部署
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -453,15 +453,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#kubernetes_1" title="Kubernetes架构" class="md-nav__link">
-    Kubernetes架构
+  <a href="#_1" title="部署文件" class="md-nav__link">
+    部署文件
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#kubernetes_2" title="Kubernetes组件" class="md-nav__link">
-    Kubernetes组件
+  <a href="#_2" title="完成部署" class="md-nav__link">
+    完成部署
   </a>
   
 </li>
@@ -488,30 +488,50 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/int-zc/web/edit/master/docs/kubernetes/introduction_to_kubernetes.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/int-zc/web/edit/master/docs/kubernetes/pods.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="kubernetes">kubernetes导论<a class="headerlink" href="#kubernetes" title="Permanent link">&para;</a></h1>
-<p>Kubernetes，作为Google在运行多年的Borg基础上开发的开源容器编排系统，在部署、伸缩及管理方面具有强大的能力。</p>
-<p>和很多初学者所想的不一样，kubernetes并非是为Docker而生的。事实上，他还支持Rocket这样的容器技术。但在本站当中，我们将不会讨论kubernetes在其他容器技术上的应用。我们鼓励您在网上寻找其他信息，如果您有这方面的需求，我们同时很欢迎您将您所找到的内容整理成文章并提交在本站当中。</p>
-<h2 id="kubernetes_1">Kubernetes架构<a class="headerlink" href="#kubernetes_1" title="Permanent link">&para;</a></h2>
-<p>Kuberenetes由五层结构构成。</p>
-<h2 id="kubernetes_2">Kubernetes组件<a class="headerlink" href="#kubernetes_2" title="Permanent link">&para;</a></h2>
-<p>基础的kubernetes由七个组件构成，他们是：</p>
-<div class="codehilite"><pre><span></span>- etcd                  集群信息保存（集群）
-
-- apiserver             集群操作入口（主机）
-
-- scheduler             集群资源调度（主机）
-
-- controller manager    集群状态维护（主机）
-
-- kubelet               镜像、容器、数据卷（CVI）、网络（CNI）等的管理（从机）
-
-- container runtime     镜像和Pod（CRI）的管理（从机）
-
-- kube-proxy            集群的服务发现和负载均衡（从机）
+                <h1 id="pods">Pods<a class="headerlink" href="#pods" title="Permanent link">&para;</a></h1>
+<p>对于Kubernetes来说，最小的部署单元是一个Pod。</p>
+<p>正如他的名字（豆荚）那样，一个Pod可以包含多个容器，他们共享命名空间、数据卷、网络并可以进行进程间通信。</p>
+<p>相比容器，Pod在这里更像一个虚拟机--如果你把完成一个任务所需的所有容器都放在一个Pod当中，那这就相当于一个独立的节点了！</p>
+<h2 id="_1">部署文件<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>一个简单的Pod的部署文件如下所示：</p>
+<div class="codehilite"><pre><span></span>apiVersion: v1
+kind: Pod
+metadata:
+name: demo
+namespace: demo
+labels:
+    - name: demo
+annotations:
+    - name: demo
+spec:
+restartPolicy: Always
+containers:
+    - name: demo
+    image: demo/demo:dev
+    resources:
+        limits:
+        nvidia.com/gpu: 1
+        requests:
+        nvidia.com/gpu: 1
+    volumeMounts:
+        - name: logs
+        mountPath: /usr/local/demo/logs
+imagePullSecrets:
+    - name: pswd
+volumes:
+    - name: logs
+    hostPath:
+        path: /usr/local/demo/logs
 </pre></div>
+
+
+<h2 id="_2">完成部署<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>对上面的内容做出少许修改（比如你可能不需要挂载日志文件，也不需要使用GPU）并在本地应用，你的第一个应用就完成部署了。</p>
+<p>但是，作为最小的部署单元，我们仅仅是将几个容器合并在了一个单元当中，而并没有实现其他的功能--比如说，最重要的，容器调度。</p>
+<p>在下一篇文章当中我们将会简要介绍Deployment，完成一个真正的应用部署。</p>
                 
                   
                 
@@ -524,9 +544,9 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://zc.int.xyz/kubernetes/introduction_to_kubernetes/";
+      this.page.url = "https://zc.int.xyz/kubernetes/pods/";
       this.page.identifier =
-        "/kubernetes/introduction_to_kubernetes/";
+        "/kubernetes/pods/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -548,7 +568,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../master/curriculum_vitae/" title="简历" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../install/" title="安装" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -557,25 +577,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                简历
-              </span>
-            </div>
-          </a>
-        
-        
-          <a href="../install/" title="安装" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
                 安装
               </span>
             </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
           </a>
+        
         
       </nav>
     </div>

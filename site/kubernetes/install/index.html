@@ -13,7 +13,7 @@
         <meta name="description" content="The website of Zhiyuan Chen">
       
       
-        <link rel="canonical" href="https://zc.int.xyz/kubernetes/kubernetes_deploy_guide/">
+        <link rel="canonical" href="https://zc.int.xyz/kubernetes/install/">
       
       
         <meta name="author" content="Zhiyuan Chen">
@@ -107,7 +107,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#kubernetes" tabindex="1" class="md-skip">
+      <a href="#_1" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -133,7 +133,7 @@
                 Zhiyuan Chen
               </span>
               <span class="md-header-nav__topic">
-                Kubernetes部署教程
+                安装
               </span>
             
           
@@ -367,11 +367,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Kubernetes部署教程
+        安装
       </label>
     
-    <a href="./" title="Kubernetes部署教程" class="md-nav__link md-nav__link--active">
-      Kubernetes部署教程
+    <a href="./" title="安装" class="md-nav__link md-nav__link--active">
+      安装
     </a>
     
       
@@ -392,7 +392,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" title="拉取依赖镜像" class="md-nav__link">
+  <a href="#_2" title="拉取依赖镜像" class="md-nav__link">
     拉取依赖镜像
   </a>
   
@@ -412,7 +412,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kubernetes_1" title="初始化kubernetes" class="md-nav__link">
+  <a href="#kubernetes" title="初始化kubernetes" class="md-nav__link">
     初始化kubernetes
   </a>
   
@@ -432,7 +432,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" title="导出配置文件" class="md-nav__link">
+  <a href="#_3" title="导出配置文件" class="md-nav__link">
     导出配置文件
   </a>
   
@@ -447,7 +447,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" title="如果配置文件无法读取，您在接下来的操作当中可能会看到如下错误之一：" class="md-nav__link">
+  <a href="#_4" title="如果配置文件无法读取，您在接下来的操作当中可能会看到如下错误之一：" class="md-nav__link">
     如果配置文件无法读取，您在接下来的操作当中可能会看到如下错误之一：
   </a>
   
@@ -459,7 +459,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kubernetes_2" title="部署kubernetes网络模型" class="md-nav__link">
+  <a href="#kubernetes_1" title="部署kubernetes网络模型" class="md-nav__link">
     部署kubernetes网络模型
   </a>
   
@@ -467,7 +467,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_4" title="如果您选择了其他网络模型，请依据指导完成本步骤" class="md-nav__link">
+  <a href="#_5" title="如果您选择了其他网络模型，请依据指导完成本步骤" class="md-nav__link">
     如果您选择了其他网络模型，请依据指导完成本步骤
   </a>
   
@@ -493,7 +493,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" title="安装结束" class="md-nav__link">
+  <a href="#_6" title="安装结束" class="md-nav__link">
     安装结束
   </a>
   
@@ -513,6 +513,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pods/" title="Pods" class="md-nav__link">
+      Pods
+    </a>
   </li>
 
         
@@ -549,7 +561,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" title="拉取依赖镜像" class="md-nav__link">
+  <a href="#_2" title="拉取依赖镜像" class="md-nav__link">
     拉取依赖镜像
   </a>
   
@@ -569,7 +581,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kubernetes_1" title="初始化kubernetes" class="md-nav__link">
+  <a href="#kubernetes" title="初始化kubernetes" class="md-nav__link">
     初始化kubernetes
   </a>
   
@@ -589,7 +601,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" title="导出配置文件" class="md-nav__link">
+  <a href="#_3" title="导出配置文件" class="md-nav__link">
     导出配置文件
   </a>
   
@@ -604,7 +616,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" title="如果配置文件无法读取，您在接下来的操作当中可能会看到如下错误之一：" class="md-nav__link">
+  <a href="#_4" title="如果配置文件无法读取，您在接下来的操作当中可能会看到如下错误之一：" class="md-nav__link">
     如果配置文件无法读取，您在接下来的操作当中可能会看到如下错误之一：
   </a>
   
@@ -616,7 +628,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kubernetes_2" title="部署kubernetes网络模型" class="md-nav__link">
+  <a href="#kubernetes_1" title="部署kubernetes网络模型" class="md-nav__link">
     部署kubernetes网络模型
   </a>
   
@@ -624,7 +636,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_4" title="如果您选择了其他网络模型，请依据指导完成本步骤" class="md-nav__link">
+  <a href="#_5" title="如果您选择了其他网络模型，请依据指导完成本步骤" class="md-nav__link">
     如果您选择了其他网络模型，请依据指导完成本步骤
   </a>
   
@@ -650,7 +662,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_5" title="安装结束" class="md-nav__link">
+  <a href="#_6" title="安装结束" class="md-nav__link">
     安装结束
   </a>
   
@@ -678,11 +690,11 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/int-zc/web/edit/master/docs/kubernetes/kubernetes_deploy_guide.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/int-zc/web/edit/master/docs/kubernetes/install.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="kubernetes">Kubernetes部署教程<a class="headerlink" href="#kubernetes" title="Permanent link">&para;</a></h1>
-<p>网上kubernetes各种教程不少，但要么是上古时期的版本，要么三言两语匆匆带过。尤其是在我们还需要用到显卡的情况下…………</p>
+                <h1 id="_1">安装<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>网上kubernetes各种安装教程不少，但要么是上古时期的版本，要么三言两语匆匆带过。尤其是在我们还需要用到显卡的情况下…………</p>
 <p>这里总结一下自己安装kubernetes的全部过程。</p>
 <h2 id="docker-kubernetes-nvidia-docker2">安装Docker &amp;&amp; Kubernetes &amp;&amp; nvidia-docker2<a class="headerlink" href="#docker-kubernetes-nvidia-docker2" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span># 安装依赖
@@ -743,7 +755,7 @@ sudo service docker restart
 </pre></div>
 
 
-<h2 id="_1">拉取依赖镜像<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_2">拉取依赖镜像<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h4 id="gfw">本步骤仅适用于位于GFW影响范围内的主机<a class="headerlink" href="#gfw" title="Permanent link">&para;</a></h4>
 <p>运行以下脚本（如果您预期安装的kubernetes版本不是v1.13.2，请运行kubeadm config images list并依据返回结果运行脚本）：</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
@@ -872,13 +884,13 @@ docker rmi registry.cn-hangzhou.aliyuncs.com/kubernetes_containers/flannel:<span
 </pre></div>
 </td></tr></table>
 
-<h2 id="kubernetes_1">初始化kubernetes<a class="headerlink" href="#kubernetes_1" title="Permanent link">&para;</a></h2>
+<h2 id="kubernetes">初始化kubernetes<a class="headerlink" href="#kubernetes" title="Permanent link">&para;</a></h2>
 <h4 id="flannel">出于对网络速度的考虑，我们使用了Flannel作为网络模型，不同网络模型的初始化参数可能不一样，请依据指导初始化<a class="headerlink" href="#flannel" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span>kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=&amp;lt;ip-address&amp;gt;
 </pre></div>
 
 
-<h2 id="_2">导出配置文件<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_3">导出配置文件<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <h4 id="kuberneteskube">导出配置文件是十分必要的，kubernetes会从当前操作用户的~/.kube目录下读取配置文件<a class="headerlink" href="#kuberneteskube" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span># 对于普通用户
 mkdir -p $HOME/.kube
@@ -889,7 +901,7 @@ export KUBECONFIG=/etc/kubernetes/admin.conf
 </pre></div>
 
 
-<h4 id="_3">如果配置文件无法读取，您在接下来的操作当中可能会看到如下错误之一：<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<h4 id="_4">如果配置文件无法读取，您在接下来的操作当中可能会看到如下错误之一：<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span>Unable to connect to the server: x509: certificate signed by unknown authority (possibly because of “crypto/rsa: verification error” while trying to verify candidate authority certificate “kubernetes”)
 
 The connection to the server localhost:8080 was refused - did you specify the right host or port?
@@ -898,8 +910,8 @@ The connection to the server localhost:6443 was refused - did you specify the ri
 </pre></div>
 
 
-<h2 id="kubernetes_2">部署kubernetes网络模型<a class="headerlink" href="#kubernetes_2" title="Permanent link">&para;</a></h2>
-<h4 id="_4">如果您选择了其他网络模型，请依据指导完成本步骤<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<h2 id="kubernetes_1">部署kubernetes网络模型<a class="headerlink" href="#kubernetes_1" title="Permanent link">&para;</a></h2>
+<h4 id="_5">如果您选择了其他网络模型，请依据指导完成本步骤<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
 <div class="codehilite"><pre><span></span>sysctl net.bridge.bridge-nf-call-iptables=1
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 </pre></div>
@@ -921,7 +933,7 @@ kubectl create -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/v1.
 </pre></div>
 
 
-<h2 id="_5">安装结束<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h2 id="_6">安装结束<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <p>至此，kubernetes已经成功在您的机器上安装，运行</p>
 <div class="codehilite"><pre><span></span>kubectl get pods --all-namespaces
 </pre></div>
@@ -941,9 +953,9 @@ kubectl create -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/v1.
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://zc.int.xyz/kubernetes/kubernetes_deploy_guide/";
+      this.page.url = "https://zc.int.xyz/kubernetes/install/";
       this.page.identifier =
-        "/kubernetes/kubernetes_deploy_guide/";
+        "/kubernetes/install/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -979,6 +991,20 @@ kubectl create -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/v1.
             </div>
           </a>
         
+        
+          <a href="../pods/" title="Pods" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Pods
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>

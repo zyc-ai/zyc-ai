@@ -14,7 +14,8 @@ nav:
   #   - 联想研究院实习总结: lenovo_research.md
   - Kubernetes:
     - Kubernetes导论: kubernetes/introduction_to_kubernetes.md
-    - Kubernetes部署教程: kubernetes/kubernetes_deploy_guide.md
+    - 安装: kubernetes/install.md
+    - Pods: kubernetes/pods.md
 
 theme:
   name: material
