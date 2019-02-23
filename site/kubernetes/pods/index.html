@@ -42,7 +42,7 @@
     
     
       
-        <title>Kubernetes Deploy Guide</title>
+        <title>Pods</title>
       
     
     
@@ -118,7 +118,7 @@
       <div class="md-flex__cell md-flex__cell--shrink">
         <a href="https://zc.int.xyz" title="Zhiyuan Chen" class="md-header-nav__button md-logo">
           
-            <img src="../../img/zc.png" width="24" height="24">
+            <img src="../../images/zc.png" width="24" height="24">
           
         </a>
       </div>
@@ -253,7 +253,7 @@
   <label class="md-nav__title md-nav__title--site" for="__drawer">
     <a href="https://zc.int.xyz" title="Zhiyuan Chen" class="md-nav__button md-logo">
       
-        <img src="../../img/zc.png" width="48" height="48">
+        <img src="../../images/zc.png" width="48" height="48">
       
     </a>
     Zhiyuan Chen
@@ -397,8 +397,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" title="部署文件" class="md-nav__link">
-    部署文件
+  <a href="#_1" title="描述文件" class="md-nav__link">
+    描述文件
   </a>
   
 </li>
@@ -453,8 +453,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" title="部署文件" class="md-nav__link">
-    部署文件
+  <a href="#_1" title="描述文件" class="md-nav__link">
+    描述文件
   </a>
   
 </li>
@@ -495,15 +495,15 @@
 <p>对于Kubernetes来说，最小的部署单元是一个Pod。</p>
 <p>正如他的名字（豆荚）那样，一个Pod可以包含多个容器，他们共享命名空间、数据卷、网络并可以进行进程间通信。</p>
 <p>相比容器，Pod在这里更像一个虚拟机--如果你把完成一个任务所需的所有容器都放在一个Pod当中，那这就相当于一个独立的节点了！</p>
-<h2 id="_1">部署文件<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>一个简单的Pod的部署文件如下所示：</p>
+<h2 id="_1">描述文件<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>一个简单的Pod的描述文件如下所示：</p>
 <div class="codehilite"><pre><span></span>apiVersion: v1
 kind: Pod
 metadata:
 name: demo
 namespace: demo
 labels:
-    - name: demo
+    app: demo
 annotations:
     - name: demo
 spec:
@@ -519,8 +519,6 @@ containers:
     volumeMounts:
         - name: logs
         mountPath: /usr/local/demo/logs
-imagePullSecrets:
-    - name: pswd
 volumes:
     - name: logs
     hostPath:

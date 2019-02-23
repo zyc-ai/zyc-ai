@@ -16,6 +16,7 @@ nav:
     - Kubernetes导论: kubernetes/introduction_to_kubernetes.md
     - 安装: kubernetes/install.md
     - Pods: kubernetes/pods.md
+    - Deployments: kubernetes/deployments.md
 
 theme:
   name: material
