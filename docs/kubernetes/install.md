@@ -1,6 +1,6 @@
 ---
-title: Kubernetes Deploy Guide
-summary: Introduciton of deploying kubernetes to you machine.
+title: Install
+summary: Install kubernetes
 authors:
     - Zhiyuan Chen
 date: 2019-01-25 02:06:37
@@ -15,6 +15,7 @@ tags:
     - Kubernetes
     - Docker
 ---
+
 # 安装
 
 网上kubernetes各种安装教程不少，但要么是上古时期的版本，要么三言两语匆匆带过。尤其是在我们还需要用到显卡的情况下…………
@@ -194,4 +195,4 @@ tags:
 
 检视所有pod的运行情况
 
-在下一篇教程当中，我们将会介绍如何部署第一个应用。
+在下一篇文章当中，我们将会介绍如何部署第一个应用。
