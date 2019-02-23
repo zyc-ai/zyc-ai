@@ -22,7 +22,7 @@ theme:
   palette:
     primary: 'teal'
     accent: 'teal'
-  logo: 'img/zc.png'
+  logo: 'images/zc.png'
   feature:
     tabs: true
 
