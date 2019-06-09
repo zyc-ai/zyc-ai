@@ -17,6 +17,8 @@ nav:
     - 安装: kubernetes/install.md
     - Pods: kubernetes/pods.md
     - Deployments: kubernetes/deployments.md
+  - 随笔:
+    - 二〇一九年 六月 十日: sketch/20190610.md
 
 theme:
   name: material
