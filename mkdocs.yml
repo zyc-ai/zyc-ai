@@ -4,7 +4,8 @@ site_author: Zhiyuan Chen
 site_description: The website of Zhiyuan Chen
 copyright: All rights reserved © Zhiyuan Chen 2019
 
-repo_url: https://github.com/int-zc/web
+repo_name: The website of Zhiyuan Chen
+repo_url: https://github.com/yc-zc/web
 
 nav:
   - 首页: index.md
@@ -26,10 +27,12 @@ theme:
     primary: 'teal'
     accent: 'teal'
   logo: 'images/zc.png'
+  favicon: 'images/favicon.ico'
   feature:
     tabs: true
 
 extra:
+  manifest: 'manifest.webmanifest'
   social:
     - type: 'github'
       link: 'https://github.com/int-zc'
@@ -74,3 +77,6 @@ markdown_extensions:
   - pymdownx.tilde
   - toc:
       permalink: true
+
+plugins:
+  - search
