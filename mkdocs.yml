@@ -20,6 +20,7 @@ nav:
     - Deployments: kubernetes/deployments.md
   - 随笔:
     - 二〇一九年 六月 十日: sketch/20190610.md
+    - 二〇一九年 六月 十九日: sketch/20190619.md
 
 theme:
   name: material
