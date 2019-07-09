@@ -1,6 +1,6 @@
 ---
-title: Install
-summary: Install kubernetes
+title: 安装Kubernetes
+summary: Installation of Kubernetes
 authors:
     - Zhiyuan Chen
 date: 2019-01-25 02:06:37
@@ -22,66 +22,19 @@ tags:
 
 这里总结一下自己安装kubernetes的全部过程。
 
-## 安装准备
-
-    # 安装依赖
-    apt-get install \
-        apt-transport-https \
-        ca-certificates \
-        curl \
-        gnupg2 \
-        software-properties-common
-
-    # 添加Docker仓库
-    # 有的教程说kubernetes不支持Docker-CE，只支持Docker-IO，相信我，他在胡扯。
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-    add-apt-repository \
-        "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-        $(lsb_release -cs) \
-        stable"
+**如果你还没有安装Dockers，请参考这篇文章**
 
     # 添加kubernetes仓库
-    # 不要问我为什么添加仓库的方式不一样，他们官方文档就是这么写的，再问自杀🙄
+    # 不要问我为什么添加仓库的方式和Docker的不一样，他们官方文档就是这么写的，再问自杀🙄
     curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
     cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
         deb https://apt.kubernetes.io/ kubernetes-xenial main
         EOF
-
     
 
     # 更新仓库
     apt-get update
-    # 安装Docker
-    apt-get install docker-ce
-    # 安装kubernetes
     apt-get install kubelet kubeadm kubectl
-
-    # 添加nvidia-docker2仓库
-    # 由于nvidia-docker2是通过Docker安装的，所以需要在完成Docker的安装之后再安装nvidia-docker2
-    docker volume ls -q -f driver=nvidia-docker | xargs -r -I{} -n1 docker ps -q -a -f volume={} | xargs -r docker rm -f
-    curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
-    apt-key add -
-    distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
-    curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | \
-        tee /etc/apt/sources.list.d/nvidia-docker.list
-
-    # 安装nvidia-docker2
-    apt-get install nvidia-docker2
-    pkill -SIGHUP dockerd
-
-将nvidia-docker2修改为docker的默认运行时环境
-
-    vim /etc/docker/daemon.json
-        {
-            "default-runtime": "nvidia",
-            "runtimes": {
-                "nvidia": {
-                    "path": "/usr/bin/nvidia-container-runtime",
-                    "runtimeArgs": []
-                }
-            }
-        }
-    sudo service docker restart
 
 ## 拉取依赖镜像
 
