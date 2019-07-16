@@ -18,7 +18,7 @@ tags:
 
 # 安装
 
-Docker的安装非常简单，apt-get两分钟就好。
+Docker的安装非常简单，apt-get两分钟就好。由于我们会用到nvidia-docker2，所以这里同时也有nvidia-docker2的安装内容。如果你不需要在容器当中使用Nvidia GPU，那么可以直接跳过相关内容。
 
 ## 安装准备
 
