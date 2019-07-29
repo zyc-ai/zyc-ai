@@ -34,9 +34,9 @@ tags:
 2017 二月 - 现在
 
     - 计算机视觉
-    - Java
-    - 数据库
     - 数据分析
+    - 数据库
+    - Java
 &nbsp;
 
 ## 工作经历
@@ -47,11 +47,13 @@ tags:
 
 2019 六月 - 2019 七月
 
-    - Simulation Methods of Optimisation and Learning 课程助教
+    Simulation Methods for Optimization and Learning
+    Integrated Water Resources Management: International Aspects
+    - 学生管理
 
-### 学生助理
+### 资深学生助理
 
-**北京大学** 工学院、留学生办公室
+**北京大学** 留学生办公室
 
 2019 六月 - 2019 七月
 

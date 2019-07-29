@@ -11,6 +11,7 @@ nav:
   - 首页: index.md
   - 关于: master/about.md
   - 简历: master/curriculum_vitae.md
+  - Resume: master/resume.md
   # - 联想研究院:
   #   - 联想研究院实习总结: lenovo_research.md
   - Kubernetes:
@@ -24,6 +25,7 @@ nav:
   - 随笔:
     - 二〇一九年 六月 十日: sketch/20190610.md
     - 二〇一九年 六月 十九日: sketch/20190619.md
+    - 二〇一九年 七月 二十七日: sketch/20190727.md
 
 theme:
   name: material
