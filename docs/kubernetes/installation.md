@@ -107,11 +107,13 @@ tags:
 ## 初始化kubernetes
 
 **出于对网络速度的考虑，我们使用了Flannel作为网络模型，不同网络模型的初始化参数可能不一样，请依据指导初始化**
+
     kubeadm init --pod-network-cidr=10.244.0.0/16 --apiserver-advertise-address=<ip-address>
 
 ## 导出配置文件
 
 **导出配置文件是十分必要的，kubernetes会从当前操作用户的~/.kube目录下读取配置文件**
+
     # 对于普通用户
     mkdir -p $HOME/.kube
     sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
@@ -120,6 +122,7 @@ tags:
     export KUBECONFIG=/etc/kubernetes/admin.conf
 
 **如果配置文件无法读取，您在接下来的操作当中可能会看到如下错误之一：**
+
     Unable to connect to the server: x509: certificate signed by unknown authority (possibly because of “crypto/rsa: verification error” while trying to verify candidate authority certificate “kubernetes”)
 
     The connection to the server localhost:8080 was refused - did you specify the right host or port?
@@ -129,10 +132,11 @@ tags:
 ## 部署kubernetes网络模型
 
 **如果您选择了其他网络模型，请依据指导完成本步骤**
+
     sysctl net.bridge.bridge-nf-call-iptables=1
     kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 
-**部署NVIDIA设备插件**
+    **部署NVIDIA设备插件**
     docker pull nvidia/k8s-device-plugin:1.11
     # 如果无法直接拉取镜像
     # git clone https://github.com/NVIDIA/k8s-device-plugin.git && cd k8s-device-plugin
@@ -141,10 +145,11 @@ tags:
 
     kubectl create -f https://raw.githubusercontent.com/NVIDIA/k8s-device-plugin/v1.11/nvidia-device-plugin.yml
 
-**部署kubernetes dashboard**
+    **部署kubernetes dashboard**
     kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v1.10.1/src/deploy/recommended/kubernetes-dashboard.yaml
 
-**安装结束**
+## 安装结束
+
 至此，kubernetes已经成功在您的机器上安装，运行
 
     kubectl get pods --all-namespaces
