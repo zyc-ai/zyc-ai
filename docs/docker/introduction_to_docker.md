@@ -1,17 +1,14 @@
 ---
-title: Introduciton To Docker
-summary: Introduciton of Docker.
+title: Docker导论
+summary: Docker导论
 authors:
     - Zhiyuan Chen
 date: 2019-05-12 15:15:31
 categories: 
-    - Documents
-    - Computer Science
-    - Technology
-    - Containerization
     - Docker
+    - 导论
 tags:
-    - Containerization
+    - 容器化
     - Docker
 ---
 

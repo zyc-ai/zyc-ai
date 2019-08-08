@@ -5,15 +5,13 @@ authors:
     - Zhiyuan Chen
 date: 2019-01-25 02:06:37
 categories: 
-    - Documents
-    - Computer Science
-    - Technology
-    - Containerization
     - Kubernetes
+    - 安装
 tags:
-    - Containerization
+    - 容器化
     - Kubernetes
     - Docker
+    - 安装
 ---
 
 # 安装

@@ -1,17 +1,14 @@
 ---
-title: Introduciton To Kubernetes
-summary: Introduciton of kubernetes.
+title: Kubernetes导论
+summary: Kubernetes导论
 authors:
     - Zhiyuan Chen
 date: 2019-01-28 12:08:33
 categories: 
-    - Documents
-    - Computer Science
-    - Technology
-    - Containerization
     - Kubernetes
+    - 导论
 tags:
-    - Containerization
+    - 容器化
     - Kubernetes
     - Docker
 ---

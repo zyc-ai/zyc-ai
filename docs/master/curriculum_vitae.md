@@ -1,6 +1,6 @@
 ---
-title: Curriculum Vitae
-summary: The Curriculum Vitae of Zhiyuan Chen
+title: 简历
+summary: 简历
 authors:
     - Zhiyuan Chen
 date: 2019-01-31 14:25:39

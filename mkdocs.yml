@@ -14,6 +14,9 @@ nav:
   - Resume: master/resume.md
   # - 联想研究院:
   #   - 联想研究院实习总结: lenovo_research.md
+  - 算法:
+    - 算法导论: algorithm/introduction_to_algorithm.md
+    - 复杂度: algorithm/complexity.md
   - Kubernetes:
     - Kubernetes导论: kubernetes/introduction_to_kubernetes.md
     - 安装Kubernetes: kubernetes/installation.md
@@ -26,10 +29,7 @@ nav:
     - 二〇一九年 六月 十日: sketch/20190610.md
     - 二〇一九年 六月 十九日: sketch/20190619.md
     - 二〇一九年 七月 二十七日: sketch/20190727.md
-  - 算法:
-    - 算法导论: algorithm/introduction_to_algorithm.md
-    - 复杂度: algorithm/complexity.md
-
+  
 theme:
   name: material
   palette:

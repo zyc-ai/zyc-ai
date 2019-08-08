@@ -1,13 +1,14 @@
 ---
-title: Introduction to Algorithm
-summary: Introduction to Algorithm
+title: 算法导论
+summary: 算法导论
 authors:
     - Zhiyuan Chen
 date: 2019-08-06 19:39:28
 categories: 
-    - algorithm
+    - 算法
+    - 导论
 tags:
-    - algorithm
+    - 算法
 ---
 
 # 算法导论

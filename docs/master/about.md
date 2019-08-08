@@ -1,6 +1,6 @@
 ---
-title: about
-summary: The about page
+title: 关于
+summary: 关于
 authors:
     - Zhiyuan Chen
 date: 2019-01-25 00:24:52
@@ -9,6 +9,7 @@ categories:
 tags:
     - master
 ---
+
 # 关于
 
 你好，最近怎样？

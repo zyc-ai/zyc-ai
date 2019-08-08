@@ -5,13 +5,10 @@ authors:
     - Zhiyuan Chen
 date: 2019-02-23 15:55:24
 categories: 
-    - Documents
-    - Computer Science
-    - Technology
-    - Containerization
     - Kubernetes
+    - Deployments
 tags:
-    - Containerization
+    - 容器化
     - Kubernetes
     - Docker
 ---
