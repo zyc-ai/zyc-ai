@@ -26,6 +26,9 @@ nav:
     - 二〇一九年 六月 十日: sketch/20190610.md
     - 二〇一九年 六月 十九日: sketch/20190619.md
     - 二〇一九年 七月 二十七日: sketch/20190727.md
+  - 算法:
+    - 算法导论: algorithm/introduction_to_algorithm.md
+    - 复杂度: algorithm/complexity.md
 
 theme:
   name: material
@@ -49,6 +52,9 @@ extra:
 extra_css:
     - css/css.css
     - css/extra.css
+
+extra_javascript: 
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 google_analytics:
   - 'UA-104387513-1'
@@ -83,6 +89,7 @@ markdown_extensions:
   - pymdownx.tilde
   - toc:
       permalink: true
+  - mdx_math
 
 plugins:
   - search
