@@ -58,7 +58,7 @@ tags:
 
 用我们之前的Karatsuba算法举例来说：
 
-    private static int karatsuba(x, y)
+    public static int karatsuba(x, y)
     {
         if(n==1) { return xy }
         a * 10^(n/2) + b = x
