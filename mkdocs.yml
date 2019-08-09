@@ -15,15 +15,15 @@ nav:
   # - 联想研究院:
   #   - 联想研究院实习总结: lenovo_research.md
   - 算法:
-    - 算法导论: algorithm/introduction_to_algorithm.md
+    - 算法导论: algorithm/introduction.md
     - 复杂度: algorithm/complexity.md
   - Kubernetes:
-    - Kubernetes导论: kubernetes/introduction_to_kubernetes.md
+    - Kubernetes导论: kubernetes/introduction.md
     - 安装Kubernetes: kubernetes/installation.md
     - Pods: kubernetes/pods.md
     - Deployments: kubernetes/deployments.md
   - Docker:
-    - Docker导论: docker/introduction_to_docker.md
+    - Docker导论: docker/introduction.md
     - 安装Docker: docker/installation.md
   - 随笔:
     - 二〇一九年 六月 十日: sketch/20190610.md
