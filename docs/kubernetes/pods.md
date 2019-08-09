@@ -1,5 +1,5 @@
 ---
-title: Pods
+title: Kubernetes Pods
 summary: Deploy first pod
 authors:
     - Zhiyuan Chen

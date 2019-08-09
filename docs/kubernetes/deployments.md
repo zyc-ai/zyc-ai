@@ -1,5 +1,5 @@
 ---
-title: Deployments
+title: Kubernetes Deployments
 summary: Deploy first deployment
 authors:
     - Zhiyuan Chen

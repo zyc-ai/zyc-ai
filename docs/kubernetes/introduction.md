@@ -13,7 +13,7 @@ tags:
     - Docker
 ---
 
-# Kubernetes导论
+# Kubernetes
 
 Kubernetes，作为Google在运行多年的Borg基础上开发的开源容器编排系统，在部署、伸缩及管理方面具有强大的能力。
 
