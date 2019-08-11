@@ -22,12 +22,12 @@ nav:
     - 安装Kubernetes: kubernetes/installation.md
     - Pods: kubernetes/pods.md
     - Deployments: kubernetes/deployments.md
-  - C++核心指南:
-    - 原文: CppCoreGuidelines/CppCoreGuidelines.md
-    - 摘要: CppCoreGuidelines/abstract.md
   - Docker:
     - Docker导论: docker/introduction.md
     - 安装Docker: docker/installation.md
+  - C++核心指南:
+    - 原文: CppCoreGuidelines/CppCoreGuidelines.md
+    - 摘要: CppCoreGuidelines/abstract.md
   - 随笔:
     - 二〇一九年 六月 十日: sketch/20190610.md
     - 二〇一九年 六月 十九日: sketch/20190619.md
