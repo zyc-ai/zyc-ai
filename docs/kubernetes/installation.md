@@ -1,6 +1,6 @@
 ---
 title: 安装Kubernetes
-summary: Installation of Kubernetes
+summary: 安装Kubernetes
 authors:
     - Zhiyuan Chen
 date: 2019-01-25 02:06:37
@@ -20,10 +20,9 @@ tags:
 
 这里总结一下自己安装kubernetes的全部过程。
 
-**如果你还没有安装Dockers，请参考这篇文章**
+**如果你还没有安装Docker，请先参考[这篇文章](https://zc.int.xyz/docker/installation)安装Docker。**
 
     # 添加kubernetes仓库
-    # 不要问我为什么添加仓库的方式和Docker的不一样，他们官方文档就是这么写的，再问自杀🙄
     curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
     cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
         deb https://apt.kubernetes.io/ kubernetes-xenial main
@@ -37,6 +36,7 @@ tags:
 ## 拉取依赖镜像
 
 **本步骤仅适用于位于GFW影响范围内的主机**
+
 运行以下脚本（如果您预期安装的kubernetes版本不是v1.13.2，请运行kubeadm config images list并依据返回结果运行脚本）：
 
     #!/bin/bash

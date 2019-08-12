@@ -1,6 +1,6 @@
 ---
 title: 安装Docker
-summary: Installation of Docker
+summary: 安装Docker
 authors:
     - Zhiyuan Chen
 date: 2019-01-25 02:06:37
@@ -15,9 +15,9 @@ tags:
 
 # 安装
 
-Docker的安装非常简单，apt-get两分钟就好。由于我们会用到nvidia-docker2，所以这里同时也有nvidia-docker2的安装内容。如果你不需要在容器当中使用Nvidia GPU，那么可以直接跳过相关内容。
+Docker的安装非常简单，apt-get/yum两分钟就好，Windows上的Docker更加简单，他还附带了Kubernetes。为节约篇幅，本文只讨论在ubuntu系统下的安装。如果你在（其他系统上）安装时遇到任何问题，欢迎留言。
 
-## 安装准备
+由于我们会用到nvidia-docker2，所以这里同时也有nvidia-docker2的安装内容。如果你不需要在容器当中使用Nvidia GPU，那么可以直接跳过相关内容。
 
     # 安装依赖
     apt-get install \
@@ -55,6 +55,7 @@ Docker的安装非常简单，apt-get两分钟就好。由于我们会用到nvid
     pkill -SIGHUP dockerd
 
 将nvidia-docker2修改为docker的默认运行时环境
+
 *如果你不需要在容器当中使用Nvidia GPU，以下步骤无需执行*
 
     vim /etc/docker/daemon.json
@@ -69,12 +70,13 @@ Docker的安装非常简单，apt-get两分钟就好。由于我们会用到nvid
         }
     sudo service docker restart
 
-**安装结束**
 至此，Docker已经成功在您的机器上安装，运行
 
     docker run hello-world
 
-Docker会提示没有找到这个镜像。这没有关系，他很快就会自动拉取。几十秒后，你将看到如下内容：
+测试结果。
+
+Docker可能会提示没有找到这个镜像。这没有关系，他很快就会自动拉取。几十秒后，你将看到如下内容：
 
     Hello from Docker!
     This message shows that your installation appears to be working correctly.
