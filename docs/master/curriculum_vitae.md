@@ -47,9 +47,10 @@ tags:
 
 2019 六月 - 2019 七月
 
+    学生服务
+    活动组织
     Simulation Methods for Optimization and Learning
     Integrated Water Resources Management: International Aspects
-    学生管理
 
 ### 资深学生助理
 
@@ -70,7 +71,7 @@ tags:
     Python中间件
       - 并发
       - RabbitMQ
-      - Redis）
+      - Redis
     Java后端
       - SpringMVC
       - RabbitMQ
@@ -111,9 +112,20 @@ tags:
     基于消息队列的微服务
     基于Kubernetes的高可用部署
 
+### 拼布艺术（桌游）
+
+**澳大利亚国立大学** 结构化编程（高等）（COMP1140）
+
+2017 四月 - 2017 六月
+
+    图形化用户界面设计
+      - JavaFX
+    人工智能玩家
+      - 遗传算法
+
 ### 安卓客户端开发
 
-**北京大学青年研究中心** 北大未名BBS
+**北京大学** 北大未名BBS
 
 2018 十一月 - 现在
 
@@ -171,7 +183,7 @@ tags:
 
 **UniLodge Australia** Weeden Lodge
 
-    为Weeden Lodge的住户组织活动
+    活动组织
 
 ### 人道安置志愿者
 

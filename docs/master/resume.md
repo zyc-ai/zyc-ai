@@ -24,8 +24,8 @@ tags:
 2019 July - 2019 July
 
     Rock, Paper & Scissor
-    - Hand Recognition
-    - Game
+      - Hand Recognition
+      - Game
 
 ### Bachelor of Information Technology
 
@@ -33,10 +33,10 @@ tags:
 
 2017 February - Present
 
-    - Computer Vision
-    - Data Analysis
-    - Database
-    - Java
+    Computer Vision
+    Data Analysis
+    Database
+    Java
 &nbsp;
 
 ## Working Experience
@@ -47,6 +47,8 @@ tags:
 
 2019 June - 2019 July
 
+    Student Service
+    Events Organization
     Simulation Methods for Optimization and Learning
     Integrated Water Resources Management: International Aspects
 
@@ -56,8 +58,8 @@ tags:
 
 2019 June - 2019 July
 
-    - Student Service
-    - Events Organization
+    Student Service
+    Events Organization
 
 ### Intern
 
@@ -66,10 +68,18 @@ tags:
 2018 November - 2019 February
 
     - .Net Frontend
-    - Python Midlayer (Multi-Processing、RabbitMQ、Redis)
-    - Java Backend(SpringMVC、RabbitMQ、MySQL)
-    - Kubernetes
-    - Docker
+    Python Midlayer
+      - Multi-Processing
+      - RabbitMQ
+      - Redis
+    Java Backend
+      - SpringMVC
+      - RabbitMQ
+      - MySQL
+    Algorithm high availability encapsulation and scheduling
+      - Kubernetes
+      - Rancher
+      - Docker
 
 ### Student Assistant
 
@@ -77,16 +87,16 @@ tags:
 
 2018 June - 2018 August
 
-    - Student Service
-    - Events Organization
-    - Video Taking
+    Student Service
+    Events Organization
+    Video Taking
 
 ### Teaching Assistant
 
 **Xueweigui Education** Lanzhou School
 
     IELTS class
-    - Help to operate WeChat official account
+    Help to operate WeChat official account
 &nbsp;
 
 ## Professional Experience
@@ -97,10 +107,27 @@ tags:
 
 2019 April - 2019 June
 
-    - Obstacle detection based on Mask-RCNN
-    - Lane line detection based on SpatialCNN
-    - Micro service based on Message Queue
-    - High Availability deployments based on Kubernetes
+    Obstacle detection based on Mask-RCNN
+    Lane line detection based on SpatialCNN
+    Micro service based on Message Queue
+    High Availability deployments based on Kubernetes
+
+### Patchwork(board game)
+
+**Australian National University** Structured Programming(Advanced)(COMP1140)
+
+2017 April - 2017 June
+
+    Graphical User Interface design
+      - JavaFX
+    Artificial Intelligence player
+      - Genetic algorithm
+
+### Android app Development
+
+**Peking University** BDWM bbs
+
+    Android application development
 
 ### Web Development
 
@@ -114,8 +141,8 @@ tags:
 
 **Zaoan** Micro Movie
 
-    - Camera Operation
-    - UAV Operation
+    Camera Operation
+    UAV Operation
 
 ### 1st Assistant Director
 
@@ -123,9 +150,9 @@ tags:
 
 **A Separation** Micro Movie
 
-    - Production Sound Mixer
-    - Gaffer
-    - UAV Operation
+    Production Sound Mixer
+    Gaffer
+    UAV Operation
 &nbsp;
 
 ## Voluntary Experience
@@ -136,8 +163,8 @@ tags:
 
 **leiphone.com** AI Yanxishe
 
-    - Lectures of T-SNE algorithms, etc.
-    - Participate in translation and proof of lectures including CS224N, CS231N by the Stanford University.
+    Lectures of T-SNE algorithms, etc.
+    Participate in translation and proof of lectures including CS224N, CS231N by the Stanford University.
 
 ### SET4ANU Volunteer
 
@@ -145,8 +172,8 @@ tags:
 
 **Australian National University** DRSS
 
-    - Campus Tour
-    - Question Answering
+    Campus Tour
+    Question Answering
 
 ### Events Crew
 
@@ -154,7 +181,7 @@ tags:
 
 **UniLodge Australia** Weeden Lodge
 
-    - Event Organizing
+    Event Organizing
 
 ### Humanitarian Settlement Volunteer
 
@@ -170,7 +197,7 @@ tags:
 
 **Baidu** Baike Campus
 
-    - Create and manage the new media operation team of the Baike Campus, Baike MT
-    - Operation of the Tieba, WeChat official account, and Weibo of the Baike Campus
-    - Provide online support of events by the Baike Campus
-    - Help the operation of the divisions of the Baike Campus
+    Create and manage the new media operation team of the Baike Campus, Baike MT
+    Operation of the Tieba, WeChat official account, and Weibo of the Baike Campus
+    Provide online support of events by the Baike Campus
+    Help the operation of the divisions of the Baike Campus
