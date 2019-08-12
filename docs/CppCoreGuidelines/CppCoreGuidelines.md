@@ -1,17 +1,12 @@
 # <a name="main"></a>C++ Core Guidelines
 
-最后修订：
-2019年 06月 16日
+June 16, 2019
 
 
-编辑:
+Editors:
 
 * [Bjarne Stroustrup](http://www.stroustrup.com)
 * [Herb Sutter](http://herbsutter.com/)
-
-翻译：
-
-* [陈陟原](https://zc.int.xyz/)
 
 This is a living document under continuous improvement.
 Had it been an open-source (code) project, this would have been release 0.8.
