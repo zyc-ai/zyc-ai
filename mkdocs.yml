@@ -14,6 +14,8 @@ nav:
   - Resume: master/resume.md
   # - 联想研究院:
   #   - 联想研究院实习总结: lenovo_research.md
+  - 文档:
+    - JetBrains使用指南: document/jetbrains.md
   - 算法:
     - 算法导论: algorithm/introduction.md
     - 复杂度: algorithm/complexity.md
