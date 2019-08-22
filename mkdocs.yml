@@ -9,6 +9,7 @@ repo_url: https://github.com/yc-zc/web
 
 nav:
   - 首页: index.md
+  - 捐赠: master/donate.md
   - 关于: master/about.md
   - 简历: master/curriculum_vitae.md
   - Resume: master/resume.md
@@ -94,7 +95,7 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - toc:
-      permalink: true
+      permalink: "#"
   - mdx_math
 
 plugins:
