@@ -20,7 +20,7 @@ tags:
 
 这里总结一下自己安装kubernetes的全部过程。
 
-**如果你还没有安装Docker，请先参考[这篇文章](https://zc.int.xyz/docker/installation)安装Docker。**
+**如果你还没有安装Docker，请先参考[这篇文章](../../docker/installation)安装Docker。**
 
     # 添加kubernetes仓库
     curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
