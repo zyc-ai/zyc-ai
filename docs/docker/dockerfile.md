@@ -19,11 +19,11 @@ tags:
 
 Dockerfile可以说是Docker最重要的一部分。Docker依据Dockerfile的描述构建出一个又一个Docker镜像，使之得以运行。也是因此，我们可以将软件交付从数十GiB的代码缩减到数百KiB。
 
-本文将简要介绍Dockerfile的内容，并将提供nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04的Dockerfile供大家分析。
+本文将简要介绍Dockerfile的内容，并将对nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04的Dockerfile进行分析。
 
 ## 指令
 
-首先，我们从Dockerfile的指令开始。Dockerfile有十几种指令，只有其中四种指令会创建一个新的层。他们是**FROM**、**COPY**、**ADD**、**RUN**和**CMD**、**ENTRYPOINT**。对于其他所有指令，Docker都将会构建一个中间镜像，这既不会增加容器的大小，也不会对容器的性能产生任何影响。但是这四个指令在运行当中会创建新的层，在实践过程当中我们需要特别关注这些指令，错误的使用这些指令将可能造成容器未按期待运行。
+首先，我们从Dockerfile的指令开始。Dockerfile有十几种指令，其中只有六种指令会创建一个新的层。他们是**ADD**、**CMD**、**COPY**、**ENTRYPOINT**、**FROM**和**RUN**。这六种指令在运行当中会创建新的层，在实践过程当中我们需要特别关注这些指令，错误的使用这些指令将可能造成容器未按期待运行。对于其他所有指令，Docker都将只会构建一个中间镜像，这既不会增加容器的大小，也不会对容器的性能产生任何影响。
 
 ### FROM
 
@@ -123,7 +123,7 @@ EXPOSE指令暴露容器对应的端口。默认情况下，EXPOSE指令将假�
 
     VOLUME ["/zc"]
 
-VOLUME指令和前文所述的使用 docker run -v 但只指定容器内目录完全一样。他会给这个挂载随机一个名字，然后再本机/var/lib/docker/volumes目录之下创建一个与挂载名字相同的文件夹。也就是说，虽然它的名字叫卷，但创建的实际上是一个捆绑挂载……这个指令我从来没有用过，还专门为这篇文章查了半天资料顺带做了两个实验。我完全无法理解这种设计的用意，也强烈建议大家都不要使用。docker run命令多打两句能实现的要比他优雅的多，建议使用。值得一提的是，如果在VOLUME里和在 docker run 里同时挂载了目录，则只有 docker run 挂载的目录会生效。
+VOLUME指令和前文所述的使用 docker run -v 但只指定容器内目录完全一样。他会给这个挂载随机一个名字，然后再本机/var/lib/docker/volumes目录之下创建一个与挂载名字相同的文件夹。也就是说，虽然它的名字叫卷，但创建的实际上是一个捆绑挂载……这个指令我从来没有用过，还专门为这篇文章查了半天资料顺带做了两个实验。我完全无法理解这种设计的用意，也强烈建议大家都不要使用。docker run 命令多打两句能实现的要比他优雅的多，建议使用。值得一提的是，如果在VOLUME里和在 docker run 里同时挂载了目录，则只有 docker run 挂载的目录会生效。
 
 ### HEALTHCHECK 和 STOPSIGNAL
 
@@ -158,7 +158,7 @@ ONBUILD指令后跟其他指令。ONBUILD指令的内容将不会在这个Docker
     ENTRYPOINT ["executable", "param1", "param2"]
     ENTRYPOINT command param1 param2
 
-CMD指令和ENTRYPOINT指令几乎没有区别，他们的作用都是在容器构建之后执行其中的命令。他们也都有两种格式--shell和exec，正如RUN指令一样。区别在于CMD指令多一种参数模式，在参数模式下，CMD指令后跟的参数将作为默认参数传递给ENTRYPOINT指令执行。即下列两个命令在实际上是等价的：
+CMD指令和ENTRYPOINT指令几乎没有区别，他们的作用都是在容器构建之后执行其中的命令。他们也都有两种格式--shell和exec，正如RUN指令一样。区别在于CMD指令多一种参数模式，在参数模式下，CMD指令后跟的参数将作为默认参数传递给ENTRYPOINT指令执行。即下列两个指令在实际上是等价的：
 
     ENTRYPOINT ["/start.sh"]
     CMD ["aptly", "api", "serve"]
@@ -182,11 +182,11 @@ ENTRYPOINT指令和CMD指令之间的具体区别在网上五花八门，却很�
 
 最后，还有一点需要强调：
 
-**Dockerfile应至少指定一个CMD或ENTRYPOINT命令！**
+**Dockerfile应至少指定一个CMD或ENTRYPOINT指令！**
 
-## nvidia/cuda
+## 分析
 
-了解了Docerfile的组成部分，让我们看看别人家都是怎么写Dockerfile的。以下是nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04及其继承的Dockerfile。
+了解了Docerfile的组成部分，让我们来分析一下别人家都是怎么写Dockerfile的。以下是nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04及其继承的Dockerfile。
 
 ### 10.1-cudnn7-devel-ubuntu18.04
 
@@ -203,6 +203,10 @@ ENTRYPOINT指令和CMD指令之间的具体区别在网上五花八门，却很�
     && \
         apt-mark hold libcudnn7 && \
         rm -rf /var/lib/apt/lists/*
+
+首先，第一行ARG指令描述了镜像的名字，并在随后的FROM指令当中应用到。
+
+nvidia/cuda的Dockerfile都是层层继承的，这非常值得学习。
 
 ### 10.1-devel-ubuntu18.04
 
