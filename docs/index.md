@@ -12,7 +12,7 @@ tags:
 
 你好，最近怎样？
 
-欢迎访问本站。本站基于[GitHUb Pages](https://pages.github.com/)与[MKDocs](https://www.mkdocs.org/)构建。旨在提供一个分享知识的平台。
+欢迎访问本站。本站基于[GitHub Pages](https://pages.github.com/)与[MKDocs](https://www.mkdocs.org/)构建。旨在提供一个分享知识的平台。
 
 本站的所有内容均基于[GNU GENERAL PUBLIC LICENSE](../master/license)发布。
 
