@@ -79,6 +79,7 @@ tags:
 与Java不同，PyCharm并没有单独的项目设置，环境是在设置里的Project一栏进行设置的。在这里可以使用Conda创建虚拟环境，也可以直接使用venv创建虚拟环境。对于懒惰的我来说……自然是只用一个根环境啦（这是一个不好的习惯千万不要学我）。
 ![PyCharm Project Interpreter](../images/document/JetBrains/pc-pi.png "PyCharm Project Interpreter")
 
-## 结语
+<br/>
 
-唔，仔细想想，好像也没什么需要写的了？相比VIM来说，IDE体积要大数千倍，功能自然也会强很多倍。从快捷键比如sout = System.out.println()、Ctrl /注释代码、Ctrl Tab/Shift Tab调整行距，到自动格式化、自动注释、自动生成构造器，有太多能写的内容没有办法在一篇文章当中详尽描述。更多的需要在实际代码当中去体会。那么，我们今天就到这里吧~
+!!! abstract "结语"
+    唔，仔细想想，好像也没什么需要写的了？相比VIM来说，IDE体积要大数千倍，功能自然也会强很多倍。从快捷键比如sout = System.out.println()、Ctrl /注释代码、Ctrl Tab/Shift Tab调整行距，到自动格式化、自动注释、自动生成构造器，有太多能写的内容没有办法在一篇文章当中详尽描述。更多的需要在实际代码当中去体会。那么，我们今天就到这里吧~
