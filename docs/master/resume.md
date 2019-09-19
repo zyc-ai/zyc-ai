@@ -21,7 +21,7 @@ tags:
 
 **Center on Frontiers of Computer Science, Peking University** Visual Computing and Learning Laboratory
 
-2019 July - 2019 July
+2019 July - Present
 
     Rock, Paper & Scissor
       - Hand Recognition
