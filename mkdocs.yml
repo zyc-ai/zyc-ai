@@ -10,9 +10,10 @@ repo_url: https://github.com/yc-zc/web
 nav:
   - Master:
     - 首页: index.md
-    - 许可: master/license.md
     - 捐赠: master/donate.md
     - 贡献: master/contribute.md
+    - 政策: master/policy.md
+    - 许可: master/license.md
   # - 联想研究院:
   #   - 联想研究院实习总结: lenovo_research.md
   - 文档:
