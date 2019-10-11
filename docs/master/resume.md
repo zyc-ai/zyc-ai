@@ -35,6 +35,8 @@ tags:
     ???+ info "Course"
         + Computer Vision
         + Data Analysis
+        + Introduction to Machine Learning
+        + Vector Calculus
         + Database
         + Java
 
