@@ -21,6 +21,7 @@ nav:
   - 算法:
     - 算法导论: algorithm/introduction.md
     - 复杂度: algorithm/complexity.md
+    - 树: algorithm/tree.md
   - Kubernetes:
     - 导论: kubernetes/introduction.md
     - 安装: kubernetes/installation.md
