@@ -39,11 +39,10 @@ nav:
     - 摘要: CppCoreGuidelines/abstract.md
   - 随笔:
     - 二〇一九年 六月 十日: sketch/20190610.md
-    - 二〇一九年 六月 十九日: sketch/20190619.md
-    - 二〇一九年 七月 二十七日: sketch/20190727.md
   
 theme:
   name: material
+  language: 'zh'
   palette:
     primary: 'teal'
     accent: 'teal'
@@ -51,12 +50,15 @@ theme:
   favicon: 'images/favicon.ico'
   feature:
     tabs: true
+  font:
+    text: 'Noto Sans'
+    code: 'Cascadia Code'
 
 extra:
   manifest: 'manifest.webmanifest'
   social:
     - type: 'github'
-      link: 'https://github.com/int-zc'
+      link: 'https://github.com/yc-zc'
     - type: 'linkedin'
       link: 'https://www.linkedin.com/in/%E9%99%9F%E5%8E%9F-%E9%99%88-0b473aa9/'
   disqus: 'intzc'
