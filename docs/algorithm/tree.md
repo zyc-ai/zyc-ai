@@ -29,8 +29,8 @@ tags:
 
     ```python
     @functools.total_ordering
-    class Value(object):
-      def __init__(self, value=''):
+    class Data(object):
+      def __init__(self, value=None):
         self.value = value
 
       def __eq__(self, other):
@@ -40,35 +40,27 @@ tags:
         return self.value < other.value
 
     class Node(object):
-      Node parent
-      Value value
-      Node left_child
-      Node right_child
-
-      def __init__(self,
-                   value=None,
-                   parent=None,
-                   left_child=new Node(None, None, None, None),
-                   right_child=new Node(None, None, None, None)):
-        this.value = value
-        this.parent = parent
-        this.left_child = left_child
-        this.right_child = right_child
+      def __init__(self, parent=None, value=None, left_child=None, right_child=None):
+        self.parent = parent
+        self.data = Data(value)
+        self.left_child = left_child
+        self.right_child = right_child
 
     class Tree(object):
-      Node root
-
       def __init__(self):
-        self.root = new Node()
+        self.root = Node()
 
-      def insert(self, value):
+      def insert(self, curr, value):
         self.insert_node(root, value)
 
       def delete(self, value):
         self.delete_node(root, value)
     
       def height(self):
-        return 0 if not node.value else max(height(node.left_child.value), height(node.right_child.value)) + 1
+        reutrn height_node(root)
+
+      def height_node(node):
+        return 0 if not node.data.value else max(height_node(node.left_child), height_node(node.right_child)) + 1
     ```
 
 理想情况下，二叉搜索树的深度应当是$\log n$。由以上的实现我们可以得知二叉搜索树的查找、插入、删除的复杂度均为$O(h)$，我们可以发现二叉搜索树的理想复杂度是很出色的。但是，事情通常不会按照预料之中发展。在极端情况之下（每一个新插入的元素都比之前的元素更小或更大），二叉搜索树即退化成了链表。我们知道，链表的复杂度为$O(n)$，这很明显并不是我们想要的，于是，自平衡二叉树（Self-balacing Binary Search Tree）诞生了。
@@ -81,13 +73,11 @@ tags:
 
     ```python
       @staticmethod
-      def insert_node(node, value):
-        if not node.value:
-          node.value = value
-          node.left_child = new Node(),
-          node.right_child = new Node()
+      def insert_node(node, value, parent=None):
+        if not node:
+          node = Node(parent, value)
         else:
-          insert_node(node.left_child, value) if value < node.value else insert_node(node.right_child, value) if value > node.value else raise Exception('Element already exists')
+          insert_node(node.left_child, value, node) if value < node.data.value else insert_node(node.right_child, value, node) if value > node.data.value else raise Exception('Element already exists')
     ```
 
 ## 遍历
@@ -120,9 +110,9 @@ tags:
       @staticmethod
       def pre_order(node):
         # Do something with root
-        if node.left_child.value:
+        if node.left_child:
           pre_order(node.left_child)
-        if node.right_child.value:
+        if node.right_child:
           pre_order(node.right_child)
     ```
 
@@ -135,10 +125,10 @@ tags:
     ```python
       @staticmethod
       def in_order(node):
-        if node.left_child.value:
+        if node.left_child:
           in_order(node.left_child)
         # Do something with root
-        if node.right_child.value:
+        if node.right_child:
           in_order(node.right_child)
     ```
 
@@ -151,9 +141,9 @@ tags:
     ```python
       @staticmethod
       def post_order(node):
-        if node.left_child.value:
+        if node.left_child:
           post_order(node.left_child)
-        if node.right_child.value:
+        if node.right_child:
           post_order(node.right_child)
         # Do something with root
     ```
@@ -166,16 +156,16 @@ tags:
 
     ```python
       def bredth_first():
-        if not self.root.value:
+        if not self.root:
           return False
         queue = []
         queue.append(self.root)
         while(len(queue) > 0):
           # Do something with root
           node = queue.pop(0)
-          if node.left_child.value:
+          if node.left_child:
             queue.append(node.left_child)
-          if node.right_child.value:
+          if node.right_child:
             queue.append(node.right_child)
     ```
 
@@ -189,27 +179,27 @@ tags:
       @staticmethod
       def minimum_node(node):
         curr = node
-        while curr.left_child.value:
+        while curr.left_child:
           curr = curr.left_child
         return curr
 
       @staticmethod
       def delete_node(node, value):
-        if not node.value:
+        if not node:
           raise Exception('Element does not exist')
-        if value < node.value:
+        if value < node.data.value:
           delete_node(node.left_child, value)
-        elif value > node.value:
+        elif value > node.data.value:
           delete_node(node.right_child, value)
         else:
-          if not node.left_child.value:
-            node = node.right_child if node.right_child.value else new Node()
-          elif not node.right_child.value:
+          if not node.left_child:
+            node = node.right_child if node.right_child else None
+          elif not node.right_child:
             node = node.left_child
           else:
             right_minimum = self.minumum_node(node.right_child)
-            node.value = right_minimum.value
-            delete_node(node.right_child, right_minimum.value)
+            node.data.value = right_minimum.data.value
+            delete_node(node.right_child, right_minimum.data.value)
     ```
 
 !!! question "遍历练习"
