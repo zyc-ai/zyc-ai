@@ -46,8 +46,8 @@ theme:
   name: material
   language: 'zh'
   palette:
-    primary: 'teal'
-    accent: 'teal'
+    primary: 'deep purple'
+    accent: 'amber'
   logo: 'images/zc.png'
   favicon: 'images/favicon.ico'
   feature:
