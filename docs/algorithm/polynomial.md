@@ -1,6 +1,6 @@
 ---
-title: 多项式
-summary: 多项式
+title: 多项式（Polynomial）
+summary: 多项式（Polynomial）
 authors:
     - Zhiyuan Chen
 date: 2019-10-21 18:53:01
@@ -13,8 +13,6 @@ tags:
     - 快速傅里叶变换
     - FFT
 ---
-
-# 多项式（Polynomial）
 
 在此前的文章当中我们通过n位数乘法运算简要的介绍了算法复杂度的计算。在本文当中我们将对多项式的计算（evaluation）、加法（addition）和乘法（multiplication）提出算法。
 
