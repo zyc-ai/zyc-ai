@@ -8,9 +8,8 @@ repo_name: The website of Zhiyuan Chen
 repo_url: https://github.com/yc-zc/web
 
 nav:
-
-  - 首页: index.md
   - Master:
+    - 首页: index.md
     - 捐赠: master/donate.md
     - 贡献: master/contribute.md
     - 政策: master/policy.md
