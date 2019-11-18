@@ -26,6 +26,7 @@ nav:
     - 递推方程: algorithm/recurrence_relation.md
   - Kubernetes:
     - 导论: kubernetes/introduction.md
+    - 组件: kubernetes/component.md
     - 安装: kubernetes/installation.md
     - Pods: kubernetes/pods.md
     - Deployments: kubernetes/deployments.md
