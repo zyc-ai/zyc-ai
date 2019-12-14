@@ -58,9 +58,17 @@ tags:
 
 ## Working Experience
 
+### Research Intern
+
+???+ important "**SenseTime** Research"
+
+    *2019 December - Present*
+
+    ???+ success "Object Tracking"
+
 ### Teaching Assistant
 
-???+ important "Peking University College of Engineering"
+???+ important "**Peking University** College of Engineering"
 
     *2019 June - 2019 July*
 
@@ -75,7 +83,7 @@ tags:
 
 ### Senior Student Assistant
 
-???+ important "Peking University International Student Division"
+???+ important "**Peking University** International Student Division"
 
     *2019 June - 2019 July*
 
@@ -90,7 +98,7 @@ tags:
 
 ### Intern
 
-???+ important "Lenovo Research"
+???+ important "**Lenovo** Research"
 
     *2018 November - 2019 February*
 
@@ -118,7 +126,7 @@ tags:
 
 ### Student Assistant
 
-???+ important "Peking University International Student Division"
+???+ important "**Peking University** International Student Division"
 
     *2018 June - 2018 August*
 
@@ -133,7 +141,7 @@ tags:
 
 ### Teaching Assistant
 
-???+ important "Xueweigui Education Lanzhou School"
+???+ important "**Xueweigui Education** Lanzhou School"
 
     *2017 December - 2018 January*
 
@@ -141,7 +149,7 @@ tags:
 
 ### Android app Development
 
-???+ important "Peking University Center of Youth Studies"
+???+ important "**Peking University Center** of Youth Studies"
 
     *2018 November - Present*
 
@@ -149,11 +157,11 @@ tags:
 
 ### Web Development
 
-???+ important "Peking University School of International Studies"
+???+ important "**Peking University** School of International Studies"
 
 ### 1st Assistant Camera
 
-???+ important "Zaoan (micro movie)"
+???+ important "**Zaoan**"
 
     *2018 April - 2018 May*
 
@@ -162,7 +170,7 @@ tags:
 
 ### 1st Assistant Director
 
-???+ important "A Separation (micro movie)"
+???+ important "**A Separation** (micro movie)"
 
     *2017 July - 2017 September*
 
@@ -174,7 +182,7 @@ tags:
 
 ### Lecturer
 
-???+ important "leiphone.com, AI Yanxishe"
+???+ important "leiphone.com, **AI Yanxishe**"
 
     *2016 - Present*
 
@@ -183,7 +191,7 @@ tags:
 
 ### SET4ANU Volunteer
 
-???+ important "DRSS, Australian National University"
+???+ important "DRSS, **Australian National University**"
 
     *2019 February - 2019 February*
 
@@ -192,7 +200,7 @@ tags:
 
 ### Events Crew
 
-???+ important "Weeden Lodge, UniLodge Australia"
+???+ important "Weeden Lodge, **UniLodge Australia**"
 
     *2017 January - 2017 December*
 
@@ -200,15 +208,15 @@ tags:
 
 ### Humanitarian Settlement Volunteer
 
-???+ important "Australian Red Cross"
+???+ important "**Australian Red Cross**"
 
-    *2016 - Present*
+    *2016 - 2018*
 
     + Helping refugees to settle in the city of Canberra. 
 
 ### New Media Operation
 
-???+ important "Baidu Baike Campus"
+???+ important "**Baidu** Baike Campus"
 
     *2016 - 2016*
 
