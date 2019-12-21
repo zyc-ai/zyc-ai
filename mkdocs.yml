@@ -19,6 +19,8 @@ nav:
   - 文档:
     - 设计模式: document/design_pattern.md
     - JetBrains使用指南: document/jetbrains.md
+  - 计算机视觉:
+    - SiamRPN: cv/SiamRPN.md
   - 算法:
     - 算法导论: algorithm/introduction.md
     - 复杂度: algorithm/complexity.md
