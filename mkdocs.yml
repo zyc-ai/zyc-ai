@@ -1,11 +1,11 @@
 site_name: Zhiyuan Chen
-site_url: https://zc.int.xyz
+site_url: https://zyc.ai
 site_author: Zhiyuan Chen
 site_description: The website of Zhiyuan Chen
-copyright: All rights reserved © Zhiyuan Chen 2019
+copyright: All rights reserved © Zhiyuan Chen 2017-2020
 
-repo_name: The website of Zhiyuan Chen
-repo_url: https://github.com/yc-zc/web
+repo_name: Zhiyuan Chen
+repo_url: https://github.com/zyc-ai
 
 nav:
   - Master:
@@ -19,8 +19,10 @@ nav:
   - 文档:
     - 设计模式: document/design_pattern.md
     - JetBrains使用指南: document/jetbrains.md
+  - 机器学习:
+    - 统计: machine_learning/statistics.md
   - 计算机视觉:
-    - SiamRPN: cv/SiamRPN.md
+    - SiamRPN: computer_vision/siamrpn.md
   - 算法:
     - 算法导论: algorithm/introduction.md
     - 复杂度: algorithm/complexity.md
@@ -65,7 +67,7 @@ extra:
   manifest: 'manifest.webmanifest'
   social:
     - type: 'github'
-      link: 'https://github.com/yc-zc'
+      link: 'https://github.com/zyc-ai'
     - type: 'linkedin'
       link: 'https://www.linkedin.com/in/%E9%99%9F%E5%8E%9F-%E9%99%88-0b473aa9/'
   disqus: 'intzc'

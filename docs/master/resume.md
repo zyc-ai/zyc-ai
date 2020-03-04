@@ -15,17 +15,6 @@ tags:
 
 ## Educational Experience
 
-### Summer Research
-
-???+ important "Visual Computing and Learning Laboratory, Peking University Center on Frontiers of Computer Science"
-
-    *2019 July - Present*
-
-    ???+ success "Rock, Paper & Scissor"
-
-        + Hand Recognition
-        + Game
-
 ### Bachelor of Information Technology
 
 ???+ important "Australian National University"
@@ -40,7 +29,7 @@ tags:
         + Database
         + Java
 
-    ???+ success "Self Driving Assistant in Computer Simulation Environment"
+    ???+ success "[Self Driving Assistant in Computer Simulation Environment](https://github.com/yc-zc/ENGN4528-project)"
 
         Computer Vision ENGN4528
 
@@ -49,12 +38,28 @@ tags:
         + Micro service based on Message Queue
         + High-Availability deployments based on Kubernetes
 
+    ???+ success "[Calendar](https://github.com/yc-zc/COMP2100-project)"
+
+        **Software Design Methodologies** COMP2100
+
+        + Network framework based on RxJava, Retrofit, and OkHtttp
+
     ???+ success "Patchwork (Board game)"
 
         Structural Programming（Advanced） COMP1140
 
         + GUI design based on JavaFX
         + AI player based on genetic algorithm
+
+### Summer Research
+
+???+ important "Visual Computing and Learning Laboratory, Peking University Center on Frontiers of Computer Science"
+
+    *2019 July - 2019 September*
+
+    ???+ success "Rock, Paper & Scissor"
+
+        + Object Detection algorithms
 
 ## Working Experience
 
@@ -64,7 +69,18 @@ tags:
 
     *2019 December - Present*
 
-    ???+ success "Object Tracking"
+    ???+ success "Single Object Tracking"
+
+        Single Object Tracking using Siamese architecture
+
+        + SiamMargin
+        + SiamRPN++
+        + SiamRPN
+        + SiamFC
+
+    ???+ success "[PySOT open source project](https://github.com/STVIR/pysot)"
+
+        Maintenance of the PySOT open source project
 
 ### Teaching Assistant
 
@@ -155,9 +171,15 @@ tags:
 
     Android application of the BDWM BBS
 
-### Web Development
+### [Project ZCbot](https://github.com/yc-zc/bot)
 
-???+ important "**Peking University** School of International Studies"
+???+ important "**Personal Project**"
+
+    *2018 November - Present*
+
+    + One-key emergency report
+    + auto reply, group invitation, etc.
+    + Board game robot judge
 
 ### 1st Assistant Camera
 
