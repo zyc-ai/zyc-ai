@@ -19,21 +19,25 @@ nav:
   - 文档:
     - 设计模式: document/design_pattern.md
     - JetBrains使用指南: document/jetbrains.md
-  - 机器学习:
-    - 统计: machine_learning/statistics.md
-  - 计算机视觉:
-    - SiamRPN: computer_vision/siamrpn.md
+  - 统计:
+    - 概率论: stat/probability.md
+  #- 机器学习:
+  #  - 统计: ml/statistics.md
+  #- 计算机视觉:
+  #  - SiamRPN: cv/siamrpn.md
+  # - 生物医学影像:
+  #   - 超声: bmi/ultrasound.md
   - 算法:
     - 算法导论: algorithm/introduction.md
     - 复杂度: algorithm/complexity.md
     - 树: algorithm/tree.md
     - 递推方程: algorithm/recurrence_relation.md
   - Kubernetes:
-    - 导论: kubernetes/introduction.md
-    - 组件: kubernetes/component.md
-    - 安装: kubernetes/installation.md
-    - Pods: kubernetes/pods.md
-    - Deployments: kubernetes/deployments.md
+    - 导论: k8s/introduction.md
+    - 组件: k8s/component.md
+    - 安装: k8s/installation.md
+    - Pods: k8s/pods.md
+    - Deployments: k8s/deployments.md
   - Docker:
     - 导论: docker/introduction.md
     - 安装: docker/installation.md
@@ -43,18 +47,19 @@ nav:
     - 导论: cntk/introduction.md
     - 200: cntk/200.md
   - C++核心指南:
-    - 原文: CppCoreGuidelines/CppCoreGuidelines.md
-    - 摘要: CppCoreGuidelines/abstract.md
+    - 原文: cppcg/CppCoreGuidelines.md
+    - 摘要: cppcg/abstract.md
   - 随笔:
     - 二〇一九年 六月 十日: sketch/20190610.md
     - 二〇一九年 十一月 八日: sketch/20191108.md
-  
+    - 二〇二〇年 四月 四日: sketch/20200404.md
+
 theme:
   name: material
   language: 'zh'
   palette:
-    primary: 'deep purple'
-    accent: 'amber'
+    primary: 'Teal'
+    accent: 'Teal'
   logo: 'images/zc.png'
   favicon: 'images/favicon.ico'
   feature:
