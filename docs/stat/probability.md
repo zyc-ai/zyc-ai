@@ -66,7 +66,7 @@ ${\mathrm{P}(X \in S) = \mathrm{P}(\{\omega \in \Omega \mid X(\omega) \in S\})}{
 
     概率（或密度）为权重的加权平均值
 
-    $\mathrm{E}[X] = \sum_{x \in X} \cdot P(x)$
+    $\mathrm{E}[X] = \sum_{x \in X} x \cdot P(x)$
 
 一个随机变量的期望刻画的是这个随机变量的概率分布的“中心”。
 

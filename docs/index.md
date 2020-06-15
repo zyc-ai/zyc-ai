@@ -10,14 +10,40 @@ tags:
     - master
 ---
 
-你好，最近怎样？
-
-欢迎访问本站。本站基于[GitHub Pages](https://pages.github.com/)与[MKDocs](https://www.mkdocs.org/)构建。旨在提供一个分享知识的平台。
-
-我们非常乐意欢迎你愿意加入我们，分享你的知识。敬请参阅[贡献](/master/contribute)，获取更多信息。
-
-如果你觉得本网站对你非常有帮助，有意进行捐赠，敬请参阅[捐赠](/master/donate)，获取更多信息。
-
-敬请参阅[政策](../master/policy)，了解你的权利。
-
-很高兴认识你。
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
