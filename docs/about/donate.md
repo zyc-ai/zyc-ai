@@ -5,7 +5,7 @@ authors:
     - Zhiyuan Chen
 date: 2019-08-2 19:50:51
 categories: 
-    - Master
+    - About
     - Donate
 tags:
     - Donate

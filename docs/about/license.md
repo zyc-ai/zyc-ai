@@ -5,10 +5,9 @@ authors:
     - Zhiyuan Chen
 date: 2019-09-16 03:08:02
 categories: 
-    - Master
+    - About
     - License
 tags:
-    - Master
     - License
 ---
 
