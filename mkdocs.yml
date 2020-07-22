@@ -61,6 +61,7 @@ theme:
   name: material
   language: 'zh'
   palette:
+    scheme: slate
     primary: 'Teal'
     accent: 'Teal'
   favicon: 'favicon.ico'
@@ -82,7 +83,7 @@ extra:
 
 extra_css:
     - css/css.css
-    - css/extra.css
+    #- css/extra.css
 
 extra_javascript: 
     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
