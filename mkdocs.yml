@@ -64,6 +64,7 @@ theme:
     scheme: slate
     primary: 'Teal'
     accent: 'Teal'
+  logo: 'images/zc.png'
   favicon: 'favicon.ico'
   feature:
     - tabs

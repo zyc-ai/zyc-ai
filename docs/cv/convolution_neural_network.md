@@ -11,4 +11,7 @@ tags:
 ---
 
 !!! abstract "卷积神经网络"
+<<<<<<< Updated upstream
     现代计算机视觉任务中几乎处处都用
+=======
+>>>>>>> Stashed changes
