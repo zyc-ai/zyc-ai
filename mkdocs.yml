@@ -54,16 +54,19 @@ nav:
     - 二〇一九年 十一月 八日: sketch/20191108.md
     - 二〇二〇年 四月 四日: sketch/20200404.md
 
+icon:
+  logo: 'images/zc.png'
+
 theme:
   name: material
   language: 'zh'
   palette:
     primary: 'Teal'
     accent: 'Teal'
-  logo: 'images/zc.png'
-  favicon: 'images/favicon.ico'
+  favicon: 'favicon.ico'
   feature:
-    tabs: true
+    - tabs
+    - instant
   font:
     text: 'Noto Sans'
     code: 'Cascadia Code'
@@ -71,10 +74,10 @@ theme:
 extra:
   manifest: 'manifest.webmanifest'
   social:
-    - type: 'github'
+    - icon: fontawesome/brands/github-alt
       link: 'https://github.com/zyc-ai'
-    - type: 'linkedin'
-      link: 'https://www.linkedin.com/in/%E9%99%9F%E5%8E%9F-%E9%99%88-0b473aa9/'
+    # - icon: 'linkedin'
+    #   link: 'https://www.linkedin.com/in/%E9%99%9F%E5%8E%9F-%E9%99%88-0b473aa9/'
   disqus: 'intzc'
 
 extra_css:
@@ -120,6 +123,9 @@ markdown_extensions:
       permalink: "#"
 
 plugins:
-  - search
+  - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - en
   - awesome-pages
   # - git-committers
