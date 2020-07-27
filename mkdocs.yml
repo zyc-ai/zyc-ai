@@ -9,14 +9,6 @@ repo_url: https://github.com/zyc-ai
 
 nav:
   - zyc.ai: index.md
-  - 关于:
-    - 捐赠: about/donate.md
-    - 贡献: about/contribute.md
-    - 最终用户许可协议: about/eula.md
-    - 隐私声明: about/privacy.md
-    - 评论政策: about/comment.md
-    - GPLv3: about/license.md
-    - 陈陟原: about/zhiyuan_chen.md
   # - 联想研究院:
   #   - 联想研究院实习总结: lenovo_research.md
   - 文档:
@@ -56,6 +48,14 @@ nav:
     - 二〇一九年 六月 十日: sketch/20190610.md
     - 二〇一九年 十一月 八日: sketch/20191108.md
     - 二〇二〇年 四月 四日: sketch/20200404.md
+  - 关于:
+    - 捐赠: about/donate.md
+    - 贡献: about/contribute.md
+    - 最终用户许可协议: about/eula.md
+    - 隐私声明: about/privacy.md
+    - 评论政策: about/comment.md
+    - GPLv3: about/license.md
+    - Zhiyuan Chen: about/zhiyuan_chen.md
 
 icon:
   logo: 'images/zc.png'
