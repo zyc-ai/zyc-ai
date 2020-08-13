@@ -44,6 +44,8 @@ nav:
   - C++核心指南:
     - 原文: cppcg/CppCoreGuidelines.md
     - 摘要: cppcg/abstract.md
+  - 速食食品:
+    - 速食食品の评测: instant_food/introduction.md
   - 随笔:
     - 二〇一九年 六月 十日: sketch/20190610.md
     - 二〇一九年 十一月 八日: sketch/20191108.md
