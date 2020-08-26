@@ -1,6 +1,6 @@
 ---
 title: 许可
-summary: 许可
+summary: License
 authors:
     - Zhiyuan Chen
 date: 2019-09-16 03:08:02

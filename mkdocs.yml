@@ -16,6 +16,13 @@ nav:
     - JetBrains使用指南: document/jetbrains.md
   - 统计:
     - 概率论: stat/probability.md
+  - 优化:
+    - 优化: optimisation/introduction.md
+    - 仿射与凸: optimisation/affine_convex.md
+    - 球与锥: optimisation/ball_cone.md
+    - 超平面、半空间与多面体: optimisation/hyperplane_halfspace_polyhedra.md
+    - 对偶锥与广义不等式: optimisation/dual_cone_generalized_inequality.md
+    - 凸凹: optimisation/convex_concave.md
   #- 机器学习:
   #  - 统计: ml/statistics.md
   #- 计算机视觉:
@@ -85,7 +92,7 @@ extra:
       link: 'https://github.com/zyc-ai'
     # - icon: 'linkedin'
     #   link: 'https://www.linkedin.com/in/%E9%99%9F%E5%8E%9F-%E9%99%88-0b473aa9/'
-  disqus: 'intzc'
+  disqus: 'zycai'
 
 extra_css:
     - css/css.css

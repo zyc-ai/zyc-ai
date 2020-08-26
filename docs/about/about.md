@@ -10,8 +10,6 @@ tags:
     - master
 ---
 
-# 关于
-
 你好，欢迎访问本网站。
 
 本网站基于[GitHUb Pages](https://pages.github.com/)与[MKDocs](https://www.mkdocs.org/)构建，旨在提供一个分享知识的平台。
