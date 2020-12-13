@@ -5,7 +5,7 @@ site_description: The website of Zhiyuan Chen
 copyright: All rights reserved © Zhiyuan Chen 2017-2020
 
 repo_name: Zhiyuan Chen
-repo_url: https://github.com/zyc-ai
+repo_url: https://github.com/ZhiyuanChen
 
 nav:
   - zyc.ai: index.md
@@ -14,6 +14,7 @@ nav:
   - 文档:
     - 设计模式: document/design_pattern.md
     - JetBrains使用指南: document/jetbrains.md
+    - PyTorch分布式: document/torch.distributed.md
   - 统计:
     - 概率论: stat/probability.md
   - 优化:
@@ -25,7 +26,8 @@ nav:
     - 凸凹: optimisation/convex_concave.md
   #- 机器学习:
   #  - 统计: ml/statistics.md
-  #- 计算机视觉:
+  - 计算机视觉:
+    - SimCLR: cv/ssl/SimCLR.md
   #  - SiamRPN: cv/siamrpn.md
   # - 生物医学影像:
   #   - 超声: bmi/ultrasound.md
@@ -57,14 +59,15 @@ nav:
     - 二〇一九年 六月 十日: sketch/20190610.md
     - 二〇一九年 十一月 八日: sketch/20191108.md
     - 二〇二〇年 四月 四日: sketch/20200404.md
+    - 二〇二〇年 十月 六日: sketch/20201006.md
   - 关于:
+    - Zhiyuan Chen: about.md
     - 捐赠: about/donate.md
     - 贡献: about/contribute.md
     - 最终用户许可协议: about/eula.md
     - 隐私声明: about/privacy.md
     - 评论政策: about/comment.md
     - GPLv3: about/license.md
-    - Zhiyuan Chen: about/zhiyuan_chen.md
 
 icon:
   logo: 'images/zc.png'
@@ -73,16 +76,16 @@ theme:
   name: material
   language: 'zh'
   palette:
-    scheme: slate
-    primary: 'Teal'
-    accent: 'Teal'
+    scheme: preference
+    primary: teal
+    accent: teal
   logo: 'images/zc.png'
   favicon: 'favicon.ico'
-  feature:
-    - tabs
-    - instant
+  features:
+    - navigation.tabs
+    - navigation.instant
   font:
-    text: 'Noto Sans'
+    text: 'Helvetica Now Display'
     code: 'Cascadia Code'
 
 extra:
@@ -107,6 +110,7 @@ google_analytics:
 
 markdown_extensions:
   - admonition
+  - attr_list
   - codehilite:
       guess_lang: false
       use_pygments: True
@@ -133,6 +137,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - smarty
   - toc:
       permalink: "#"
 
