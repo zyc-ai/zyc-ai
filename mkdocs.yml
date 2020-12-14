@@ -2,7 +2,7 @@ site_name: Zhiyuan Chen
 site_url: https://zyc.ai
 site_author: Zhiyuan Chen
 site_description: The website of Zhiyuan Chen
-copyright: All rights reserved © Zhiyuan Chen 2017-2020
+copyright: All rights reserved &copy; Zhiyuan Chen 2017-2020
 
 repo_name: Zhiyuan Chen
 repo_url: https://github.com/ZhiyuanChen
@@ -69,36 +69,67 @@ nav:
     - 评论政策: about/comment.md
     - GPLv3: about/license.md
 
-icon:
-  logo: 'images/zc.png'
-
 theme:
   name: material
   language: 'zh'
   palette:
-    scheme: preference
-    primary: teal
-    accent: teal
-  logo: 'images/zc.png'
-  favicon: 'favicon.ico'
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: default
+      primary: cyan
+      accent: cyan
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  logo: 'assests/site/logo.png'
+  favicon: 'assests/site/logo.png'
   features:
-    - navigation.tabs
+    - navigation.expand
     - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - search.highlight
+    - search.suggest
+    - header.autohide
   font:
-    text: 'Helvetica Now Display'
+    text: 'Helvetica'
     code: 'Cascadia Code'
 
 extra:
   manifest: 'manifest.webmanifest'
   social:
-    - icon: fontawesome/brands/github-alt
-      link: 'https://github.com/zyc-ai'
-    # - icon: 'linkedin'
-    #   link: 'https://www.linkedin.com/in/%E9%99%9F%E5%8E%9F-%E9%99%88-0b473aa9/'
+    - icon: fontawesome/brands/github
+      link: 'https://github.com/ZhiyuanChen'
+    - icon: fontawesome/brands/gitlab
+      link: 'https://gitlab.com/ZhiyuanChen'
+    - icon: fontawesome/brands/bitbucket
+      link: 'https://bitbucket.org/ZhiyuanChen'
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:this@zyc.ai
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/zyc.fb
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/zyc_ai
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/zyc.ai
+    - icon: fontawesome/brands/linkedin
+      link: 'https://www.linkedin.com/in/%E9%99%9F%E5%8E%9F-%E9%99%88-0b473aa9/'
+  alternate:
+    - name: English
+      link: https://zyc.ai/en/
+      lang: en
   disqus: 'zycai'
+  generator: false
+  # version:
+  #   method: mike
 
 extra_css:
-    - css/css.css
+    #- css/css.css
     #- css/extra.css
 
 extra_javascript: 
@@ -127,7 +158,8 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_png
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink
@@ -139,12 +171,13 @@ markdown_extensions:
   - pymdownx.tilde
   - smarty
   - toc:
+      slugify: !!python/name:pymdownx.slugs.uslugify
       permalink: "#"
 
 plugins:
   - search:
-      separator: '[\s\-\.]+'
-      lang:
-        - en
+      prebuild_index: true
   - awesome-pages
-  # - git-committers
+  - git-revision-date-localized:
+      type: iso_datetime
+  - git-committers
