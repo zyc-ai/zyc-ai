@@ -2814,11 +2814,11 @@ The following tables summarize the advice in the following Guidelines, F.16-21.
 
 Normal parameter passing:
 
-![Normal parameter passing table](../assests/images/CppCoreGuidelines/param-passing-normal.png "Normal parameter passing")
+![Normal parameter passing table](../assests/CppCoreGuidelines/param-passing-normal.png "Normal parameter passing")
 
 Advanced parameter passing:
 
-![Advanced parameter passing table](../assests/images/CppCoreGuidelines/param-passing-advanced.png "Advanced parameter passing")
+![Advanced parameter passing table](../assests/CppCoreGuidelines/param-passing-advanced.png "Advanced parameter passing")
 
 Use the advanced techniques only after demonstrating need, and document that need in a comment.
 

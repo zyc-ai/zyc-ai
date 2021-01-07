@@ -14,18 +14,6 @@ tags:
     - Computer Vision
 ---
 
-!!! info "专有名词翻译和缩写"
-    在本文当中，专有名词被如下翻译和缩写：
-
-    + anchor 锚框
-    + Convolution Neural Network CNN 卷积神经网络
-    + Meta-Learning 元学习
-    + Padding 填充
-    + Regional Proposal Network RPN 区域候选网络
-    + Siamese 孪生
-    + Single Object Tracking SOT 单目标跟踪
-    + Visual Object Tracking VOT
-
 SiamFC是牛津大学的Luca Bertinetto等提出的用于单目标跟踪的网络。
 
 ## 简介

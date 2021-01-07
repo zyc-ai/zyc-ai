@@ -14,7 +14,9 @@ nav:
   - 文档:
     - 设计模式: document/design_pattern.md
     - JetBrains使用指南: document/jetbrains.md
-    - PyTorch分布式: document/torch.distributed.md
+  - PyTorch:
+    - nn.Module: pytorch/nn.Module.md
+    - 分布式: pytorch/distributed.md
   - 统计:
     - 概率论: stat/probability.md
   - 优化:
@@ -28,6 +30,8 @@ nav:
   #  - 统计: ml/statistics.md
   - 计算机视觉:
     - SimCLR: cv/ssl/SimCLR.md
+    - Vision Transformer: cv/vision_transformer.md
+    - Big Transfer: cv/big_transfer.md
   #  - SiamRPN: cv/siamrpn.md
   # - 生物医学影像:
   #   - 超声: bmi/ultrasound.md
