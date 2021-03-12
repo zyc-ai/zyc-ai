@@ -14,6 +14,7 @@ nav:
   - 文档:
     - 设计模式: document/design_pattern.md
     - JetBrains使用指南: document/jetbrains.md
+    - ResNet面试简介: document/interview-resnet.md
   - PyTorch:
     - nn.Module: pytorch/nn.Module.md
     - 分布式: pytorch/distributed.md
@@ -30,6 +31,7 @@ nav:
   #  - 统计: ml/statistics.md
   - 计算机视觉:
     - SimCLR: cv/ssl/SimCLR.md
+    - Visual Transformer: cv/visual_transformer.md
     - Vision Transformer: cv/vision_transformer.md
     - Big Transfer: cv/big_transfer.md
   #  - SiamRPN: cv/siamrpn.md
@@ -64,6 +66,7 @@ nav:
     - 二〇一九年 十一月 八日: sketch/20191108.md
     - 二〇二〇年 四月 四日: sketch/20200404.md
     - 二〇二〇年 十月 六日: sketch/20201006.md
+    - 二〇二一年 三月 十一日: sketch/20210311.md
   - 关于:
     - Zhiyuan Chen: about.md
     - 捐赠: about/donate.md
