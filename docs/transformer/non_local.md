@@ -1,19 +1,19 @@
 ---
-title: VT
-summary: Visual Transformer
+title: Non Local
+summary: Non Local Neural Networks
 authors:
     - Zhiyuan Chen
-date: 2021-01-05 16:02:11
+date: 2021-01-11 14:28:48
 categories: 
     - Computer Vision
 tags:
     - Computer Vision
-    - Visual Transformer
+    - Non Local Neuaral Networks
 ---
 
-## 动机
+## 介绍
 
-得益于性能和计算效率，卷积神经网络已经成为计算机视觉的事实标准。然而像素-卷积范式仍然存在一定问题，比如：
+卷积和循环运算都
 
 1. **并非像素皆生而平等** ：图像分类模型应当主要关注前景对象而忽略背景。然而卷积运算平等的处理图像的每一个子区域，而无论其重要性。这使得计算和表示的空间效率低下。
 2. **​​不是所有概念都会在所有图像中出现** ：所有自然图像中都存在诸如拐角和边缘之类的低级特征，因此将低级卷积滤波应用于所有图像是合适的。然而，高级特征（例如耳形）仅存在于某些特定图像中。然而，卷积神经网络在所有图像中显式建模所有概念而无论内容，很少使用的、不适用的卷积层花费了大量的计算。
@@ -28,7 +28,7 @@ tags:
 !!! important ""
     Visual Transformer在语义令牌空间中运作，根据上下文来处理不同的图像部分。相比传统的像素空间的Transformer可以节省海量计算。
 
-## 方法
+## Visual Transformer
 
 对于输入图片，本文首先应用卷积层来提取低层特征。输出的特征图被输入VT：首先，令牌器将像素分组为少量视觉令牌，每个视觉令牌都表示图像中的语义概念。然后，应用Transformer来建模令牌之间的关系。视觉令牌被直接应用于图像分类或者映射会特征图以进行语义分割。
 
