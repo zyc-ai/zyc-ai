@@ -34,9 +34,9 @@ $$
 
 图1描述了Vision Transformer的结构。标准Transformer的输入是1维的符号嵌套的序列。为了支持2维图像，本文将图像$\mathbf{x} \in \mathbb{R}^{H \times W \times C}$重塑成一系列展平的2维块$\mathbf{x}_p \in \mathbb{R}^{N \times (P^2 \cdot C)}$，其中$(H, W)$是原始图像的分辨率，$C$是通道的数量，$(P,P)$是每个图像块的分辨率，$N=HW/P^2$是块的数量，它同时也是Transformer的实际输入序列的长度。Transformer在所有层的宽度是恒定的，因此一个可训练的线性映射将每个矢量化的块映射到模型维度D（公式1），本文将这个映射的输出称为块嵌套。
 
-<object data="../../assests/cv/vision_transformer/model_scheme.pdf" type="application/pdf" width="700px" height="400px">
-    <embed src="../../assests/cv/vision_transformer/model_scheme.pdf">
-        <p>本浏览器不支持PDF图像的显示，请更换浏览器或<a href="../assests/cv/vision_transformer/model_scheme.pdf">下载图像</a></p>
+<object data="../assests/transformer/vision_transformer/model_scheme.pdf" type="application/pdf" width="700px" height="400px">
+    <embed src="../assests/transformer/vision_transformer/model_scheme.pdf">
+        <p>本浏览器不支持PDF图像的显示，请更换浏览器或<a href="../assests/transformer/vision_transformer/model_scheme.pdf">下载图像</a></p>
     </embed>
 </object>
 

@@ -31,9 +31,11 @@ nav:
   #  - 统计: ml/statistics.md
   - 计算机视觉:
     - SimCLR: cv/ssl/SimCLR.md
-    - Visual Transformer: cv/visual_transformer.md
-    - Vision Transformer: cv/vision_transformer.md
     - Big Transfer: cv/big_transfer.md
+  - 变换网络:
+    - 注意力: transformer/attention.md
+    - Visual Transformer: transformer/visual_transformer.md
+    - Vision Transformer: transformer/vision_transformer.md
   #  - SiamRPN: cv/siamrpn.md
   # - 生物医学影像:
   #   - 超声: bmi/ultrasound.md
