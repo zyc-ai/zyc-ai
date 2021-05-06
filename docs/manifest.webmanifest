@@ -1,0 +1,18 @@
+{
+    "short_name": "zyc.ai",
+    "name": "zyc.ai",
+    "description": "The website of Zhiyuan Chen",
+    "icons": [
+      {
+        "src": "assests/site/logo.png",
+        "type": "image/png",
+        "sizes": "2000x2000"
+      }
+    ],
+    "start_url": "/?source=pwa",
+    "display": "standalone",
+    "scope": "/",
+    "shortcuts": [
+
+    ]
+  }
