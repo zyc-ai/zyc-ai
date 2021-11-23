@@ -23,8 +23,6 @@ And I believe the world would be better if we apply coding in public welfare, I 
 
 I am looking for PhD opportunities as well as research assistant/intern positions. Please drop me an [email](mailto:this@zyc.ai) if you are interested, you may also add me on [Messenger](https://m.me/zyc.fb) or WeChat: zyc-personal.
 
-Please do NOT send me emails if you are having troubles to run some code or cannot reproduce some results, instead, you are more than welcome to create an issue or start a discussion and @me. I will not be answering any question via email, since it would be unfair to others.
-
 **We ([Computational Biology Group](https://www.microsoft.com/en-us/research/group/computational-biology-group/) at the [Microsoft Research Asia](https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/)) are looking for highly self-motivated and talented interns with deep learning background, knowledge in Biology is not required. Please drop me an [email](mailto:v-zhichen@microsoft.com) if you are interested.**
 
 [![Zhiyuan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=ZhiyuanChen&custom_title=Zhiyuan's GitHub Stats&show_icons=true&count_private=true&theme=panda)](https://github.com/ZhiyuanChen)
