@@ -25,7 +25,7 @@ nav:
     - JetBrains使用指南: document/jetbrains.md
     - ResNet面试简介: document/interview-resnet.md
   - PyTorch:
-    - nn.Module: pytorch/nn.Module.md
+    - nn.Module: pytorch/nn/Module.md
     - 分布式: pytorch/distributed.md
   - 统计:
     - 概率论: stat/probability.md
