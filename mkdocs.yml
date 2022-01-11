@@ -8,16 +8,7 @@ repo_name: Zhiyuan Chen
 repo_url: https://github.com/ZhiyuanChen
 
 nav:
-  - Zhiyuan Chen:
-    - Zhiyuan Chen: index.md
-    - 捐赠: donate.md
-    - 服务协议: sa.md
-    - 最终用户许可协议: eula.md
-    - 隐私声明: privacy.md
-    - 评论政策: comment.md
-    - GPLv3: license.md
-    - 贡献: contribute.md
-    - 禅: zen.md
+  - Zhiyuan Chen: index.md
   # - 联想研究院:
   #   - 联想研究院实习总结: lenovo_research.md
   - 文档:
@@ -78,7 +69,17 @@ nav:
     - 二〇二一年 三月 十一日: sketch/20210311.md
     - 二〇二一年 十月 十二日: sketch/20211012.md
     - 青海-成长历程分享: sketch/growth-experience.md
+    - 属性访问慢吗？: sketch/is_attribute_lookup_slow.md
     - iPad Pro简评: sketch/ipad.md
+  - 关于:
+    - 禅: zen.md
+    - 服务协议: sa.md
+    - 最终用户许可协议: eula.md
+    - 隐私声明: privacy.md
+    - 评论政策: comment.md
+    - GPLv3: license.md
+    - 贡献: contribute.md
+    - 捐赠: donate.md
 
 theme:
   name: material
