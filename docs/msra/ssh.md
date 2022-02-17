@@ -5,9 +5,9 @@ authors:
     - Zhiyuan Chen
 date: 2021-04-06 17:04:10
 categories: 
-    - document
+    - MSRA
 tags:
-    - document
+    - MSRA
     - Grand Central Resource
     - Jumptainer
 ---
@@ -18,11 +18,11 @@ tags:
 
     本文档最后更新于2021年11月22日，这表示本文档最后一次被验证的日期。
 
-!!! abstract "前言"
+## 摘要
 
-    出于“零信任”的设计，使用大中央资源（Grand Central Resources, GCR)需要通过跳板机（Jumptainer）进行连接。
+出于“零信任”的设计，使用大中央资源（Grand Central Resources, GCR)需要通过跳板机（Jumptainer）进行连接。
 
-    本文简要介绍了如何配置OpenSSH以通过跳板机连接到大中央资源，并对一些常见故障提供解决方案。
+本文简要介绍了如何配置OpenSSH以通过跳板机连接到大中央资源，并对一些常见故障提供解决方案。
 
 ## OpenSSH服务
 
@@ -30,7 +30,7 @@ tags:
 
 ### OpenSSH可用性
 
-OpenSSH可能或者可能没有在您的机器上安装。请遵循下列步骤验证OpenSSH的可用状态：
+OpenSSH应该已经在您的机器上安装。您可以通过以下步骤验证OpenSSH的可用状态：
 
 ```shell
 Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'
@@ -83,7 +83,7 @@ New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH-Server-In-TCP(sshd)' -Enabl
 
 [参考](https://dev.azure.com/msresearch/GCR/_wiki/wikis/GCR.wiki/4099/SSH-Key-Management)
 
-为了连接至大中央资源，你需要将你的SSH公钥上传至大中央资源。
+为了连接至大中央资源，您需要将您的SSH公钥上传至大中央资源。
 
 大中央资源目前支持的密钥类型包括：
 

@@ -11,6 +11,9 @@ nav:
   - Zhiyuan Chen: index.md
   # - 联想研究院:
   #   - 联想研究院实习总结: lenovo_research.md
+  - MSRA:
+    - 配置OpenSSH以通过跳板机连接大中央资源: msra/ssh.md
+    - 配置AVD以在任何设备上访问公司资源: msra/remote.md
   - 文档:
     - 设计模式: document/design_pattern.md
     - JetBrains使用指南: document/jetbrains.md
