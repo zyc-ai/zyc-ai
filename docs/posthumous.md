@@ -5,11 +5,8 @@ authors:
     - Zhiyuan Chen
 date: 2020-12-17 00:43:43
 categories: 
-    - About
     - Posthumous
 tags:
-    - About
-    - Policy
     - Posthumous
 ---
 

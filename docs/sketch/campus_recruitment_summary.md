@@ -1,13 +1,13 @@
 ---
-title: 二〇二一年 十月 十二日
-summary: 20211012
+title: 秋招面试总结
+summary: Campus Recruitment Summary
 authors:
     - Zhiyuan Chen
 date: 2021-10-12 19:44:52
 categories: 
     - sketch
 tags:
-    - sketch
+    - interview
 ---
 
 ## 摘要
