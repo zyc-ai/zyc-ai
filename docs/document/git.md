@@ -4,7 +4,7 @@ summary: The Git cookbook
 authors:
     - Zhiyuan Chen
 date: 2020-08-05 23:02:55
-categories: 
+categories:
     - Document
     - Git
 tags:

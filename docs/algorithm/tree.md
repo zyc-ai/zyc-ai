@@ -4,7 +4,7 @@ summary: 树（Tree）
 authors:
     - Zhiyuan Chen
 date: 2019-10-30 02:55:33
-categories: 
+categories:
     - algorithm
     - tree
 tags:
@@ -18,7 +18,7 @@ tags:
   
 与生物学意义上的树不太相同，对于数据结构意义上的树来说，树的根在顶部，叶子则在底部。数据都存储在树的节点当中，节点除了数据之外还存储指向其父节点和子节点的指针--这和双向链表非常相似。通常，一个树只有一个父节点，但可能有多个子节点。我们将每个节点都有不超过m个子结点的树称之为m叉树。此外，倘若一个树的节点之间存在顺序关系，我们称其为有序树，反之则称其为无序树。对于一个树而言，我们将其第一个节点称作根节点（root node）；将没有任何子节点的节点成为叶节点（leaf node）；将由根节点到叶节点的最长距离称为树的高度h。下图是一个典型的高度为4的二叉搜索树：
 
-![Binary Search Tree](../assests/algorithm/tree/bst.png)
+![Binary Search Tree](../assets/algorithm/tree/bst.png)
 
 ## 二叉搜索树（Binary Search Tree, BST）
 
@@ -205,7 +205,7 @@ tags:
 
     回忆例图中的二叉搜索树：
     
-    ![Binary Search Tree](../assests/algorithm/tree/bst.png)
+    ![Binary Search Tree](../assets/algorithm/tree/bst.png)
 
     其先序遍历、中序遍历以及后序遍历的输出分别是多少？
 

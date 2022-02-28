@@ -4,7 +4,7 @@ summary: 导论
 authors:
     - Zhiyuan Chen
 date: 2019-08-28 23:49:36
-categories: 
+categories:
     - master
 tags:
     - master

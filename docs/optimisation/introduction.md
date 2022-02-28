@@ -4,7 +4,7 @@ summary: Optimisation
 authors:
     - Zhiyuan Chen
 date: 2020-08-18 19:59:48
-categories: 
+categories:
     - Opsimisation
 tags:
     - Opsimisation

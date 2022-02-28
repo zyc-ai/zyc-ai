@@ -4,7 +4,7 @@ summary: SiamRPN
 authors:
     - Zhiyuan Chen
 date: 2019-12-24 12:15:18
-categories: 
+categories:
     - Computer Vision
     - Object Tracking
     - Single Object Tracking

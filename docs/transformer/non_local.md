@@ -4,7 +4,7 @@ summary: Non Local Neural Networks
 authors:
     - Zhiyuan Chen
 date: 2021-01-11 14:28:48
-categories: 
+categories:
     - Computer Vision
 tags:
     - Computer Vision
@@ -38,7 +38,7 @@ tags:
 
 VT模块包括三个步骤：第一步将像素分组成语义概念来产生一个较小的视觉令牌集；第二步对这些视觉令牌应用Transformer来建模语义概念的关系；第三步将语义令牌映射回像素空间以获得增强的特征图。
 
-![图1](../assests/transformer/visual_transformer/vt_diagram.svg "图1")
+![图1](../assets/transformer/visual_transformer/vt_diagram.svg "图1")
 
 ### 令牌器
 
@@ -59,7 +59,7 @@ VT模块包括三个步骤：第一步将像素分组成语义概念来产生一
 
 但是，许多高级语义概念是稀疏的，可能每个仅在少数图像中出现。因此，固定的一组学习权重$\mathbf {W}_A$可能会浪费计算量。
 
-![图2](../assests/transformer/visual_transformer/filter_based_tokenizder.svg "图2")
+![图2](../assets/transformer/visual_transformer/filter_based_tokenizder.svg "图2")
 
 #### 簇基令牌器（循环令牌器）
 
@@ -74,7 +74,7 @@ VT模块包括三个步骤：第一步将像素分组成语义概念来产生一
     \end{aligned}
 \end{equation}
 
-![图3](../assests/transformer/visual_transformer/cluster_based_tokenizer.svg "图3")
+![图3](../assets/transformer/visual_transformer/cluster_based_tokenizer.svg "图3")
 
 其中$\mathbf{W}_{T \rightarrow R} \in \mathbb{R}^{C \times C}$。
 

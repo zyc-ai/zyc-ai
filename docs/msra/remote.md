@@ -4,7 +4,7 @@ summary: Config AVD to access company resources on any device
 authors:
     - Zhiyuan Chen
 date: 2022-02-16 18:36:21
-categories: 
+categories:
     - MSRA
 tags:
     - MSRA

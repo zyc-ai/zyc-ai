@@ -4,7 +4,7 @@ summary: Docker导论
 authors:
     - Zhiyuan Chen
 date: 2019-05-12 15:15:31
-categories: 
+categories:
     - Docker
     - 导论
 tags:

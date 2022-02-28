@@ -4,7 +4,7 @@ summary: Convex and Concave
 authors:
     - Zhiyuan Chen
 date: 2020-08-19 19:02:43
-categories: 
+categories:
     - Opsimisation
 tags:
     - Opsimisation

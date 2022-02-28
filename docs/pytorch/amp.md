@@ -4,7 +4,7 @@ summary: torch.cuda.amp
 authors:
     - Zhiyuan Chen
 date: 2021-01-04 17:44:36
-categories: 
+categories:
     - PyTorch
     - cuda
     - amp

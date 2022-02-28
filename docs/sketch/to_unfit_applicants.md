@@ -4,7 +4,7 @@ summary: To those who did not pass the interview
 authors:
     - Zhiyuan Chen
 date: 2022-02-27 21:11:47
-categories: 
+categories:
     - sketch
 tags:
     - sketch

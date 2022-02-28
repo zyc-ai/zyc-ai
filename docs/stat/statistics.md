@@ -4,7 +4,7 @@ summary: 统计
 authors:
     - Zhiyuan Chen
 date: 2020-03-04 15:37:34
-categories: 
+categories:
 tags:
     - Machine Learning
     - Bayes

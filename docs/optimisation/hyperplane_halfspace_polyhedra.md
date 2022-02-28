@@ -4,7 +4,7 @@ summary: Hyperplane, Halfspace, and Polyhedra
 authors:
     - Zhiyuan Chen
 date: 2020-08-18 16:06:19
-categories: 
+categories:
     - Opsimisation
 tags:
     - Opsimisation

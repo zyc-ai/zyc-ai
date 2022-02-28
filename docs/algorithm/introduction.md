@@ -4,7 +4,7 @@ summary: 算法（Algorithm）
 authors:
     - Zhiyuan Chen
 date: 2019-08-06 19:39:28
-categories: 
+categories:
     - 算法
     - 导论
 tags:

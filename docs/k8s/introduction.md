@@ -4,7 +4,7 @@ summary: Kubernetes
 authors:
     - Zhiyuan Chen
 date: 2019-01-28 12:08:33
-categories: 
+categories:
     - Kubernetes
     - 导论
 tags:

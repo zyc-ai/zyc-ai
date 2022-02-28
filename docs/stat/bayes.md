@@ -4,7 +4,7 @@ summary: 贝叶斯
 authors:
     - Zhiyuan Chen
 date: 2020-03-03 23:48:02
-categories: 
+categories:
     - statistics
 tags:
     - statistics

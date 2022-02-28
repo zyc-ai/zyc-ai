@@ -4,7 +4,7 @@ summary: 分治法（Divide and Conquer）
 authors:
     - Zhiyuan Chen
 date: 2019-11-01 02:28:44
-categories: 
+categories:
     - 算法
     - 变治法
 tags:

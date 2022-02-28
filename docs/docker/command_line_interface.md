@@ -4,7 +4,7 @@ summary: Docker命令行接口基础操作
 authors:
     - Zhiyuan Chen
 date: 2019-07-07 14:50:21
-categories: 
+categories:
     - Docker
     - 命令行接口
 tags:

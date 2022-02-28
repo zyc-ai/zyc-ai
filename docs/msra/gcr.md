@@ -4,7 +4,7 @@ summary: Config OpenSSH to connect to GCR by jumpianer
 authors:
     - Zhiyuan Chen
 date: 2021-04-06 17:04:10
-categories: 
+categories:
     - MSRA
 tags:
     - MSRA

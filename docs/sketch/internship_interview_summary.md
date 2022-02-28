@@ -4,7 +4,7 @@ summary: Internship Interview Summary
 authors:
     - Zhiyuan Chen
 date: 2020-11-01 23:59:59
-categories: 
+categories:
     - sketch
 tags:
     - sketch

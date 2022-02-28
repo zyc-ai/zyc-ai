@@ -4,7 +4,7 @@ summary: 组件
 authors:
     - Zhiyuan Chen
 date: 2019-11-19 07:18:34
-categories: 
+categories:
     - Kubernetes
     - 组件
 tags:

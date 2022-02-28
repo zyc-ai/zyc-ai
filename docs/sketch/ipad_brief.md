@@ -4,7 +4,7 @@ summary: 你的下一台电脑，何必是一台电脑
 authors:
     - Zhiyuan Chen
 date: 2021-08-07 21:10:04
-categories: 
+categories:
     - sketch
 tags:
     - sketch
@@ -22,7 +22,7 @@ tags:
 
 何必是一台电脑？
 
-![桌面](../assests/sketch/ipad/home.png "桌面")
+![桌面](../assets/sketch/ipad/home.png "桌面")
 
 作为一个搞算法的，我们的一天可以被三件事所总结：写代码、跑实验、看论文。在这三件事情上，iPad都做到了一定的可用性与足够的易用性，打分如下：
 
@@ -34,7 +34,7 @@ tags:
 
 我之前在商汤的时候曾尝试过手机上用Terminus跑实验，那真是一场无比痛苦的噩梦。Terminus这种三十秒钟就自动断连的东西应该被挂在历史的耻辱柱上令人唾弃。令人高兴的是，其实还是存在会写代码的人在给iOS写程序，比如说iSH。他几乎可以满足我的所有需求--除了窗口使用的是苹果自带的所以不太好用之外。此外，还有一些瑕不掩瑜的小缺陷，比如对zsh支持不够完善以及实在有点儿丑……。
 
-![iSH](../assests/sketch/ipad/iSH.png "iSH")
+![iSH](../assets/sketch/ipad/iSH.png "iSH")
 
 iPad看论文体验一直以来都远不如Surface--甚至于说，我会认为看论文是Surface比iPad唯一的优点（当然其实就这三点来说的话苏菲其实每一点做的都比iPad更好……然而使用体验确实实在不大行。但是，现在不同了，虽然还是没有Drawboard那样的杀手级程序，PDF Expert在看论文方面其实没有差别很大。而Zotero的评估版本已经来到了129，用起来没有什么问题。
 

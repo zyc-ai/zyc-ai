@@ -4,8 +4,6 @@ summary: Zhiyuan Chen
 authors:
     - Zhiyuan Chen
 date: 2020-07-22 13:07:56
-categories: 
-tags:
 ---
 
 I'm Zhiyuan (pronounces as ˈʤ-jʊˈɑːn), an undergraduate student at the Australian National Unversity major in Advanced Intelligent System.

@@ -4,8 +4,10 @@ summary: 磁共振成像
 authors:
     - Zhiyuan Chen
 date: 2020-03-13 10:08:26
-categories: 
+categories:
+    - BioMedical Imaging
 tags:
+    - BioMedical Imaging
 ---
 
 !!! abstract ""

@@ -4,7 +4,7 @@ summary: Probability Theory
 authors:
     - Zhiyuan Chen
 date: 2020-04-16 01:03:52
-categories: 
+categories:
     - statistics
 tags:
     - statistics

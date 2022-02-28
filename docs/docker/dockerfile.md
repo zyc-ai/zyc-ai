@@ -4,7 +4,7 @@ summary: Dockerfile
 authors:
     - Zhiyuan Chen
 date: 2019-08-30 19:15:03
-categories: 
+categories:
     - Document
     - Docker
     - Dockerfile

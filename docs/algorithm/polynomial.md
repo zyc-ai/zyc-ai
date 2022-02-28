@@ -4,7 +4,7 @@ summary: 多项式（Polynomial）
 authors:
     - Zhiyuan Chen
 date: 2019-10-21 18:53:01
-categories: 
+categories:
     - 算法
     - 多项式
 tags:

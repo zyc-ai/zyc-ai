@@ -4,7 +4,7 @@ summary: ResNet in interview, an introduction
 authors:
     - Zhiyuan Chen
 date: 2021-02-13 13:31:14
-categories: 
+categories:
     - sketch
 tags:
     - interview

@@ -4,7 +4,7 @@ summary: distribution
 authors:
     - Zhiyuan Chen
 date: 2019-11-08 08:11:19
-categories: 
+categories:
     - Machine Learning
     - Distribution
 tags:

@@ -4,7 +4,7 @@ summary: torch.nn.Module
 authors:
     - Zhiyuan Chen
 date: 2021-01-04 14:34:59
-categories: 
+categories:
     - PyTorch
     - nn
     - Module

@@ -4,10 +4,11 @@ summary:
 authors:
     - Zhiyuan Chen
 date: 2019-08-06 19:39:28
-categories: 
+categories:
     - C++核心指南
     - 摘要
 tags:
+    - C++核心指南
 ---
 
 # 摘要

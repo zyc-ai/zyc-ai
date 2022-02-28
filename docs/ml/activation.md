@@ -4,7 +4,7 @@ summary: None Linear Activation Function
 authors:
     - Zhiyuan Chen
 date: 2020-12-17 14:39:09
-categories: 
+categories:
     - Machine Learning
 tags:
     - Machine Learning

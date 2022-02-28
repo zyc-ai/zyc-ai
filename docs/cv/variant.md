@@ -4,7 +4,7 @@ summary: 变化
 authors:
     - Zhiyuan Chen
 date: 2019-12-17 23:59:01
-categories: 
+categories:
     - Computer Vision
 tags:
     - Computer Vision

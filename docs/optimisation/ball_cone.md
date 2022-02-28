@@ -4,7 +4,7 @@ summary: Ball and Cone
 authors:
     - Zhiyuan Chen
 date: 2020-08-13 22:32:58
-categories: 
+categories:
     - Opsimisation
 tags:
     - Opsimisation

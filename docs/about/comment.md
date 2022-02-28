@@ -4,7 +4,7 @@ summary: 评论政策
 authors:
     - Zhiyuan Chen
 date: 2019-01-31 14:25:39
-categories: 
+categories:
     - About
     - Policy
 tags:

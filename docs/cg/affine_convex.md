@@ -4,7 +4,7 @@ summary: Affine and Convex
 authors:
     - Zhiyuan Chen
 date: 2020-08-27 14:47:26
-categories: 
+categories:
     - Computer Graphics
 tags:
     - Computer Graphics

@@ -11,3 +11,6 @@
 
 # Site
 /site
+
+# Cache
+.cache/

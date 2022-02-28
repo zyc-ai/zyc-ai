@@ -4,7 +4,7 @@ summary: 20210507
 authors:
     - Zhiyuan Chen
 date: 2021-05-07 01:44:37
-categories: 
+categories:
     - sketch
 tags:
     - sketch

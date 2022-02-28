@@ -5,7 +5,7 @@ authors:
     - Zhiyuan Chen
     - Jing Li
 date: 2019-01-31 14:25:39
-categories: 
+categories:
     - About
     - Policy
 tags:

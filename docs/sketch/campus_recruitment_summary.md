@@ -4,7 +4,7 @@ summary: Campus Recruitment Summary
 authors:
     - Zhiyuan Chen
 date: 2021-10-12 19:44:52
-categories: 
+categories:
     - sketch
 tags:
     - interview

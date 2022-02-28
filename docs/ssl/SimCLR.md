@@ -4,7 +4,7 @@ summary: A Simple Framework for Contrastive Learning of Visual Representations
 authors:
     - Zhiyuan Chen
 date: 2020-10-10 13:55:14
-categories: 
+categories:
     - Computer Vision
     - Self-Supervised Learning
 tags:

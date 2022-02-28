@@ -4,7 +4,7 @@ summary: 变治法
 authors:
     - Zhiyuan Chen
 date: 2019-10-19 18:27:21
-categories: 
+categories:
     - 算法
     - 变治法
 tags:

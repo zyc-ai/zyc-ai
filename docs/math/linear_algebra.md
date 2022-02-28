@@ -4,7 +4,7 @@ summary: 线性代数
 authors:
     - Zhiyuan Chen
 date: 2019-08-28 23:57:38
-categories: 
+categories:
     - master
     - mathematics
     - linear algebra

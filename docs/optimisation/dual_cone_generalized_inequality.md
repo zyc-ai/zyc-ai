@@ -4,7 +4,7 @@ summary: Dual Cones and Generalised Inequality
 authors:
     - Zhiyuan Chen
 date: 2020-08-18 19:57:47
-categories: 
+categories:
     - Opsimisation
 tags:
     - Opsimisation

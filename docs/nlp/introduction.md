@@ -4,7 +4,7 @@ summary: 自然语言处理
 authors:
     - Zhiyuan Chen
 date: 2019-08-08 16:00:02
-categories: 
+categories:
     - 自然语言处理
     - 导论
 tags:

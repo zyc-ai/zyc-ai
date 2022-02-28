@@ -4,7 +4,7 @@ summary: License
 authors:
     - Zhiyuan Chen
 date: 2019-09-16 03:08:02
-categories: 
+categories:
     - About
     - License
 tags:

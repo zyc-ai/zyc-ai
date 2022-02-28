@@ -4,7 +4,7 @@ summary: 概率
 authors:
     - Zhiyuan Chen
 date: 2019-10-09 20:05:58
-categories: 
+categories:
     - mathematics
     - probability
 tags:

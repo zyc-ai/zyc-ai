@@ -4,7 +4,7 @@ summary: Is attribute lookup slow?
 authors:
     - Zhiyuan Chen
 date: 2022-01-11 21:24:47
-categories: 
+categories:
     - sketch
 tags:
     - sketch

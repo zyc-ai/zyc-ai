@@ -4,7 +4,7 @@ summary: 贡献
 authors:
     - Zhiyuan Chen
 date: 2019-09-18 02:55:15
-categories: 
+categories:
     - master
     - contribute
 tags:

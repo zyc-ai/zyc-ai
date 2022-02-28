@@ -4,7 +4,7 @@ summary: 递推方程（Recurrence Relation）
 authors:
     - Zhiyuan Chen
 date: 2019-11-01 02:20:41
-categories: 
+categories:
     - algorithm
     - Recurrence Relation
 tags:

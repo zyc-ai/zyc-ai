@@ -4,7 +4,7 @@ summary: 安装Docker
 authors:
     - Zhiyuan Chen
 date: 2019-01-25 02:06:37
-categories: 
+categories:
     - Docker
     - 安装
 tags:

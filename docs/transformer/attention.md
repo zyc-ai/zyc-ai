@@ -4,7 +4,7 @@ summary: Neural Machine Translation by Jointly Learning to Align and Translate
 authors:
     - Zhiyuan Chen
 date: 2021-03-10 21:24:49
-categories: 
+categories:
     - Tramsformer
 tags:
     - Transformer
@@ -17,7 +17,7 @@ tags:
 
 <figure class="video_container">
   <video width="100%" height="auto" loop="" autoplay="" controls="">
-    <source src="../../assests/transformer/attention/seq2seq_1.mp4" type="video/mp4">
+    <source src="../../assets/transformer/attention/seq2seq_1.mp4" type="video/mp4">
   </video>
 </figure>
 
@@ -25,7 +25,7 @@ tags:
 
 <figure class="video_container">
   <video width="100%" height="auto" loop="" autoplay="" controls="">
-    <source src="../../assests/transformer/attention/seq2seq_3.mp4" type="video/mp4">
+    <source src="../../assets/transformer/attention/seq2seq_3.mp4" type="video/mp4">
   </video>
 </figure>
 
@@ -34,23 +34,23 @@ tags:
 
 <figure class="video_container">
   <video width="100%" height="auto" loop="" autoplay="" controls="">
-    <source src="../../assests/transformer/attention/seq2seq_4.mp4" type="video/mp4">
+    <source src="../../assets/transformer/attention/seq2seq_4.mp4" type="video/mp4">
   </video>
 </figure>
 
 对于神经机器翻译任务，输入和输出都为词嵌入。词嵌入的典型大小在200-300之间，为了便于展示，此处为4。
 
-![词嵌入](../assests/transformer/attention/embedding.png)
+![词嵌入](../assets/transformer/attention/embedding.png)
 
 <span style="color:#F39019">上下文</span>是一个向量。它的大小是一个超参数，通常为256、512或者1024，为了便于展示，此处为4。
 
-![上下文](../assests/transformer/attention/context.png)
+![上下文](../assets/transformer/attention/context.png)
 
 循环神经网络通常在神经机器翻译中被用作<span style="color:#70BF41">编码器</span>和<span style="color:#B36AE2">解码器</span>。他将第$k-1$步的<span style="color:#F39019">隐藏态</span>和第$k$步的输入向量作为输入，输出为第$k$步的<span style="color:#F39019">隐藏态</span>和输出，如图所示：
 
 <figure class="video_container">
   <video width="100%" height="auto" loop="" autoplay="" controls="">
-    <source src="../../assests/transformer/attention/RNN_1.mp4" type="video/mp4">
+    <source src="../../assets/transformer/attention/RNN_1.mp4" type="video/mp4">
   </video>
 </figure>
 
@@ -58,7 +58,7 @@ tags:
 
 <figure class="video_container">
   <video width="100%" height="auto" loop="" autoplay="" controls="">
-    <source src="../../assests/transformer/attention/seq2seq_5.mp4" type="video/mp4">
+    <source src="../../assets/transformer/attention/seq2seq_5.mp4" type="video/mp4">
   </video>
 </figure>
 
@@ -66,7 +66,7 @@ tags:
 
 <figure class="video_container">
   <video width="100%" height="auto" loop="" autoplay="" controls="">
-    <source src="../../assests/transformer/attention/seq2seq_6.mp4" type="video/mp4">
+    <source src="../../assets/transformer/attention/seq2seq_6.mp4" type="video/mp4">
   </video>
 </figure>
 
@@ -82,7 +82,7 @@ tags:
 
 <figure class="video_container">
   <video width="100%" height="auto" loop="" autoplay="" controls="">
-    <source src="../../assests/transformer/attention/seq2seq_7.mp4" type="video/mp4">
+    <source src="../../assets/transformer/attention/seq2seq_7.mp4" type="video/mp4">
   </video>
 </figure>
 
@@ -90,7 +90,7 @@ tags:
 
 <figure class="video_container">
   <video width="100%" height="auto" loop="" autoplay="" controls="">
-    <source src="../../assests/transformer/attention/seq2seq_8.mp4" type="video/mp4">
+    <source src="../../assets/transformer/attention/seq2seq_8.mp4" type="video/mp4">
   </video>
 </figure>
 
@@ -100,7 +100,7 @@ tags:
 
 <figure class="video_container">
   <video width="100%" height="auto" loop="" autoplay="" controls="">
-    <source src="../../assests/transformer/attention/attention_process.mp4" type="video/mp4">
+    <source src="../../assets/transformer/attention/attention_process.mp4" type="video/mp4">
   </video>
 </figure>
 
@@ -108,7 +108,7 @@ tags:
 
 <figure class="video_container">
   <video width="100%" height="auto" loop="" autoplay="" controls="">
-    <source src="../../assests/transformer/attention/attention_tensor_dance.mp4" type="video/mp4">
+    <source src="../../assets/transformer/attention/attention_tensor_dance.mp4" type="video/mp4">
   </video>
 </figure>
 
@@ -119,6 +119,6 @@ tags:
 
 <figure class="video_container">
   <video width="100%" height="auto" loop="" autoplay="" controls="">
-    <source src="../../assests/transformer/attention/seq2seq_9.mp4" type="video/mp4">
+    <source src="../../assets/transformer/attention/seq2seq_9.mp4" type="video/mp4">
   </video>
 </figure>

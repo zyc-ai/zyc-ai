@@ -4,7 +4,7 @@ summary: Pareto Optimal Curve
 authors:
     - Zhiyuan Chen
 date: 2020-09-02 16:49:55
-categories: 
+categories:
     - Opsimisation
     - Pareto Optimal Curve
 tags:

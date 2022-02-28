@@ -4,7 +4,7 @@ summary: Big Transfer
 authors:
     - Zhiyuan Chen
 date: 2020-12-17 11:10:11
-categories: 
+categories:
     - Computer Vision
 tags:
     - Computer Vision

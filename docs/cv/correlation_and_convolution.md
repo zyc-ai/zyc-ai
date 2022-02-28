@@ -4,7 +4,7 @@ summary: 互相关与卷积
 authors:
     - Zhiyuan Chen
 date: 2019-12-17 10:30:25
-categories: 
+categories:
     - Computer Vision
 tags:
     - Computer Vision

@@ -4,7 +4,7 @@ summary: Posthumous Paper
 authors:
     - Zhiyuan Chen
 date: 2020-12-17 00:43:43
-categories: 
+categories:
     - Posthumous
 tags:
     - Posthumous

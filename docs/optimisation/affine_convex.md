@@ -4,7 +4,7 @@ summary: Affine and Convex
 authors:
     - Zhiyuan Chen
 date: 2020-08-13 12:13:10
-categories: 
+categories:
     - Opsimisation
 tags:
     - Opsimisation

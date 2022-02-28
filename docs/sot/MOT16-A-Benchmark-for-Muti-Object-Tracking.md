@@ -10,7 +10,7 @@ authors:
 translators:
     - Zhiyuan Chen
 date: 2020-04-18 03:17:18
-categories: 
+categories:
     - Object Tracking
 tags:
     - MOT

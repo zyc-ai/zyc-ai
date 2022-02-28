@@ -4,7 +4,7 @@ summary: 文献管理
 authors:
     - Zhiyuan Chen
 date: 2020-08-05 18:33:19
-categories: 
+categories:
     - Document
     - Literature Management
 tags:

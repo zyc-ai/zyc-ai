@@ -4,7 +4,7 @@ summary: Kubernetes命令行接口基础操作
 authors:
     - Zhiyuan Chen
 date: 2019-07-07 14:50:21
-categories: 
+categories:
     - Kuberenetes
     - 命令行接口
 tags:

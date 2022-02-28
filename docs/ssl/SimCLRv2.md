@@ -4,7 +4,7 @@ summary: Big Self-Supervised Models are Strong Semi-Supervised Learners
 authors:
     - Zhiyuan Chen
 date: 2020-10-10 23:51:33
-categories: 
+categories:
     - Computer Vision
     - Self-Supervised Learning
 tags:

@@ -4,7 +4,7 @@ summary: 安装Kubernetes
 authors:
     - Zhiyuan Chen
 date: 2019-01-25 02:06:37
-categories: 
+categories:
     - Kubernetes
     - 安装
 tags:
