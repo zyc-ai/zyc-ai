@@ -167,7 +167,6 @@ extra_css:
   - assets/fonts/fonts.css
 
 extra_javascript: 
-  - javascripts/shortcuts.js
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 markdown_extensions:
@@ -212,5 +211,5 @@ plugins:
       type: iso_datetime
   - git-committers
   - search
-  - privacy
+  # - privacy
   - tags
