@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block announce %}
+  This site references <a href="https://giscus.app">Giscus</a> and <a href="https://www.mathjax.org">MathJax</a> from other website.
+  This makes it not complying with <a href="https://gdpr.eu">GDPR</a>.</br>
+  To use this site, you <b>MUST NOT</b> be locating in <a href="https://european-union.europa.eu">the European Union</a>.</br>
+  We are currently working on this and will post updates when we figure out a solution.
+{% endblock %}
+
 {% block content %}
   {{ super() }}
 
