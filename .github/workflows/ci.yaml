@@ -6,6 +6,7 @@ on:
       - main
 jobs:
   deploy:
+    environment: github-pages
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -16,5 +17,6 @@ jobs:
         with:
           key: ${{ github.ref }}
           path: .cache
-      - run: pip install git+https://${env.TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+      - run: pip install git+https://${{ secrets.TOKEN }}@github.com/squidfunk/mkdocs-material-insiders.git
+      - run: pip install -r requirments.txt
       - run: mkdocs gh-deploy --force
