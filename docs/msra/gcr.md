@@ -20,7 +20,7 @@ tags:
 
 ## 摘要
 
-出于“零信任”的设计，使用大中央资源（Grand Central Resources, GCR)需要通过跳板机（Jumptainer）进行连接。
+出于“零信任”的设计，使用大中央资源（Grand Central Resources, GCR）需要通过跳板机（Jumptainer）进行连接。
 
 本文简要介绍了如何配置OpenSSH以通过跳板机连接到大中央资源，并对一些常见故障提供解决方案。
 

@@ -2,7 +2,7 @@ site_name: Zhiyuan Chen
 site_url: https://zyc.ai
 site_author: Zhiyuan Chen
 site_description: The website of Zhiyuan Chen
-copyright: All rights reserved &copy; Zhiyuan Chen 2017-2020
+copyright: All rights reserved &copy; Zhiyuan Chen 2017-2022
 
 repo_name: Zhiyuan Chen
 repo_url: https://github.com/ZhiyuanChen
@@ -16,7 +16,7 @@ nav:
     - 配置OpenSSH以通过跳板机连接大中央资源: msra/gcr.md
   - 文档:
     - 设计模式: document/design_pattern.md
-    - 属性访问慢吗？: sketch/attribute_lookup.md
+    - 属性访问慢吗？: document/attribute_lookup.md
     - JetBrains使用指南: document/jetbrains.md
   - PyTorch:
     - nn.Module: pytorch/nn/Module.md
@@ -60,13 +60,10 @@ nav:
     - 安装: docker/installation.md
     - 命令行接口: docker/command_line_interface.md
     - Dockerfile: docker/dockerfile.md
-  - C++核心指南:
-    - 原文: cppcg/CppCoreGuidelines.md
-    - 摘要: cppcg/abstract.md
   - 随笔:
     - ResNet面试简介: sketch/interview_resnet.md
-    - 实习面试总结: diary/internship_summary.md
-    - 秋招面试总结: sketch/campus_recruitment_summary.md
+    - 实习面试总结: sketch/internship_interview_summary.md
+    - 秋招总结: sketch/campus_recruitment_summary.md
     - 写给没有通过面试的同学: sketch/to_unfit_applicants.md
     - 青海-成长历程分享: sketch/growth_experience.md
     - iPad Pro简评: sketch/ipad_brief.md
