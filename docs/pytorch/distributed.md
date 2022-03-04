@@ -52,7 +52,7 @@ PyTorch将数据组织为张量（也就是一个n维数组）；而模块定义
 
 DDP在每个计算资源（GPU）上创建模型副本来独立的生成梯度，然后在每个迭代中交流这些梯度使得模型副本一致。PyTorch使用了多种技术来加速并行运算，包括梯度合桶（bucketing gradients）、计算通信重叠（overlapping computation with communication）以及梯度同步跳过（skipping gradient synchronization）。评估表明，PyTorch可以在256个GPU上达到接近线性的可扩展性。
 
-![DistributedDataParallel](../assets/document/torch.distributed/ddp.png "DistributedDataParallel"){: align=right loading=lazy style="width:40%"}
+![DistributedDataParallel](torch.distributed/ddp.png "DistributedDataParallel"){: align=right loading=lazy style="width:40%"}
 DDP的每一个进程都对应一个独立的训练过程，它拥有自己的模型副本，自己的优化器，当然也控制一张GPU。DDP通过确保以下两点来确保算法的正确性（即其训练结果与单卡训练结果一致）。
 
 1. 所有模型副本的初始状态相同
@@ -73,12 +73,12 @@ DDP的梯度规约一直在进化，让我们从一个简单的算法开始并�
 
 #### 梯度合桶（bucketing gradients）
 
-![Collective Communication](../assets/document/torch.distributed/cc.png "DistributedDataParallel"){: align=right loading=lazy style="width:60%"}
+![Collective Communication](torch.distributed/cc.png "DistributedDataParallel"){: align=right loading=lazy style="width:60%"}
 聚合通信在小张量传输上的表现欠佳，但它的性能随着张量的尺寸增大而提升。右图的a、b子图展示了一个60MiB大小的`torch.float32`参数相对于每次`AllReduce`不同数量的参数的总运行时间。为了最大化带宽利用，`AllReduce`操作被设计为异步调用，并在反向传播时阻塞。我们可以发现，DDP等待较短时间后将多个梯度存储到一个桶里后执行一个`AllReduce`操作可以显著降低通信延迟。右图的c、d子图展示了一个包含大约60M个参数的ResNet152网络的反向传播计算时间，其中x轴代表就虚的梯度的数量。GPU上的反向传播大约需要250毫秒以完成，这与NVLink上的NCCL数量级相同。这些实验表明，如果参数桶相对小，DDP可以在反向传播的同时启动`AllReduce`操作，使通信与计算重叠。
 
 #### 计算通信重叠（overlapping computation with communication）
 
-![Collective Communication](../assets/document/torch.distributed/gsf.png "DistributedDataParallel"){: align=right loading=lazy style="width:60%"}
+![Collective Communication](torch.distributed/gsf.png "DistributedDataParallel"){: align=right loading=lazy style="width:60%"}
 通过合桶，DDP仅需要在启动通信之前等待桶中所有的梯度完成计算。此时，在整个网络完成反向传播后再进行`AllReduce`操作便不再足够，而应该在每一个桶完成反向传播后都进行`AllReduce`操作。DDP为每一个梯度累加器注册一个自动求导钩子，并在相应的累加器更新梯度后激活。当一个桶内的所有钩子都被激活时，最后一个被激活的钩子会触发`AllReduce`操作。
 
 !!! warning "进程的规约顺序重要"
