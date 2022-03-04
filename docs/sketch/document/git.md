@@ -5,10 +5,12 @@ authors:
     - Zhiyuan Chen
 date: 2020-08-05 23:02:55
 categories:
-    - Document
-    - Git
+    - sketch
+    - document
 tags:
-    - Git
+    - sketch
+    - document
+    - git
 ---
 
 !!! abstract "前言"

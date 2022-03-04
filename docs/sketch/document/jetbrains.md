@@ -5,10 +5,11 @@ authors:
     - Zhiyuan Chen
 date: 2019-08-13 23:25:59
 categories:
-    - Document
-    - IDE
-    - JetBrains
+    - sketch
+    - document
 tags:
+    - sketch
+    - document
     - IDE
     - JetBrains
     - IntellijIDEA

@@ -5,8 +5,8 @@ authors:
     - Zhiyuan Chen
 date: 2020-08-05 18:33:19
 categories:
-    - Document
-    - Literature Management
+    - sketch
+    - document
 tags:
     - Literature Management
     - EndNote

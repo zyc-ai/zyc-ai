@@ -5,10 +5,11 @@ authors:
     - Zhiyuan Chen
 date: 2021-01-11 14:28:48
 categories:
-    - Computer Vision
+    - Transformer
 tags:
+    - Transformer
     - Computer Vision
-    - Non Local Neuaral Networks
+    - Non Local Neural Networks
 ---
 
 ## 介绍

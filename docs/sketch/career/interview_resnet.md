@@ -6,7 +6,10 @@ authors:
 date: 2021-02-13 13:31:14
 categories:
     - sketch
+    - career
 tags:
+    - sketch
+    - career
     - interview
 ---
 

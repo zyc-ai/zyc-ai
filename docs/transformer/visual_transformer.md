@@ -5,8 +5,9 @@ authors:
     - Zhiyuan Chen
 date: 2021-01-05 16:02:11
 categories:
-    - Computer Vision
+    - Transformer
 tags:
+    - Transformer
     - Computer Vision
     - Visual Transformer
 ---

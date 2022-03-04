@@ -8,6 +8,8 @@ categories:
     - Tramsformer
 tags:
     - Transformer
+    - Self Attention
+    - Computer Vision
     - Natural Language Process
 ---
 

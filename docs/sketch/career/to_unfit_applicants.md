@@ -6,8 +6,11 @@ authors:
 date: 2022-02-27 21:11:47
 categories:
     - sketch
+    - career
 tags:
     - sketch
+    - career
+    - interview
 ---
 
 同学你好，

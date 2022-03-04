@@ -6,8 +6,11 @@ authors:
 date: 2022-01-11 21:24:47
 categories:
     - sketch
+    - document
 tags:
     - sketch
+    - document
+    - Python
 ---
 
 !!! abstract "前言"

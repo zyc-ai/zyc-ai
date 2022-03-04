@@ -5,8 +5,8 @@ authors:
     - Zhiyuan Chen
 date: 2019-11-15 02:39:01
 categories:
-    - Document
-    - Design Pattern
+    - sketch
+    - document
 tags:
     - Design Pattern
     - Strategy
