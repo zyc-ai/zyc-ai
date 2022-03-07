@@ -47,7 +47,7 @@ nav:
   #   - 递推方程: algorithm/recurrence_relation.md
   - 容器:
     - Kubernetes:
-      - 导论: container/k8s/introduction.md
+      - Kubernetes: container/k8s/introduction.md
       - 组件: container/k8s/component.md
       - 安装: container/k8s/installation.md
       - Pods: container/k8s/pods.md
@@ -185,18 +185,18 @@ markdown_extensions:
   - mdx_math
   - meta
   - pymdownx.arithmatex:
-      generic: true
+    generic: true
   - pymdownx.betterem
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+    emoji_index: !!python/name:materialx.emoji.twemoji
+    emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight:
-      anchor_linenums: true
-      auto_title: true
-      linenums: true
+    anchor_linenums: true
+    auto_title: true
+    linenums: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink
@@ -204,26 +204,29 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.snippets
   - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+    custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
-      alternate_style: true
+    alternate_style: true
   - pymdownx.tasklist:
-      custom_checkbox: true
+    custom_checkbox: true
   - pymdownx.tilde
   - smarty
   - tables
   - toc:
-      slugify: !!python/name:pymdownx.slugs.uslugify
-      permalink: true
+    slugify: !!python/name:pymdownx.slugs.uslugify
+    permalink: true
 
 plugins:
   - awesome-pages
   - git-revision-date-localized:
-      type: iso_datetime
+    type: iso_datetime
   - git-committers
+  - privacy:
+    externals_exclude:
+      - cdn.jsdelivr.net/npm/mathjax@3/*
+      - giscus.app/*
   - search
-  # - privacy
   - tags
