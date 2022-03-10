@@ -75,8 +75,9 @@ nav:
       - 二〇一九年 十一月 八日: sketch/diary/20191108.md
       - 二〇二〇年 四月 四日: sketch/diary/20200404.md
       - 二〇二〇年 十月 六日: sketch/diary/20201006.md
-      - 二〇二一年 三月 十一日: sketch/diary/20210311.md
       - 辛丑年度总结: sketch/diary/2021.md
+    - 致敬我们终将过时的电脑: sketch/tribute_to_computers.md
+    - 一个Windows爱好者的叛变: sketch/betray_windows.md
     - 青海-成长历程分享: sketch/growth_experience.md
   - 关于:
     - 禅: about/zen.md
@@ -185,18 +186,18 @@ markdown_extensions:
   - mdx_math
   - meta
   - pymdownx.arithmatex:
-    generic: true
+      generic: true
   - pymdownx.betterem
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-    emoji_index: !!python/name:materialx.emoji.twemoji
-    emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight:
-    anchor_linenums: true
-    auto_title: true
-    linenums: true
+      anchor_linenums: true
+      auto_title: true
+      linenums: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.magiclink
@@ -204,29 +205,29 @@ markdown_extensions:
   - pymdownx.smartsymbols
   - pymdownx.snippets
   - pymdownx.superfences:
-    custom_fences:
-      - name: mermaid
-        class: mermaid
-        format: !!python/name:pymdownx.superfences.fence_code_format
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
-    alternate_style: true
+      alternate_style: true
   - pymdownx.tasklist:
-    custom_checkbox: true
+      custom_checkbox: true
   - pymdownx.tilde
   - smarty
   - tables
   - toc:
-    slugify: !!python/name:pymdownx.slugs.uslugify
-    permalink: true
+      slugify: !!python/name:pymdownx.slugs.uslugify
+      permalink: true
 
 plugins:
   - awesome-pages
   - git-revision-date-localized:
-    type: iso_datetime
+      type: iso_datetime
   - git-committers
   - privacy:
-    externals_exclude:
-      - cdn.jsdelivr.net/npm/mathjax@3/*
-      - giscus.app/*
+      externals_exclude:
+        - cdn.jsdelivr.net/npm/mathjax@3/*
+        - giscus.app/*
   - search
   - tags

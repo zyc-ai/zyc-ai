@@ -1,5 +1,5 @@
 ---
-title: 二〇二一年 三月 十一日
+title: 致敬我们终将过时的电脑
 summary: 20210311
 authors:
     - Zhiyuan Chen
