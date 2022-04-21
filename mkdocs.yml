@@ -137,7 +137,7 @@ extra:
       lang: en
   analytics:
     provider: google
-    property: 'UA-104387513-1'
+    property: 'G-HJPHFP4Y4Y'
   consent:
     title: Cookie consent
     description: >- 
