@@ -111,7 +111,7 @@ theme:
         icon: material/toggle-switch
         name: Switch to dark mode
   logo: 'assets/images/logo.png'
-  favicon: 'assets/images/logo.png'
+  favicon: 'assets/images/logo.ico'
   features:
     - announce.dismiss
     - header.autohide
