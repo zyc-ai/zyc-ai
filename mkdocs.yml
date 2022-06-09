@@ -95,15 +95,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
-      accent: blue
+      primary: blue grey
+      accent: teal
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
-      accent: blue
+      primary: blue grey
+      accent: teal
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode

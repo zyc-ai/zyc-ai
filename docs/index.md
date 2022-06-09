@@ -23,6 +23,3 @@ I am looking for PhD opportunities as well as research assistant/intern position
 [![Zhiyuan's GitHub Stats](https://github-readme-stats.vercel.app/api?username=ZhiyuanChen&custom_title=Zhiyuan's GitHub Stats&show_icons=true&count_private=true&theme=panda)](https://github.com/ZhiyuanChen)
 [![Zhiyuan's WakaTime Stats](https://github-readme-stats.vercel.app/api/wakatime?username=@ZhiyuanChen&custom_title=Zhiyuan's WakaTime Stats&layout=compact&time_range=last_year&theme=panda)](https://github.com/ZhiyuanChen)
 
-## Activities
-
-Conference Reviewer: ICRA(2021)
