@@ -11,9 +11,6 @@ nav:
   - Zhiyuan Chen: index.md
   # - 联想研究院:
   #   - 联想研究院实习总结: lenovo_research.md
-  - MSRA:
-    - 配置AVD以在任何设备上访问公司资源: msra/remote.md
-    - 配置OpenSSH以通过跳板机连接大中央资源: msra/gcr.md
   - PyTorch:
     - nn.Module: pytorch/nn/Module.md
     - 分布式: pytorch/distributed.md
@@ -29,7 +26,7 @@ nav:
   #- 机器学习:
   #  - 统计: ml/statistics.md
   - 计算机视觉:
-    - Big Transfer: cv/big_transfer.md
+    - Big Transfer: vision/big_transfer.md
   - 变换网络:
     - 注意力: transformer/attention.md
     - Visual Transformer: transformer/visual_transformer.md
@@ -37,7 +34,7 @@ nav:
   - 自监督学习:
     - SimCLR: ssl/SimCLR.md
     - SimCLRv2: ssl/SimCLRv2.md
-  #  - SiamRPN: cv/siamrpn.md
+  #  - SiamRPN: vision/siamrpn.md
   # - 生物医学影像:
   #   - 超声: bmi/ultrasound.md
   # - 算法:
@@ -98,15 +95,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: teal
-      accent: teal
+      primary: indigo
+      accent: blue
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
-      accent: teal
+      primary: indigo
+      accent: blue
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
@@ -228,9 +225,9 @@ plugins:
   - git-revision-date-localized:
       type: iso_datetime
   - git-committers
-  - privacy:
-      externals_exclude:
-        - cdn.jsdelivr.net/npm/mathjax@3/*
-        - giscus.app/*
+  # - privacy:
+  #     externals_exclude:
+  #       - cdn.jsdelivr.net/npm/mathjax@3/*
+  #       - giscus.app/*
   - search
   - tags

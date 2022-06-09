@@ -28,6 +28,7 @@ $$
 但在训练数据充分时（14M-300M）结果反了过来。本文发现大规模训练可以胜过归纳偏见。Transformer在以足够的数据预训练然后以很少的数据迁移到特定任务时达到了极好的结果。本文提出的ViT，在JFT-300M数据集上时，在多个图像识别任务中达到了SOTA结果。ImageNet 88.36%、ImageNet-ReaL 90.77%、CIFAR-100 94.55%、VTAB 19任务77.16%。
 
 ## 方法
+
 本问尽可能地遵循了传统的Transformer结构，因此传统的Transformer和他们的实现几乎可以开箱即用。本文展示了在适当缩放的情况下，Transformer足以胜过最强的卷积神经网络。
 
 ### 结构
@@ -74,7 +75,7 @@ Transformer编码器由交替的多头自注意力（MSA）（公式2）和多�
 
 #### 数据集
 
-本文在ImageNet ILSVRC-2012（1k标签、1.3M图像）、ImageNet（21k标签、14M图像）、JFT-300M（18k标签、303M图像）上预训练，然后迁移到多个下游任务中，包括ImageNet ILSVRC-2012、ImageNet ReaL、CIFAR 10/100、Oxford-IIIT Pets、Oxford FLowers-102。对于这些数据集，本文使用[BiT](../big_transfer)的预处理策略。
+本文在ImageNet ILSVRC-2012（1k标签、1.3M图像）、ImageNet（21k标签、14M图像）、JFT-300M（18k标签、303M图像）上预训练，然后迁移到多个下游任务中，包括ImageNet ILSVRC-2012、ImageNet ReaL、CIFAR 10/100、Oxford-IIIT Pets、Oxford FLowers-102。对于这些数据集，本文使用[BiT](../vision/big_transfer)的预处理策略。
 
 此外，本文还在19任务的VTAB测试上进行评估。VTAB评估使用1000个样本的少量数据迁移到多样性的任务中。任务可以被分为三个组：
 
@@ -84,7 +85,7 @@ Transformer编码器由交替的多头自注意力（MSA）（公式2）和多�
 
 #### 模型变种
 
-本文基于BERT来构建ViT配置。ViT-L/16表示大模型变种（L）和$16 \times 16$输入块大小（不同变种的配置见表1）。ResNet使用了[BiT](../big_transfer)结构，将标准ResNet的BN替换成GN，并在卷积层应用了WS。混合架构将中间特征图以1个“像素”的块大小输入到ViT中。为了比较不同的序列长度，本文尝试了两种方案：
+本文基于BERT来构建ViT配置。ViT-L/16表示大模型变种（L）和$16 \times 16$输入块大小（不同变种的配置见表1）。ResNet使用了[BiT](../vision/big_transfer)结构，将标准ResNet的BN替换成GN，并在卷积层应用了WS。混合架构将中间特征图以1个“像素”的块大小输入到ViT中。为了比较不同的序列长度，本文尝试了两种方案：
 
 1. 提取常规R50的第4阶段的输出
 2. 删除第4阶段，并在第3阶段放置相同数量的层（使得总层数仍为50），然后提取阶段3的输出。
