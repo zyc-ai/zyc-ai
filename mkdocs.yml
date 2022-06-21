@@ -31,6 +31,7 @@ nav:
     - 注意力: transformer/attention.md
     - Visual Transformer: transformer/visual_transformer.md
     - Vision Transformer: transformer/vision_transformer.md
+    - Early Convolutions Help Transformers See Better: transformer/early_convolutions.md
   - 自监督学习:
     - SimCLR: ssl/SimCLR.md
     - SimCLRv2: ssl/SimCLRv2.md
@@ -222,6 +223,10 @@ markdown_extensions:
 
 plugins:
   - awesome-pages
+  - bibtex:
+      bib_file: "docs/references.bib"
+      csl_file: "https://raw.githubusercontent.com/citation-style-language/styles/master/ieee.csl"
+      cite_inline: true
   - git-revision-date-localized:
       type: iso_datetime
   - git-committers
