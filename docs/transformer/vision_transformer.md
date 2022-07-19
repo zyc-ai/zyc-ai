@@ -1,6 +1,6 @@
 ---
-title: ViT
-summary: Vision Transformer
+title: Vision Transformer
+summary: [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](https://arxiv.org/abs/2010.11929)[@ViT]
 authors:
     - Zhiyuan Chen
 date: 2021-01-05 16:02:11

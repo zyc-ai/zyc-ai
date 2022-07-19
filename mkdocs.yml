@@ -31,7 +31,7 @@ nav:
     - 注意力: transformer/attention.md
     - Visual Transformer: transformer/visual_transformer.md
     - Vision Transformer: transformer/vision_transformer.md
-    - Early Convolutions Help Transformers See Better: transformer/early_convolutions.md
+    - Early Convolutions: transformer/early_convolutions.md
   - 自监督学习:
     - SimCLR: ssl/SimCLR.md
     - SimCLRv2: ssl/SimCLRv2.md

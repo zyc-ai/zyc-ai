@@ -1,6 +1,6 @@
 ---
-title: VT
-summary: Visual Transformer
+title: Visual Transformer
+summary: [Visual Transformers: Token-based Image Representation and Processing for Computer Vision](https://arxiv.org/abs/2006.03677)[@VT]
 authors:
     - Zhiyuan Chen
 date: 2021-01-05 16:02:11
