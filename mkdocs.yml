@@ -32,6 +32,8 @@ nav:
     - Visual Transformer: transformer/visual_transformer.md
     - Vision Transformer: transformer/vision_transformer.md
     - Early Convolutions: transformer/early_convolutions.md
+  - 基模型:
+    - CLIP: foundation/clip.md
   - 自监督学习:
     - SimCLR: ssl/SimCLR.md
     - SimCLRv2: ssl/SimCLRv2.md

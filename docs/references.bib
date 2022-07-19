@@ -10,12 +10,33 @@
   year      = {2012}
 }
 
+@inproceedings{Annotations1.3B,
+  author    = {Beal, Josh and Wu, Hao-Yu and Park, Dong Huk and Zhai, Andrew and Kislyuk, Dmitry},
+  booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+  month     = {January},
+  pages     = {564-573},
+  title     = {Billion-Scale Pretraining With Vision Transformers for Multi-Task Visual Representations},
+  year      = {2022}
+}
+
 @inproceedings{Attention,
   author    = {Dzmitry Bahdanau and Kyunghyun Cho and Yoshua Bengio},
   booktitle = {International Conference on Learning Representations},
   editor    = {Yoshua Bengio and Yann LeCun},
   title     = {Neural Machine Translation by Jointly Learning to Align and Translate},
   year      = {2015}
+}
+
+@inproceedings{bachman2019learning,
+  author    = {Bachman, Philip and Hjelm, R Devon and Buchwalter, William},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor    = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+  pages     = {},
+  publisher = {Curran Associates, Inc.},
+  title     = {Learning Representations by Maximizing Mutual Information Across Views},
+  url       = {https://proceedings.neurips.cc/paper/2019/file/ddf354219aac374f1d40b7e760ee5bb7-Paper.pdf},
+  volume    = {32},
+  year      = {2019}
 }
 
 @inproceedings{BEiT,
@@ -40,6 +61,14 @@
   year      = {2019}
 }
 
+@inproceedings{bot,
+  author    = {He, Tong and Zhang, Zhi and Zhang, Hang and Zhang, Zhongyue and Xie, Junyuan and Li, Mu},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  title     = {Bag of Tricks for Image Classification with Convolutional Neural Networks},
+  year      = {2019}
+}
+
 @inproceedings{CeiT,
   author    = {Yuan, Kun and Guo, Shaopeng and Liu, Ziwei and Zhou, Aojun and Yu, Fengwei and Wu, Wei},
   booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
@@ -47,6 +76,59 @@
   pages     = {579-588},
   title     = {Incorporating Convolution Designs Into Visual Transformers},
   year      = {2021}
+}
+
+@inproceedings{CLIP,
+  abstract  = {State-of-the-art computer vision systems are trained to predict a fixed set of predetermined object categories. This restricted form of supervision limits their generality and usability since additional labeled data is needed to specify any other visual concept. Learning directly from raw text about images is a promising alternative which leverages a much broader source of supervision. We demonstrate that the simple pre-training task of predicting which caption goes with which image is an efficient and scalable way to learn SOTA image representations from scratch on a dataset of 400 million (image, text) pairs collected from the internet. After pre-training, natural language is used to reference learned visual concepts (or describe new ones) enabling zero-shot transfer of the model to downstream tasks. We study the performance of this approach by benchmarking on over 30 different existing computer vision datasets, spanning tasks such as OCR, action recognition in videos, geo-localization, and many types of fine-grained object classification. The model transfers non-trivially to most tasks and is often competitive with a fully supervised baseline without the need for any dataset specific training. For instance, we match the accuracy of the original ResNet-50 on ImageNet zero-shot without needing to use any of the 1.28 million training examples it was trained on.},
+  author    = {Radford, Alec and Kim, Jong Wook and Hallacy, Chris and Ramesh, Aditya and Goh, Gabriel and Agarwal, Sandhini and Sastry, Girish and Askell, Amanda and Mishkin, Pamela and Clark, Jack and Krueger, Gretchen and Sutskever, Ilya},
+  booktitle = {Proceedings of the 38th International Conference on Machine Learning},
+  editor    = {Meila, Marina and Zhang, Tong},
+  month     = {18-24 July},
+  pages     = {8748-8763},
+  pdf       = {http://proceedings.mlr.press/v139/radford21a/radford21a.pdf},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  title     = {Learning Transferable Visual Models From Natural Language Supervision},
+  url       = {https://proceedings.mlr.press/v139/radford21a.html},
+  volume    = {139},
+  year      = {2021}
+}
+
+@inproceedings{CMC,
+  abstract  = {Humans view the world through many sensory channels, e.g., the long-wavelength light channel, viewed by the left eye, or the high-frequency vibrations channel, heard by the right ear. Each view is noisy and incomplete, but important factors, such as physics, geometry, and semantics, tend to be shared between all views (e.g., a ``dog'' can be seen, heard, and felt). We investigate the classic hypothesis that a powerful representation is one that models view-invariant factors. We study this hypothesis under the framework of multiview contrastive learning, where we learn a representation that aims to maximize mutual information between different views of the same scene but is otherwise compact. Our approach scales to any number of views, and is view-agnostic. We analyze key properties of the approach that make it work, finding that the contrastive loss outperforms a popular alternative based on cross-view prediction, and that the more views we learn from, the better the resulting representation captures underlying scene semantics. Code is available at: http://github.com/HobbitLong/CMC/.},
+  address   = {Cham},
+  author    = {Tian, Yonglong and Krishnan, Dilip and Isola, Phillip},
+  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+  editor    = {Vedaldi, Andrea and Bischof, Horst and Brox, Thomas and Frahm, Jan-Michael},
+  isbn      = {978-3-030-58621-8},
+  pages     = {776--794},
+  publisher = {Springer International Publishing},
+  title     = {Contrastive Multiview Coding},
+  year      = {2020}
+}
+
+@inproceedings{COCO,
+  abstract  = {We present a new dataset with the goal of advancing the state-of-the-art in object recognition by placing the question of object recognition in the context of the broader question of scene understanding. This is achieved by gathering images of complex everyday scenes containing common objects in their natural context. Objects are labeled using per-instance segmentations to aid in precise object localization. Our dataset contains photos of 91 objects types that would be easily recognizable by a 4 year old. With a total of 2.5 million labeled instances in 328k images, the creation of our dataset drew upon extensive crowd worker involvement via novel user interfaces for category detection, instance spotting and instance segmentation. We present a detailed statistical analysis of the dataset in comparison to PASCAL, ImageNet, and SUN. Finally, we provide baseline performance analysis for bounding box and segmentation detection results using a Deformable Parts Model.},
+  author    = {Lin, Tsung-Yi and Maire, Michael and Belongie, Serge and Hays, James and Perona, Pietro and Ramanan, Deva and Dollar, Piotr and Zitnick, Larry},
+  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+  editor    = {Fleet, David and Pajdla, Tomas and Schiele, Bernt and Tuytelaars, Tinne},
+  month     = {September},
+  pages     = {740-755},
+  publisher = {Springer International Publishing},
+  title     = {Microsoft COCO: Common Objects in Context},
+  url       = {https://www.microsoft.com/en-us/research/publication/microsoft-coco-common-objects-in-context/},
+  year      = {2014}
+}
+
+@article{ConVIRT,
+  author     = {Yuhao Zhang and Hang Jiang and Yasuhide Miura and Christopher D. Manning and Curtis P. Langlotz},
+  eprint     = {2010.00747},
+  eprinttype = {arXiv},
+  journal    = {CoRR},
+  title      = {Contrastive Learning of Medical Visual Representations from Paired Images and Text},
+  url        = {https://arxiv.org/abs/2010.00747},
+  volume     = {abs/2010.00747},
+  year       = {2020}
 }
 
 @inproceedings{CvT,
@@ -60,12 +142,9 @@
 
 @article{data2vec,
   author     = {Alexei Baevski and Wei{-}Ning Hsu and Qiantong Xu and Arun Babu and Jiatao Gu and Michael Auli},
-  bibsource  = {dblp computer science bibliography, https://dblp.org},
-  biburl     = {https://dblp.org/rec/journals/corr/abs-2202-03555.bib},
   eprint     = {2202.03555},
   eprinttype = {arXiv},
   journal    = {CoRR},
-  timestamp  = {Wed, 09 Feb 2022 15:43:34 +0100},
   title      = {data2vec: {A} General Framework for Self-supervised Learning in Speech, Vision and Language},
   url        = {https://arxiv.org/abs/2202.03555},
   volume     = {abs/2202.03555},
@@ -77,8 +156,8 @@
   author    = {Touvron, Hugo and Cord, Matthieu and Douze, Matthijs and Massa, Francisco and Sablayrolles, Alexandre and Jegou, Herve},
   booktitle = {Proceedings of the 38th International Conference on Machine Learning},
   editor    = {Meila, Marina and Zhang, Tong},
-  month     = {18-24 Jul},
-  pages     = {10347--10357},
+  month     = {18-24 July},
+  pages     = {10347-10357},
   pdf       = {http://proceedings.mlr.press/v139/touvron21a/touvron21a.pdf},
   publisher = {PMLR},
   series    = {Proceedings of Machine Learning Research},
@@ -86,6 +165,95 @@
   url       = {https://proceedings.mlr.press/v139/touvron21a.html},
   volume    = {139},
   year      = {2021}
+}
+
+@inproceedings{EfficientNet,
+  abstract  = {Convolutional Neural Networks (ConvNets) are commonly developed at a fixed resource budget, and then scaled up for better accuracy if more resources are given. In this paper, we systematically study model scaling and identify that carefully balancing network depth, width, and resolution can lead to better performance. Based on this observation, we propose a new scaling method that uniformly scales all dimensions of depth/width/resolution using a simple yet highly effective compound coefficient. We demonstrate the effectiveness of this method on MobileNets and ResNet. To go even further, we use neural architecture search to design a new baseline network and scale it up to obtain a family of models, called EfficientNets, which achieve much better accuracy and efficiency than previous ConvNets. In particular, our EfficientNet-B7 achieves stateof-the-art 84.4% top-1 / 97.1% top-5 accuracy on ImageNet, while being 8.4x smaller and 6.1x faster on inference than the best existing ConvNet (Huang et al., 2018). Our EfficientNets also transfer well and achieve state-of-the-art accuracy on CIFAR-100 (91.7%), Flower (98.8%), and 3 other transfer learning datasets, with an order of magnitude fewer parameters.},
+  author    = {Tan, Mingxing and Le, Quoc},
+  booktitle = {Proceedings of the 36th International Conference on Machine Learning},
+  editor    = {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  month     = {09-15 Jun},
+  pages     = {6105-6114},
+  pdf       = {http://proceedings.mlr.press/v97/tan19a/tan19a.pdf},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  title     = {{E}fficient{N}et: Rethinking Model Scaling for Convolutional Neural Networks},
+  url       = {https://proceedings.mlr.press/v97/tan19a.html},
+  volume    = {97},
+  year      = {2019}
+}
+
+@inproceedings{ELMo,
+  abstract  = {We introduce a new type of deep contextualized word representation that models both (1) complex characteristics of word use (e.g., syntax and semantics), and (2) how these uses vary across linguistic contexts (i.e., to model polysemy). Our word vectors are learned functions of the internal states of a deep bidirectional language model (biLM), which is pre-trained on a large text corpus. We show that these representations can be easily added to existing models and significantly improve the state of the art across six challenging NLP problems, including question answering, textual entailment and sentiment analysis. We also present an analysis showing that exposing the deep internals of the pre-trained network is crucial, allowing downstream models to mix different types of semi-supervision signals.},
+  address   = {New Orleans, Louisiana},
+  author    = {Peters, Matthew E. and Neumann, Mark and Iyyer, Mohit and Gardner, Matt and Clark, Christopher and Lee, Kenton and Zettlemoyer, Luke},
+  booktitle = {Proceedings of the 2018 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)},
+  doi       = {10.18653/v1/N18-1202},
+  month     = {June},
+  pages     = {2227-2237},
+  publisher = {Association for Computational Linguistics},
+  title     = {Deep Contextualized Word Representations},
+  url       = {https://aclanthology.org/N18-1202},
+  year      = {2018}
+}
+
+@inproceedings{ERNIE,
+  abstract  = {Neural language representation models such as BERT pre-trained on large-scale corpora can well capture rich semantic patterns from plain text, and be fine-tuned to consistently improve the performance of various NLP tasks. However, the existing pre-trained language models rarely consider incorporating knowledge graphs (KGs), which can provide rich structured knowledge facts for better language understanding. We argue that informative entities in KGs can enhance language representation with external knowledge. In this paper, we utilize both large-scale textual corpora and KGs to train an enhanced language representation model (ERNIE), which can take full advantage of lexical, syntactic, and knowledge information simultaneously. The experimental results have demonstrated that ERNIE achieves significant improvements on various knowledge-driven tasks, and meanwhile is comparable with the state-of-the-art model BERT on other common NLP tasks. The code and datasets will be available in the future.},
+  address   = {Florence, Italy},
+  author    = {Zhang, Zhengyan and Han, Xu and Liu, Zhiyuan and Jiang, Xin and Sun, Maosong and Liu, Qun},
+  booktitle = {Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
+  doi       = {10.18653/v1/P19-1139},
+  month     = jul,
+  pages     = {1441--1451},
+  publisher = {Association for Computational Linguistics},
+  title     = {{ERNIE}: Enhanced Language Representation with Informative Entities},
+  url       = {https://aclanthology.org/P19-1139},
+  year      = {2019}
+}
+
+@article{GPT,
+  author    = {Radford, Alec and Narasimhan, Karthik and Salimans, Tim and Sutskever, Ilya and others},
+  publisher = {OpenAI},
+  title     = {Improving language understanding by generative pre-training},
+  year      = {2018}
+}
+
+@article{GPT-2,
+  author    = {Radford, Alec and Wu, Jeffrey and Child, Rewon and Luan, David and Amodei, Dario and Sutskever, Ilya and others},
+  publisher = {OpenAI},
+  title     = {Language Models are Unsupervised Multitask Learners},
+  year      = {2018}
+}
+
+@inproceedings{GPT-3,
+  author    = {Brown, Tom and Mann, Benjamin and Ryder, Nick and Subbiah, Melanie and Kaplan, Jared D and Dhariwal, Prafulla and Neelakantan, Arvind and Shyam, Pranav and Sastry, Girish and Askell, Amanda and Agarwal, Sandhini and Herbert-Voss, Ariel and Krueger, Gretchen and Henighan, Tom and Child, Rewon and Ramesh, Aditya and Ziegler, Daniel and Wu, Jeffrey and Winter, Clemens and Hesse, Chris and Chen, Mark and Sigler, Eric and Litwin, Mateusz and Gray, Scott and Chess, Benjamin and Clark, Jack and Berner, Christopher and McCandlish, Sam and Radford, Alec and Sutskever, Ilya and Amodei, Dario},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor    = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+  pages     = {1877-1901},
+  publisher = {Curran Associates, Inc.},
+  title     = {Language Models are Few-Shot Learners},
+  url       = {https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf},
+  volume    = {33},
+  year      = {2020}
+}
+
+@article{hestness2017deep,
+  author     = {Joel Hestness and Sharan Narang and Newsha Ardalani and Gregory F. Diamos and Heewoo Jun and Hassan Kianinejad and Md. Mostofa Ali Patwary and Yang Yang and Yanqi Zhou},
+  eprint     = {1712.00409},
+  eprinttype = {arXiv},
+  journal    = {CoRR},
+  title      = {Deep Learning Scaling is Predictable, Empirically},
+  url        = {http://arxiv.org/abs/1712.00409},
+  volume     = {abs/1712.00409},
+  year       = {2017}
+}
+
+@inproceedings{IG1B,
+  author    = {Mahajan, Dhruv and Girshick, Ross and Ramanathan, Vignesh and He, Kaiming and Paluri, Manohar and Li, Yixuan and Bharambe, Ashwin and van der Maaten, Laurens},
+  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+  month     = {September},
+  title     = {Exploring the Limits of Weakly Supervised Pretraining},
+  year      = {2018}
 }
 
 @article{ILSVRC,
@@ -99,6 +267,22 @@
   year    = {2015}
 }
 
+@inproceedings{ImageGPT,
+  abstract  = {Inspired by progress in unsupervised representation learning for natural language, we examine whether similar models can learn useful representations for images. We train a sequence Transformer to auto-regressively predict pixels, without incorporating knowledge of the 2D input structure. Despite training on low-resolution ImageNet without labels, we find that a GPT-2 scale model learns strong image representations as measured by linear probing, fine-tuning, and low-data classification. On CIFAR-10, we achieve 96.3% accuracy with a linear probe, outperforming a supervised Wide ResNet, and 99.0% accuracy with full fine-tuning, matching the top supervised pre-trained models. We are also competitive with self-supervised benchmarks on ImageNet when substituting pixels for a VQVAE encoding, achieving 69.0% top-1 accuracy on a linear probe of our features.},
+  author    = {Chen, Mark and Radford, Alec and Child, Rewon and Wu, Jeffrey and Jun, Heewoo and Luan, David and Sutskever, Ilya},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning},
+  editor    = {III, Hal Daumé and Singh, Aarti},
+  month     = {13--18 Jul},
+  pages     = {1691--1703},
+  pdf       = {http://proceedings.mlr.press/v119/chen20s/chen20s.pdf},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  title     = {Generative Pretraining From Pixels},
+  url       = {https://proceedings.mlr.press/v119/chen20s.html},
+  volume    = {119},
+  year      = {2020}
+}
+
 @inproceedings{ImageNet,
   author    = {Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
   booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition (CVPR)},
@@ -108,6 +292,23 @@
   year      = {2009}
 }
 
+@inproceedings{JFT300M,
+  author    = {Sun, Chen and Shrivastava, Abhinav and Singh, Saurabh and Gupta, Abhinav},
+  booktitle = {Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
+  month     = {October},
+  title     = {Revisiting Unreasonable Effectiveness of Data in Deep Learning Era},
+  year      = {2017}
+}
+
+@inproceedings{JFT3B,
+  author    = {Zhai, Xiaohua and Kolesnikov, Alexander and Houlsby, Neil and Beyer, Lucas},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  pages     = {12104-12113},
+  title     = {Scaling Vision Transformers},
+  year      = {2022}
+}
+
 @article{LeNet,
   abstract = {The ability of learning networks to generalize can be greatly enhanced by providing constraints from the task domain. This paper demonstrates how such constraints can be integrated into a backpropagation network through the architecture of the network. This approach has been successfully applied to the recognition of handwritten zip code digits provided by the U.S. Postal Service. A single network learns the entire recognition operation, going from the normalized image of the character to the final classification.},
   author   = {LeCun, Yann and Boser, Bernhard and Denker, John S. and Henderson, Donnie and Howard, Richard E. and Hubbard, Wayne and Jackel, Lawrence D.},
@@ -115,7 +316,7 @@
   eprint   = {https://direct.mit.edu/neco/article-pdf/1/4/541/811941/neco.1989.1.4.541.pdf},
   issn     = {0899-7667},
   journal  = {Neural Computation},
-  month    = {12},
+  month    = {December},
   number   = {4},
   pages    = {541-551},
   title    = {Backpropagation Applied to Handwritten Zip Code Recognition},
@@ -133,6 +334,14 @@
   year      = {2021}
 }
 
+@inproceedings{li2017learning,
+  author    = {Li, Ang and Jabri, Allan and Joulin, Armand and van der Maaten, Laurens},
+  booktitle = {Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
+  month     = {October},
+  title     = {Learning Visual N-Grams From Web Data},
+  year      = {2017}
+}
+
 @inproceedings{MAE,
   author    = {He, Kaiming and Chen, Xinlei and Xie, Saining and Li, Yanghao and Doll\'ar, Piotr and Girshick, Ross},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
@@ -141,6 +350,7 @@
   title     = {Masked Autoencoders Are Scalable Vision Learners},
   year      = {2022}
 }
+
 
 @inproceedings{MaskFeat,
   author    = {Wei, Chen and Fan, Haoqi and Xie, Saining and Wu, Chao-Yuan and Yuille, Alan and Feichtenhofer, Christoph},
@@ -151,11 +361,56 @@
   year      = {2022}
 }
 
+
+@inproceedings{MCNNSIA,
+  abstract  = {Modern convolutional networks are not shift-invariant, as small input shifts or translations can cause drastic changes in the output. Commonly used downsampling methods, such as max-pooling, strided-convolution, and average-pooling, ignore the sampling theorem. The well-known signal processing fix is anti-aliasing by low-pass filtering before downsampling. However, simply inserting this module into deep networks leads to performance degradation; as a result, it is seldomly used today. We show that when integrated correctly, it is compatible with existing architectural components, such as max-pooling. The technique is general and can be incorporated across layer types and applications, such as image classification and conditional image generation. In addition to increased shift-invariance, we also observe, surprisingly, that anti-aliasing boosts accuracy in ImageNet classification, across several commonly-used architectures. This indicates that anti-aliasing serves as effective regularization. Our results demonstrate that this classical signal processing technique has been undeservingly overlooked in modern deep networks.},
+  author    = {Zhang, Richard},
+  booktitle = {Proceedings of the 36th International Conference on Machine Learning},
+  editor    = {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
+  month     = {09-15 June},
+  pages     = {7324--7334},
+  pdf       = {http://proceedings.mlr.press/v97/zhang19a/zhang19a.pdf},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  title     = {Making Convolutional Networks Shift-Invariant Again},
+  url       = {https://proceedings.mlr.press/v97/zhang19a.html},
+  volume    = {97},
+  year      = {2019}
+}
+
 @inproceedings{MoCo,
   author    = {He, Kaiming and Fan, Haoqi and Wu, Yuxin and Xie, Saining and Girshick, Ross},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   month     = {June},
   title     = {Momentum Contrast for Unsupervised Visual Representation Learning},
+  year      = {2020}
+}
+
+@article{MoCov2,
+  author     = {Xinlei Chen and Haoqi Fan and Ross B. Girshick and Kaiming He},
+  eprint     = {2003.04297},
+  eprinttype = {arXiv},
+  journal    = {CoRR},
+  title      = {Improved Baselines with Momentum Contrastive Learning},
+  url        = {https://arxiv.org/abs/2003.04297},
+  volume     = {abs/2003.04297},
+  year       = {2020}
+}
+
+@inproceedings{mori1999image,
+  author       = {Mori, Yasuhide and Takahashi, Hironobu and Oka, Ryuichi},
+  booktitle    = {First international workshop on multimedia intelligent storage and retrieval management},
+  organization = {Citeseer},
+  pages        = {1-9},
+  title        = {Image-to-word transformation based on dividing and vector quantizing images with words},
+  year         = {1999}
+}
+
+@inproceedings{NoisyStudent,
+  author    = {Xie, Qizhe and Luong, Minh-Thang and Hovy, Eduard and Le, Quoc V.},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  title     = {Self-Training With Noisy Student Improves ImageNet Classification},
   year      = {2020}
 }
 
@@ -167,16 +422,56 @@
   year      = {2016}
 }
 
+@article{ScalingLaws,
+  author     = {Jared Kaplan and Sam McCandlish and Tom Henighan and Tom B. Brown and Benjamin Chess and Rewon Child and Scott Gray and Alec Radford and Jeffrey Wu and Dario Amodei},
+  eprint     = {2001.08361},
+  eprinttype = {arXiv},
+  journal    = {CoRR},
+  title      = {Scaling Laws for Neural Language Models},
+  url        = {https://arxiv.org/abs/2001.08361},
+  volume     = {abs/2001.08361},
+  year       = {2020}
+}
+
 @inproceedings{SimCLR,
-  abstract  = {This paper presents SimCLR: a simple framework for contrastive learning of visual representations. We simplify recently proposed contrastive self-supervised learning algorithms without requiring specialized architectures or a memory bank. In order to understand what enables the contrastive prediction tasks to learn useful representations, we systematically study the major components of our framework. We show that (1) composition of data augmentations plays a critical role in defining effective predictive tasks, (2) introducing a learnable nonlinear transformation between the representation and the contrastive loss substantially improves the quality of the learned representations, and (3) contrastive learning benefits from larger batch sizes and more training steps compared to supervised learning. By combining these findings, we are able to considerably outperform previous methods for self-supervised and semi-supervised learning on ImageNet. A linear classifier trained on self-supervised representations learned by Sim-CLR achieves 76.5% top-1 accuracy, which is a 7% relative improvement over previous state-of-the-art, matching the performance of a supervised ResNet-50. When fine-tuned on only 1% of the labels, we achieve 85.8% top-5 accuracy, outperforming AlexNet with 100\texttimes{} fewer labels.},
-  articleno = {149},
+  abstract  = {This paper presents SimCLR: a simple framework for contrastive learning of visual representations. We simplify recently proposed contrastive self-supervised learning algorithms without requiring specialized architectures or a memory bank. In order to understand what enables the contrastive prediction tasks to learn useful representations, we systematically study the major components of our framework. We show that (1) composition of data augmentations plays a critical role in defining effective predictive tasks, (2) introducing a learnable nonlinear transformation between the representation and the contrastive loss substantially improves the quality of the learned representations, and (3) contrastive learning benefits from larger batch sizes and more training steps compared to supervised learning. By combining these findings, we are able to considerably outperform previous methods for self-supervised and semi-supervised learning on ImageNet. A linear classifier trained on self-supervised representations learned by SimCLR achieves 76.5% top-1 accuracy, which is a 7% relative improvement over previous state-of-the-art, matching the performance of a supervised ResNet-50. When fine-tuned on only 1% of the labels, we achieve 85.8% top-5 accuracy, outperforming AlexNet with 100X fewer labels.},
   author    = {Chen, Ting and Kornblith, Simon and Norouzi, Mohammad and Hinton, Geoffrey},
   booktitle = {Proceedings of the 37th International Conference on Machine Learning},
-  numpages  = {11},
-  publisher = {JMLR.org},
-  series    = {ICML'20},
+  editor    = {III, Hal Daumé and Singh, Aarti},
+  month     = {13-18 July},
+  pages     = {1597-1607},
+  pdf       = {http://proceedings.mlr.press/v119/chen20j/chen20j.pdf},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
   title     = {A Simple Framework for Contrastive Learning of Visual Representations},
+  url       = {https://proceedings.mlr.press/v119/chen20j.html},
+  volume    = {119},
   year      = {2020}
+}
+
+@inproceedings{SimCLRv2,
+  author    = {Chen, Ting and Kornblith, Simon and Swersky, Kevin and Norouzi, Mohammad and Hinton, Geoffrey E},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor    = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+  pages     = {22243-22255},
+  publisher = {Curran Associates, Inc.},
+  title     = {Big Self-Supervised Models are Strong Semi-Supervised Learners},
+  url       = {https://proceedings.neurips.cc/paper/2020/file/fcbc95ccdd551da181207c0c1400c655-Paper.pdf},
+  volume    = {33},
+  year      = {2020}
+}
+
+@inproceedings{Subword,
+  address   = {Berlin, Germany},
+  author    = {Sennrich, Rico and Haddow, Barry and Birch, Alexandra},
+  booktitle = {Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  doi       = {10.18653/v1/P16-1162},
+  month     = {August},
+  pages     = {1715-1725},
+  publisher = {Association for Computational Linguistics},
+  title     = {Neural Machine Translation of Rare Words with Subword Units},
+  url       = {https://aclanthology.org/P16-1162},
+  year      = {2016}
 }
 
 @inproceedings{Swin,
@@ -186,6 +481,17 @@
   pages     = {10012-10022},
   title     = {Swin Transformer: Hierarchical Vision Transformer Using Shifted Windows},
   year      = {2021}
+}
+
+@article{T5,
+  author  = {Colin Raffel and Noam Shazeer and Adam Roberts and Katherine Lee and Sharan Narang and Michael Matena and Yanqi Zhou and Wei Li and Peter J. Liu},
+  journal = {Journal of Machine Learning Research},
+  number  = {140},
+  pages   = {1-67},
+  title   = {Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer},
+  url     = {http://jmlr.org/papers/v21/20-074.html},
+  volume  = {21},
+  year    = {2020}
 }
 
 @inproceedings{Transformer,
@@ -200,11 +506,34 @@
   year      = {2017}
 }
 
+@inproceedings{ULMFiT,
+  abstract  = {Inductive transfer learning has greatly impacted computer vision, but existing approaches in NLP still require task-specific modifications and training from scratch. We propose Universal Language Model Fine-tuning (ULMFiT), an effective transfer learning method that can be applied to any task in NLP, and introduce techniques that are key for fine-tuning a language model. Our method significantly outperforms the state-of-the-art on six text classification tasks, reducing the error by 18-24{\%} on the majority of datasets. Furthermore, with only 100 labeled examples, it matches the performance of training from scratch on 100 times more data. We open-source our pretrained models and code.},
+  address   = {Melbourne, Australia},
+  author    = {Howard, Jeremy and Ruder, Sebastian},
+  booktitle = {Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  doi       = {10.18653/v1/P18-1031},
+  month     = {July},
+  pages     = {328-339},
+  publisher = {Association for Computational Linguistics},
+  title     = {Universal Language Model Fine-tuning for Text Classification},
+  url       = {https://aclanthology.org/P18-1031},
+  year      = {2018}
+}
+
 @inproceedings{VGG,
   author    = {Karen Simonyan and Andrew Zisserman},
   booktitle = {International Conference on Learning Representations},
   title     = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
   year      = {2015}
+}
+
+@inproceedings{VirTex,
+  author    = {Desai, Karan and Johnson, Justin},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  pages     = {11162-11173},
+  title     = {VirTex: Learning Visual Representations From Textual Annotations},
+  year      = {2021}
 }
 
 @inproceedings{Visformer,
@@ -214,6 +543,26 @@
   pages     = {589-598},
   title     = {Visformer: The Vision-Friendly Transformer},
   year      = {2021}
+}
+
+@article{VisualGenome,
+  abstract   = {Despite progress in perceptual tasks such as image classification, computers still perform poorly on cognitive tasks such as image description and question answering. Cognition is core to tasks that involve not just recognizing, but reasoning about our visual world. However, models used to tackle the rich content in images for cognitive tasks are still being trained using the same datasets designed for perceptual tasks. To achieve success at cognitive tasks, models need to understand the interactions and relationships between objects in an image. When asked "What vehicle is the person riding?", computers will need to identify the objects in an image as well as the relationships riding(man, carriage) and pulling(horse, carriage) to answer correctly that "the person is riding a horse-drawn carriage." In this paper, we present the Visual Genome dataset to enable the modeling of such relationships. We collect dense annotations of objects, attributes, and relationships within each image to learn these models. Specifically, our dataset contains over 108K images where each image has an average of $$35$$35 objects, $$26$$26 attributes, and $$21$$21 pairwise relationships between objects. We canonicalize the objects, attributes, relationships, and noun phrases in region descriptions and questions answer pairs to WordNet synsets. Together, these annotations represent the densest and largest dataset of image descriptions, objects, attributes, relationships, and question answer pairs.},
+  address    = {USA},
+  author     = {Krishna, Ranjay and Zhu, Yuke and Groth, Oliver and Johnson, Justin and Hata, Kenji and Kravitz, Joshua and Chen, Stephanie and Kalantidis, Yannis and Li, Li-Jia and Shamma, David A. and Bernstein, Michael S. and Fei-Fei, Li},
+  doi        = {10.1007/s11263-016-0981-7},
+  issn       = {0920-5691},
+  issue_date = {May 2017},
+  journal    = {International Journal of Computer Vision},
+  keywords   = {Relationships, Knowledge, Dataset, Language, Image, Computer vision, Crowdsourcing, Scene graph, Objects, Attributes, Question answering},
+  month      = {May},
+  number     = {1},
+  numpages   = {42},
+  pages      = {32–73},
+  publisher  = {Kluwer Academic Publishers},
+  title      = {Visual Genome: Connecting Language and Vision Using Crowdsourced Dense Image Annotations},
+  url        = {https://doi.org/10.1007/s11263-016-0981-7},
+  volume     = {123},
+  year       = {2017}
 }
 
 @inproceedings{ViT,
@@ -233,4 +582,29 @@
   url        = {https://arxiv.org/abs/2006.03677},
   volume     = {abs/2006.03677},
   year       = {2020}
+}
+
+@online{wikidump,
+  author = {Wikimedia Foundation},
+  title  = {Wikimedia Downloads},
+  url    = {https://dumps.wikimedia.org}
+}
+
+@article{YFCC100M,
+  abstract   = {This publicly available curated dataset of almost 100 million photos and videos is free and legal for all.},
+  address    = {New York, NY, USA},
+  author     = {Thomee, Bart and Shamma, David A. and Friedland, Gerald and Elizalde, Benjamin and Ni, Karl and Poland, Douglas and Borth, Damian and Li, Li-Jia},
+  doi        = {10.1145/2812802},
+  issn       = {0001-0782},
+  issue_date = {February 2016},
+  journal    = {Commun. ACM},
+  month      = {jan},
+  number     = {2},
+  numpages   = {10},
+  pages      = {64–73},
+  publisher  = {Association for Computing Machinery},
+  title      = {YFCC100M: The New Data in Multimedia Research},
+  url        = {https://doi.org/10.1145/2812802},
+  volume     = {59},
+  year       = {2016}
 }
