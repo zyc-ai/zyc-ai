@@ -101,7 +101,7 @@
   booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
   editor    = {Vedaldi, Andrea and Bischof, Horst and Brox, Thomas and Frahm, Jan-Michael},
   isbn      = {978-3-030-58621-8},
-  pages     = {776--794},
+  pages     = {776-794},
   publisher = {Springer International Publishing},
   title     = {Contrastive Multiview Coding},
   year      = {2020}
@@ -115,7 +115,7 @@
   month     = {September},
   pages     = {740-755},
   publisher = {Springer International Publishing},
-  title     = {Microsoft COCO: Common Objects in Context},
+  title     = {{Microsoft COCO}: Common Objects in Context},
   url       = {https://www.microsoft.com/en-us/research/publication/microsoft-coco-common-objects-in-context/},
   year      = {2014}
 }
@@ -136,7 +136,7 @@
   booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
   month     = {October},
   pages     = {22-31},
-  title     = {CvT: Introducing Convolutions to Vision Transformers},
+  title     = {{CvT}: Introducing Convolutions to Vision Transformers},
   year      = {2021}
 }
 
@@ -145,7 +145,7 @@
   eprint     = {2202.03555},
   eprinttype = {arXiv},
   journal    = {CoRR},
-  title      = {data2vec: {A} General Framework for Self-supervised Learning in Speech, Vision and Language},
+  title      = {{data2vec}: {A} General Framework for Self-supervised Learning in Speech, Vision and Language},
   url        = {https://arxiv.org/abs/2202.03555},
   volume     = {abs/2202.03555},
   year       = {2022}
@@ -204,7 +204,7 @@
   booktitle = {Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics},
   doi       = {10.18653/v1/P19-1139},
   month     = jul,
-  pages     = {1441--1451},
+  pages     = {1441-1451},
   publisher = {Association for Computational Linguistics},
   title     = {{ERNIE}: Enhanced Language Representation with Informative Entities},
   url       = {https://aclanthology.org/P19-1139},
@@ -272,8 +272,8 @@
   author    = {Chen, Mark and Radford, Alec and Child, Rewon and Wu, Jeffrey and Jun, Heewoo and Luan, David and Sutskever, Ilya},
   booktitle = {Proceedings of the 37th International Conference on Machine Learning},
   editor    = {III, Hal Daumé and Singh, Aarti},
-  month     = {13--18 Jul},
-  pages     = {1691--1703},
+  month     = {13-18 Jul},
+  pages     = {1691-1703},
   pdf       = {http://proceedings.mlr.press/v119/chen20s/chen20s.pdf},
   publisher = {PMLR},
   series    = {Proceedings of Machine Learning Research},
@@ -288,7 +288,7 @@
   booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition (CVPR)},
   month     = {June},
   pages     = {248-255},
-  title     = {Imagenet: A large-scale hierarchical image database},
+  title     = {{ImageNet}: A large-scale hierarchical image database},
   year      = {2009}
 }
 
@@ -330,7 +330,7 @@
   booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
   month     = {October},
   pages     = {12259-12269},
-  title     = {LeViT: A Vision Transformer in ConvNet's Clothing for Faster Inference},
+  title     = {{LeViT}: A Vision Transformer in ConvNet's Clothing for Faster Inference},
   year      = {2021}
 }
 
@@ -351,7 +351,6 @@
   year      = {2022}
 }
 
-
 @inproceedings{MaskFeat,
   author    = {Wei, Chen and Fan, Haoqi and Xie, Saining and Wu, Chao-Yuan and Yuille, Alan and Feichtenhofer, Christoph},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
@@ -361,14 +360,13 @@
   year      = {2022}
 }
 
-
 @inproceedings{MCNNSIA,
   abstract  = {Modern convolutional networks are not shift-invariant, as small input shifts or translations can cause drastic changes in the output. Commonly used downsampling methods, such as max-pooling, strided-convolution, and average-pooling, ignore the sampling theorem. The well-known signal processing fix is anti-aliasing by low-pass filtering before downsampling. However, simply inserting this module into deep networks leads to performance degradation; as a result, it is seldomly used today. We show that when integrated correctly, it is compatible with existing architectural components, such as max-pooling. The technique is general and can be incorporated across layer types and applications, such as image classification and conditional image generation. In addition to increased shift-invariance, we also observe, surprisingly, that anti-aliasing boosts accuracy in ImageNet classification, across several commonly-used architectures. This indicates that anti-aliasing serves as effective regularization. Our results demonstrate that this classical signal processing technique has been undeservingly overlooked in modern deep networks.},
   author    = {Zhang, Richard},
   booktitle = {Proceedings of the 36th International Conference on Machine Learning},
   editor    = {Chaudhuri, Kamalika and Salakhutdinov, Ruslan},
   month     = {09-15 June},
-  pages     = {7324--7334},
+  pages     = {7324-7334},
   pdf       = {http://proceedings.mlr.press/v97/zhang19a/zhang19a.pdf},
   publisher = {PMLR},
   series    = {Proceedings of Machine Learning Research},
@@ -412,6 +410,22 @@
   month     = {June},
   title     = {Self-Training With Noisy Student Improves ImageNet Classification},
   year      = {2020}
+}
+
+@inproceedings{OFA,
+  abstract  = {In this work, we pursue a unified paradigm for multimodal pretraining to break the shackles of complex task/modality-specific customization. We propose OFA, a Task-Agnostic and Modality-Agnostic framework that supports Task Comprehensiveness. OFA unifies a diverse set of cross-modal and unimodal tasks, including image generation, visual grounding, image captioning, image classification, language modeling, etc., in a simple sequence-to-sequence learning framework. OFA follows the instruction-based learning in both pretraining and finetuning stages, requiring no extra task-specific layers for downstream tasks. In comparison with the recent state-of-the-art vision &amp; language models that rely on extremely large cross-modal datasets, OFA is pretrained on only 20M publicly available image-text pairs. Despite its simplicity and relatively small-scale training data, OFA achieves new SOTAs in a series of cross-modal tasks while attaining highly competitive performances on uni-modal tasks. Our further analysis indicates that OFA can also effectively transfer to unseen tasks and unseen domains. Our code and models are publicly available at https://github.com/OFA-Sys/OFA.},
+  author    = {Wang, Peng and Yang, An and Men, Rui and Lin, Junyang and Bai, Shuai and Li, Zhikang and Ma, Jianxin and Zhou, Chang and Zhou, Jingren and Yang, Hongxia},
+  booktitle = {Proceedings of the 39th International Conference on Machine Learning},
+  editor    = {Chaudhuri, Kamalika and Jegelka, Stefanie and Song, Le and Szepesvari, Csaba and Niu, Gang and Sabato, Sivan},
+  month     = {17-23 Jul},
+  pages     = {23318-23340},
+  pdf       = {https://proceedings.mlr.press/v162/wang22al/wang22al.pdf},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  title     = {{OFA}: Unifying Architectures, Tasks, and Modalities Through a Simple Sequence-to-Sequence Learning Framework},
+  url       = {https://proceedings.mlr.press/v162/wang22al.html},
+  volume    = {162},
+  year      = {2022}
 }
 
 @inproceedings{ResNet,
@@ -479,7 +493,7 @@
   booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
   month     = {October},
   pages     = {10012-10022},
-  title     = {Swin Transformer: Hierarchical Vision Transformer Using Shifted Windows},
+  title     = {{Swin Transformer}: Hierarchical Vision Transformer Using Shifted Windows},
   year      = {2021}
 }
 
@@ -492,6 +506,22 @@
   url     = {http://jmlr.org/papers/v21/20-074.html},
   volume  = {21},
   year    = {2020}
+}
+
+@inproceedings{TimeSformer,
+  abstract  = {We present a convolution-free approach to video classification built exclusively on self-attention over space and time. Our method, named “TimeSformer,” adapts the standard Transformer architecture to video by enabling spatiotemporal feature learning directly from a sequence of frame-level patches. Our experimental study compares different self-attention schemes and suggests that “divided attention,” where temporal attention and spatial attention are separately applied within each block, leads to the best video classification accuracy among the design choices considered. Despite the radically new design, TimeSformer achieves state-of-the-art results on several action recognition benchmarks, including the best reported accuracy on Kinetics-400 and Kinetics-600. Finally, compared to 3D convolutional networks, our model is faster to train, it can achieve dramatically higher test efficiency (at a small drop in accuracy), and it can also be applied to much longer video clips (over one minute long). Code and models are available at: https://github.com/facebookresearch/TimeSformer.},
+  author    = {Bertasius, Gedas and Wang, Heng and Torresani, Lorenzo},
+  booktitle = {Proceedings of the 38th International Conference on Machine Learning},
+  editor    = {Meila, Marina and Zhang, Tong},
+  month     = {18-24 July},
+  pages     = {813-824},
+  pdf       = {http://proceedings.mlr.press/v139/bertasius21a/bertasius21a.pdf},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  title     = {Is Space-Time Attention All You Need for Video Understanding?},
+  url       = {https://proceedings.mlr.press/v139/bertasius21a.html},
+  volume    = {139},
+  year      = {2021}
 }
 
 @inproceedings{Transformer,
@@ -520,6 +550,48 @@
   year      = {2018}
 }
 
+@inproceedings{UniPerceiver,
+  author    = {Zhu, Xizhou and Zhu, Jinguo and Li, Hao and Wu, Xiaoshi and Li, Hongsheng and Wang, Xiaohua and Dai, Jifeng},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  pages     = {16804-16815},
+  title     = {{Uni-Perceiver}: Pre-Training Unified Architecture for Generic Perception for Zero-Shot and Few-Shot Tasks},
+  year      = {2022}
+}
+
+@article{UniPerceiverMoE,
+  author     = {Jinguo Zhu and Xizhou Zhu and Wenhai Wang and Xiaohua Wang and Hongsheng Li and Xiaogang Wang and Jifeng Dai},
+  doi        = {10.48550/arXiv.2206.04674},
+  eprint     = {2206.04674},
+  eprinttype = {arXiv},
+  journal    = {CoRR},
+  title      = {{Uni-Perceiver-MoE}: Learning Sparse Generalist Models with Conditional MoEs},
+  url        = {https://doi.org/10.48550/arXiv.2206.04674},
+  volume     = {abs/2206.04674},
+  year       = {2022}
+}
+
+@inproceedings{UniT,
+  author    = {Hu, Ronghang and Singh, Amanpreet},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  month     = {October},
+  pages     = {1439-1449},
+  title     = {{UniT}: Multimodal Multitask Learning With a Unified Transformer},
+  year      = {2021}
+}
+
+@inproceedings{VATT,
+  author    = {Akbari, Hassan and Yuan, Liangzhe and Qian, Rui and Chuang, Wei-Hong and Chang, Shih-Fu and Cui, Yin and Gong, Boqing},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor    = {M. Ranzato and A. Beygelzimer and Y. Dauphin and P.S. Liang and J. Wortman Vaughan},
+  pages     = {24206-24221},
+  publisher = {Curran Associates, Inc.},
+  title     = {{VATT}: Transformers for Multimodal Self-Supervised Learning from Raw Video, Audio and Text},
+  url       = {https://proceedings.neurips.cc/paper/2021/file/cb3213ada48302953cb0f166464ab356-Paper.pdf},
+  volume    = {34},
+  year      = {2021}
+}
+
 @inproceedings{VGG,
   author    = {Karen Simonyan and Andrew Zisserman},
   booktitle = {International Conference on Learning Representations},
@@ -527,12 +599,28 @@
   year      = {2015}
 }
 
+@inproceedings{ViLT,
+  abstract  = {Vision-and-Language Pre-training (VLP) has improved performance on various joint vision-and-language downstream tasks. Current approaches to VLP heavily rely on image feature extraction processes, most of which involve region supervision (e.g., object detection) and the convolutional architecture (e.g., ResNet). Although disregarded in the literature, we find it problematic in terms of both (1) efficiency/speed, that simply extracting input features requires much more computation than the multimodal interaction steps; and (2) expressive power, as it is upper bounded to the expressive power of the visual embedder and its predefined visual vocabulary. In this paper, we present a minimal VLP model, Vision-and-Language Transformer (ViLT), monolithic in the sense that the processing of visual inputs is drastically simplified to just the same convolution-free manner that we process textual inputs. We show that ViLT is up to tens of times faster than previous VLP models, yet with competitive or better downstream task performance. Our code and pre-trained weights are available at https://github.com/dandelin/vilt.},
+  author    = {Kim, Wonjae and Son, Bokyung and Kim, Ildoo},
+  booktitle = {Proceedings of the 38th International Conference on Machine Learning},
+  editor    = {Meila, Marina and Zhang, Tong},
+  month     = {18-24 July},
+  pages     = {5583-5594},
+  pdf       = {http://proceedings.mlr.press/v139/kim21k/kim21k.pdf},
+  publisher = {PMLR},
+  series    = {Proceedings of Machine Learning Research},
+  title     = {{ViLT}: Vision-and-Language Transformer Without Convolution or Region Supervision},
+  url       = {https://proceedings.mlr.press/v139/kim21k.html},
+  volume    = {139},
+  year      = {2021}
+}
+
 @inproceedings{VirTex,
   author    = {Desai, Karan and Johnson, Justin},
   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
   month     = {June},
   pages     = {11162-11173},
-  title     = {VirTex: Learning Visual Representations From Textual Annotations},
+  title     = {{VirTex}: Learning Visual Representations From Textual Annotations},
   year      = {2021}
 }
 
@@ -541,7 +629,7 @@
   booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
   month     = {October},
   pages     = {589-598},
-  title     = {Visformer: The Vision-Friendly Transformer},
+  title     = {{Visformer}: The Vision-Friendly Transformer},
   year      = {2021}
 }
 
@@ -603,8 +691,16 @@
   numpages   = {10},
   pages      = {64–73},
   publisher  = {Association for Computing Machinery},
-  title      = {YFCC100M: The New Data in Multimedia Research},
+  title      = {{YFCC100M}: The New Data in Multimedia Research},
   url        = {https://doi.org/10.1145/2812802},
   volume     = {59},
   year       = {2016}
+}
+
+@inproceedings{zhu2015aligning,
+  author    = {Zhu, Yukun and Kiros, Ryan and Zemel, Rich and Salakhutdinov, Ruslan and Urtasun, Raquel and Torralba, Antonio and Fidler, Sanja},
+  booktitle = {Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
+  month     = {December},
+  title     = {Aligning Books and Movies: Towards Story-Like Visual Explanations by Watching Movies and Reading Books},
+  year      = {2015}
 }
