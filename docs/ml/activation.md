@@ -2,7 +2,7 @@
 title: 非线性激活函数
 summary: None Linear Activation Function
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-12-17 14:39:09
 categories:
     - Machine Learning

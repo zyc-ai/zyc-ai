@@ -2,7 +2,7 @@
 title: 球与锥
 summary: Ball and Cone
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-08-13 22:32:58
 categories:
     - Opsimisation

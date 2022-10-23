@@ -2,7 +2,7 @@
 title: 递推方程（Recurrence Relation）
 summary: 递推方程（Recurrence Relation）
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-11-01 02:20:41
 categories:
     - algorithm

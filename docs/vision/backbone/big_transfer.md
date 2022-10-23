@@ -2,7 +2,7 @@
 title: BiT
 summary: Big Transfer
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-12-17 11:10:11
 categories:
     - Computer Vision

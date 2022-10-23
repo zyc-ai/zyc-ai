@@ -2,7 +2,7 @@
 title: 超声成像
 summary: 超声成像
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-03-10 00:14:15
 categories:
     - BioMedical Imaging

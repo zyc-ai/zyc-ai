@@ -2,7 +2,7 @@
 title: 概率论
 summary: Probability Theory
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-04-16 01:03:52
 categories:
     - statistics

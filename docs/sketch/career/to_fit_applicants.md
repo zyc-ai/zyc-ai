@@ -2,7 +2,7 @@
 title: 写给通过面试的同学
 summary: To those who passed the interview
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2022-07-07 02:43:17
 categories:
     - sketch

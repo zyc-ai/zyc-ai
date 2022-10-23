@@ -2,7 +2,7 @@
 title: tf-idf
 summary: tf-idf
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-09-18 05:29:32
 categories:
     - 自然语言处理

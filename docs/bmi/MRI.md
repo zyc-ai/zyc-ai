@@ -2,7 +2,7 @@
 title: 磁共振成像
 summary: 磁共振成像
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-03-13 10:08:26
 categories:
     - BioMedical Imaging

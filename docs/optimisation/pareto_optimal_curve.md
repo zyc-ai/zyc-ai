@@ -2,7 +2,7 @@
 title: 帕累托优化曲线
 summary: Pareto Optimal Curve
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-09-02 16:49:55
 categories:
     - Opsimisation

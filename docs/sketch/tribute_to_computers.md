@@ -2,7 +2,7 @@
 title: 致敬我们终将过时的电脑
 summary: 20210311
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-03-11 23:11:30
 categories:
     - sketch

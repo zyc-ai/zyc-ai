@@ -2,7 +2,7 @@
 title: Kubernetes Pods
 summary: Deploy first pod
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-02-23 15:55:24
 categories:
     - Kubernetes

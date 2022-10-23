@@ -2,7 +2,7 @@
 title: Kubernetes
 summary: Kubernetes
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-01-28 12:08:33
 categories:
     - Kubernetes

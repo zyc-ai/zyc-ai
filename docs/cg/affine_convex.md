@@ -2,7 +2,7 @@
 title: 仿射与凸
 summary: Affine and Convex
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-08-27 14:47:26
 categories:
     - Computer Graphics

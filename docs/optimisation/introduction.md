@@ -2,7 +2,7 @@
 title: 优化
 summary: Optimisation
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-08-18 19:59:48
 categories:
     - Opsimisation

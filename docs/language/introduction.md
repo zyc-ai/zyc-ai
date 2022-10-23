@@ -2,7 +2,7 @@
 title: 自然语言处理
 summary: 自然语言处理
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-08-08 16:00:02
 categories:
     - 自然语言处理

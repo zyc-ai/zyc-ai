@@ -2,7 +2,7 @@
 title: 分治法（Divide and Conquer）
 summary: 分治法（Divide and Conquer）
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-11-01 02:28:44
 categories:
     - 算法

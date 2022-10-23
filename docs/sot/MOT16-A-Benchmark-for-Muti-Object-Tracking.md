@@ -8,7 +8,7 @@ authors:
     - Stefan Roth
     - Konard Schindler
 translators:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-04-18 03:17:18
 categories:
     - Object Tracking

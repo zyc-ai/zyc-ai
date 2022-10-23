@@ -2,7 +2,7 @@
 title: PyTorch分布式
 summary: Distributed in PyTorch
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-09-15 00:33:46
 categories:
     - PyTorch

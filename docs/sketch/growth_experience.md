@@ -2,7 +2,7 @@
 title: 青海-成长历程分享
 summary: 20210507
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2021-05-07 01:44:37
 categories:
     - sketch

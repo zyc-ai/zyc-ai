@@ -2,7 +2,7 @@
 title: Docker命令行接口
 summary: Docker命令行接口基础操作
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-07-07 14:50:21
 categories:
     - Docker

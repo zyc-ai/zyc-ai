@@ -2,7 +2,7 @@
 title: nn.Module
 summary: torch.nn.Module
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2021-01-04 14:34:59
 categories:
     - PyTorch

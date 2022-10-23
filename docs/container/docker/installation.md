@@ -2,7 +2,7 @@
 title: 安装Docker
 summary: 安装Docker
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-01-25 02:06:37
 categories:
     - Docker

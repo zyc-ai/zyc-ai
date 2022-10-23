@@ -2,7 +2,7 @@
 title: 如何准备面试
 summary: how to prepare for an interview
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2022-09-22 00:20:18
 categories:
     - sketch

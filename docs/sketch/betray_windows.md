@@ -2,7 +2,7 @@
 title: 一个Windows爱好者的叛变
 summary: Betrayal of a Windows enthusiast
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2022-03-10 17:14:54
 categories:
     - sketch

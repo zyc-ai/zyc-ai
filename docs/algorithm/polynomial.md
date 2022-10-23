@@ -2,7 +2,7 @@
 title: 多项式（Polynomial）
 summary: 多项式（Polynomial）
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-10-21 18:53:01
 categories:
     - 算法

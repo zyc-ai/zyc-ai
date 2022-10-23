@@ -2,7 +2,7 @@
 title: 设计模式（Design Pattern）
 summary: 设计模式（Design Pattern）
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-11-15 02:39:01
 categories:
     - sketch

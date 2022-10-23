@@ -2,7 +2,7 @@
 title: 隐私声明
 summary: 隐私声明
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-07-22 13:22:48
 categories:
     - About

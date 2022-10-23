@@ -2,7 +2,7 @@
 title: Dockerfile
 summary: Dockerfile
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-08-30 19:15:03
 categories:
     - Document

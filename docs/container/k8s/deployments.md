@@ -2,7 +2,7 @@
 title: Kubernetes Deployments
 summary: Deploy first deployment
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-02-23 15:55:24
 categories:
     - Kubernetes

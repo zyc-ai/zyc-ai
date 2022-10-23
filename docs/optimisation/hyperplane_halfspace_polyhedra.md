@@ -2,7 +2,7 @@
 title: 超平面、半空间与多面体
 summary: Hyperplane, Halfspace, and Polyhedra
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-08-18 16:06:19
 categories:
     - Opsimisation

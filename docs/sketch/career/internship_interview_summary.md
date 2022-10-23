@@ -2,7 +2,7 @@
 title: 实习面试总结
 summary: Internship Interview Summary
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-11-01 23:59:59
 categories:
     - sketch

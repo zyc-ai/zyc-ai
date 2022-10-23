@@ -2,7 +2,7 @@
 title: 算法（Algorithm）
 summary: 算法（Algorithm）
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-08-06 19:39:28
 categories:
     - 算法

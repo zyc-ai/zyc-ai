@@ -2,7 +2,7 @@
 title: 许可
 summary: License
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-09-16 03:08:02
 categories:
     - About

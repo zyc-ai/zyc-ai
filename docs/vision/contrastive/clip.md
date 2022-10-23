@@ -2,7 +2,7 @@
 title: CLIP
 summary: [Learning Transferable Visual Models From Natural Language Supervision](https://arxiv.org/abs/2103.00020)[@CLIP]
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2022-07-18 17:57:26
 categories:
     - Foundation

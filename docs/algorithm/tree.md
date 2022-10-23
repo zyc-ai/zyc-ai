@@ -2,7 +2,7 @@
 title: 树（Tree）
 summary: 树（Tree）
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-10-30 02:55:33
 categories:
     - algorithm

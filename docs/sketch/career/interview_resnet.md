@@ -2,7 +2,7 @@
 title: ResNet面试简介
 summary: ResNet in interview, an introduction
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2021-02-13 13:31:14
 categories:
     - sketch

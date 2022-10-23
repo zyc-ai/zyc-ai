@@ -2,7 +2,7 @@
 title: 变治法
 summary: 变治法
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-10-19 18:27:21
 categories:
     - 算法

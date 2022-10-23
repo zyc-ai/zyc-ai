@@ -2,7 +2,7 @@
 title: 组件
 summary: 组件
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-11-19 07:18:34
 categories:
     - Kubernetes

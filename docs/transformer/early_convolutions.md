@@ -2,7 +2,7 @@
 title: Early Convolutions Help Transformers See Better
 summary: [Early Convolutions Help Transformers See Better](https://openreview.net/forum?id=Lpfh1Bpqfk)
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2022-06-21 11:39:21
 categories:
     - Transformer

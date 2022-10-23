@@ -2,7 +2,7 @@
 title: 食品储备
 summary: Food Reserve
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2022-04-09 17:53:19
 categories:
     - sketch

@@ -2,7 +2,7 @@
 title: 文献管理
 summary: 文献管理
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-08-05 18:33:19
 categories:
     - sketch

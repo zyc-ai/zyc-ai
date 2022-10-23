@@ -2,7 +2,7 @@
 title: 属性访问慢吗？
 summary: Is attribute lookup slow?
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2022-01-11 21:24:47
 categories:
     - sketch

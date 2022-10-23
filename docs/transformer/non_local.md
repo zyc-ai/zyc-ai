@@ -2,7 +2,7 @@
 title: Non Local
 summary: Non Local Neural Networks
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2021-01-11 14:28:48
 categories:
     - Transformer

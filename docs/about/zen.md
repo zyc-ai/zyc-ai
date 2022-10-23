@@ -2,7 +2,7 @@
 title: index
 summary: The index page
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-01-01 00:00:00
 categories:
     - master

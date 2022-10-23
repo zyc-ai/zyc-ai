@@ -2,7 +2,7 @@
 title: 不要买分体式键盘
 summary: Think twice before you get a split keyboard
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2022-04-12 21:56:25
 categories:
     - sketch

@@ -2,7 +2,7 @@
 title: 元人工智能 Residency 面经
 summary: Interview experience of Meta AI Residency
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2022-03-19 11:40:02
 categories:
     - sketch

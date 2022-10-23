@@ -2,7 +2,7 @@
 title: 秋招总结
 summary: Campus Recruitment Summary
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2021-10-12 19:44:52
 categories:
     - sketch

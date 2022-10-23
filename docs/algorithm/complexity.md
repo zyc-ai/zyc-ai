@@ -2,7 +2,7 @@
 title: 复杂度
 summary: 复杂度
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-08-06 21:26:39
 categories:
     - algorithm

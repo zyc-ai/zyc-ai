@@ -2,7 +2,7 @@
 title: 写给没有通过面试的同学
 summary: To those who did not pass the interview
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2022-02-27 21:11:47
 categories:
     - sketch

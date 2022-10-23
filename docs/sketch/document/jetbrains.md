@@ -2,7 +2,7 @@
 title: JetBrains使用指南
 summary: JetBrains使用指南
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-08-13 23:25:59
 categories:
     - sketch

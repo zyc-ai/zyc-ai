@@ -2,7 +2,7 @@
 title: SiamRPN
 summary: SiamRPN
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-12-24 12:15:18
 categories:
     - Computer Vision

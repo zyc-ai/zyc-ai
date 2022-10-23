@@ -2,7 +2,7 @@
 title: 变化
 summary: 变化
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-12-17 23:59:01
 categories:
     - Computer Vision

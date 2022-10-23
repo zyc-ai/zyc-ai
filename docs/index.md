@@ -2,7 +2,7 @@
 title: Zhiyuan Chen
 summary: Zhiyuan Chen
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-07-22 13:07:56
 ---
 

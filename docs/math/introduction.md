@@ -2,7 +2,7 @@
 title: 导论
 summary: 导论
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-08-28 23:49:36
 categories:
     - master

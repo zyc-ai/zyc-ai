@@ -2,7 +2,7 @@
 title: 互相关与卷积
 summary: 互相关与卷积
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-12-17 10:30:25
 categories:
     - Computer Vision

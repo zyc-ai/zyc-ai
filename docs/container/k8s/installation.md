@@ -2,7 +2,7 @@
 title: 安装Kubernetes
 summary: 安装Kubernetes
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-01-25 02:06:37
 categories:
     - Kubernetes

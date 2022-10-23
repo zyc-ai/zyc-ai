@@ -2,7 +2,7 @@
 title: 摘要
 summary: 
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-08-06 19:39:28
 categories:
     - C++核心指南

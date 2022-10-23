@@ -2,7 +2,7 @@
 title: 仿射与凸
 summary: Affine and Convex
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-08-13 12:13:10
 categories:
     - Opsimisation

@@ -2,7 +2,7 @@
 title: 线性代数
 summary: 线性代数
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-08-28 23:57:38
 categories:
     - master

@@ -2,7 +2,7 @@
 title: Docker导论
 summary: Docker导论
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-05-12 15:15:31
 categories:
     - Docker

@@ -2,7 +2,7 @@
 title: 对偶锥与广义不等式
 summary: Dual Cones and Generalised Inequality
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-08-18 19:57:47
 categories:
     - Opsimisation

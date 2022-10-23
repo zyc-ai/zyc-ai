@@ -2,7 +2,7 @@
 title: 分布
 summary: distribution
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-11-08 08:11:19
 categories:
     - Machine Learning

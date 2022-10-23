@@ -2,7 +2,7 @@
 title: Selective Kernel Networks
 summary: Selective Kernel Networks
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2021-02-02 11:21:34
 categories:
     - Computer Vision

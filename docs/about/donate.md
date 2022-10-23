@@ -2,7 +2,7 @@
 title: 捐赠
 summary: 捐赠
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-08-2 19:50:51
 categories:
     - About

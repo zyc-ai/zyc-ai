@@ -2,7 +2,7 @@
 title: 遗书
 summary: Posthumous Paper
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2020-12-17 00:43:43
 categories:
     - Posthumous

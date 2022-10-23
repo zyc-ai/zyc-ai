@@ -2,7 +2,7 @@
 title: 评论政策
 summary: 评论政策
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-01-31 14:25:39
 categories:
     - About

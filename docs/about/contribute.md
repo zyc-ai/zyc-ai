@@ -2,7 +2,7 @@
 title: 贡献
 summary: 贡献
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2019-09-18 02:55:15
 categories:
     - master

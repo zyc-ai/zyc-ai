@@ -2,7 +2,7 @@
 title: 注意力
 summary: Neural Machine Translation by Jointly Learning to Align and Translate
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2021-03-10 21:24:49
 categories:
     - Tramsformer

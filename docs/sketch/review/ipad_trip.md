@@ -2,7 +2,7 @@
 title: iPad是否可以担任中短途旅行中的主力计算机
 summary: 你的下一台电脑，何必是一台电脑
 authors:
-    - Zhiyuan Chen
+    - zyc
 date: 2021-08-07 21:10:04
 categories:
     - sketch
