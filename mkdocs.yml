@@ -235,9 +235,10 @@ plugins:
   - git-revision-date-localized:
       type: iso_datetime
   - git-committers
-  # - privacy:
-  #     externals_exclude:
-  #       - cdn.jsdelivr.net/npm/mathjax@3/*
-  #       - giscus.app/*
+  - privacy:
+      externals_exclude:
+        - cdn.jsdelivr.net/npm/mathjax@3/*
+        - giscus.app/*
+        - github-readme-stats.vercel.app/*
   - search
   - tags
