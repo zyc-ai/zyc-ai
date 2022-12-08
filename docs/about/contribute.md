@@ -1,16 +1,16 @@
 ---
-title: 贡献
-summary: 贡献
 authors:
     - zyc
 date: 2019-09-18 02:55:15
 categories:
-    - master
-    - contribute
+    - About
+    - Contribute
 tags:
-    - master
-    - contribute
+    - About
+    - Contribute
 ---
+
+# 贡献
 
 在你做出任何贡献之前，我们强烈建议你先阅读这篇文章，确保你了解格式信息并掌握MkDocs的语法。
 

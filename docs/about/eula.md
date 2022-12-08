@@ -1,9 +1,7 @@
 ---
-title: 最终用户许可协议
-summary: 最终用户许可协议
 authors:
     - zyc
-    - Jing Li
+    - JingLi
 date: 2019-01-31 14:25:39
 categories:
     - About
@@ -13,6 +11,8 @@ tags:
     - Policy
     - EULA
 ---
+
+# 最终用户许可协议
 
 !!! info "最后修订"
 

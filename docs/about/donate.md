@@ -1,6 +1,4 @@
 ---
-title: 捐赠
-summary: 捐赠
 authors:
     - zyc
 date: 2019-08-2 19:50:51
@@ -8,8 +6,11 @@ categories:
     - About
     - Donate
 tags:
+    - About
     - Donate
 ---
+
+# 捐赠
 
 我们很高兴如果您认为这个网站是有帮助的。
 &nbsp;

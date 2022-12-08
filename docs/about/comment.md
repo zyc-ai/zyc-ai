@@ -1,6 +1,4 @@
 ---
-title: 评论政策
-summary: 评论政策
 authors:
     - zyc
 date: 2019-01-31 14:25:39
@@ -12,6 +10,8 @@ tags:
     - Policy
     - Comment
 ---
+
+# 评论政策
 
 !!! info "最后修订"
 

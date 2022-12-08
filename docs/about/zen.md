@@ -1,14 +1,14 @@
 ---
-title: index
-summary: The index page
 authors:
     - zyc
 date: 2019-01-01 00:00:00
 categories:
-    - master
+    - About
 tags:
-    - master
+    - About
 ---
+
+# index
 
 Beautiful is better than ugly.
 
