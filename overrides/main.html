@@ -8,25 +8,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 {% extends "base.html" %}
 
-<!-- {% block announce %}
-
-{% endblock %} -->
-
 {% block content %}
   {{ super() }}
 
   <!-- Giscus -->
   <script src="https://giscus.app/client.js"
-    data-repo="zyc-ai/blog"
+    data-repo="zyc-ai/zyc-ai"
     data-repo-id="MDEwOlJlcG9zaXRvcnk5OTQ5NTIwMg=="
     data-category="General"
     data-category-id="DIC_kwDOBe4tIs4CBXji"
     data-mapping="pathname"
+    data-strict="0"
     data-reactions-enabled="1"
     data-emit-metadata="1"
     data-input-position="top"
     data-theme="dark"
-    data-lang="zh-CN"
+    data-lang="en"
+    data-loading="lazy"
     crossorigin="anonymous"
     async>
   </script>
