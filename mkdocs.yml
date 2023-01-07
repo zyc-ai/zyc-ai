@@ -76,6 +76,7 @@ nav:
       - 食品储备: sketch/food_reserve.md
       - 交通规则: sketch/traffic_rules.md
       - 文档:
+          - Python软件工程: sketch/document/python_software_engineering.md
           - 设计模式: sketch/document/design_pattern.md
           - 属性访问慢吗？: sketch/document/attribute_lookup.md
           - JetBrains使用指南: sketch/document/jetbrains.md
