@@ -238,34 +238,14 @@ markdown_extensions:
       permalink: true
 
 plugins:
-  - meta
-  - blog:
-      blog_dir: .
-      archive_url_date_format: yyyy/MM
-      archive_date_format: MMMM yyyy
-      categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
-      categories_toc: true
-      categories_url_format: "{slug}"
-      post_date_format: full
-      post_readtime_words_per_minute: 40
-      post_slugify: !!python/object/apply:pymdownx.slugs.slugify
-        kwds:
-          case: lower
-      post_url_format: "{categories}/{slug}"
+  - autorefs
   - bibtex:
       bib_file: "docs/references.bib"
       csl_file: "https://raw.githubusercontent.com/citation-style-language/styles/master/ieee.csl"
       cite_inline: true
+  - git-committers
   # - git-revision-date-localized:
   #     type: iso_datetime
-  - git-committers
-  - privacy:
-      externals_exclude:
-        - cdn.jsdelivr.net/npm/mathjax@3/*
-        - giscus.app/*
-        - github-readme-stats.vercel.app/*
   - rss:
       match_path: .*
       date_from_meta:
@@ -276,3 +256,4 @@ plugins:
   - search:
       separator: '[\s\u200b\-]'
   - tags
+  # - markdown-exec

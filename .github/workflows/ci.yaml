@@ -19,6 +19,5 @@ jobs:
           path: .cache
       - run: wget https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-1-amd64.deb && sudo dpkg -i pandoc-2.18-1-amd64.deb
       - run: sudo apt-get install pandoc-citeproc
-      - run: pip install git+https://${{ secrets.GH_TOKEN }}@github.com/squidfunk/mkdocs-material-insiders.git
       - run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force
