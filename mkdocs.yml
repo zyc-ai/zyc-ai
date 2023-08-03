@@ -82,6 +82,7 @@ nav:
           - 属性访问慢吗？: sketch/document/attribute_lookup.md
           - JetBrains使用指南: sketch/document/jetbrains.md
       - 职业:
+          - 星桥: sketch/career/star_bridge.md
           - 元人工智能Residency面经: sketch/career/interview_fair_residency.md
           - 如何准备面试: sketch/career/prepare_interview.md
           - ResNet面试简介: sketch/career/interview_resnet.md
