@@ -1,15 +1,15 @@
 ---
 authors:
-    - zyc
-    - JingLi
+  - zyc
+  - JingLi
 date: 2019-01-31 14:25:39
 categories:
-    - About
-    - Policy
+  - About
+  - Policy
 tags:
-    - About
-    - Policy
-    - EULA
+  - About
+  - Policy
+  - EULA
 ---
 
 # 最终用户许可协议
@@ -40,7 +40,7 @@ tags:
 
 ## 1 许可
 
-我们依据GNU GPLv3向您授予对我们所提供的内容的使用权利。
+我们依据 GNU Affero GPL 协议向您授予对我们所提供的内容的使用权利。
 
 ## 2 第三方内容
 
