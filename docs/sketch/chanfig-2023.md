@@ -29,20 +29,21 @@ tags:
 ### 基类
 
 一年前的 CHANfiG 使用`OrderedDict`来作为基类。然而，`OrderedDict`的 key 必须为`str`类型。这大大的不好。现代版本的 CHANfiG 包括了`Registry`，而有些时候，`Regitsry`的 key 需要是一个 Python 对象，比如[`TorchFuncRegistry`](https://github.com/ZhiyuanChen/DanLing/blob/master/danling/tensors/torch_func_registry.py)。
-此外，CHANfiG 最低支持 Python 3.7，而 dict 的顺序在 Python 3.7 及以后版本中是被保证的。不管从任何角度来讲，CHANfiG 都没有使用`OrderedDict`来作为基类的必要。于是在 v0.0.54 中，CHANfiG 的基类换成了`dict`。尽管如此，我们计划在未来的版本中实现一些`OrderedDict`的专属功能。
+此外，CHANfiG 最低支持 Python 3.7，而`dict`的顺序在 3.7 及以后的版本中是被保证的。因此，不管从任何角度来讲，CHANfiG 都没有使用`OrderedDict`来作为基类的必要。于是在 v0.0.54 中，CHANfiG 的基类被换成了`dict`。尽管如此，我们计划在未来的版本中实现一些`OrderedDict`的专属功能。
 
-许多配置的值是依赖于其他值的，在 v0.0.34 我们介绍了`Variable`来实现值同步，但他无法表征运算关系。
-比如 Transformer 的`ffn.hidden_dim`通常是`hidden_dim * 4`。
-为了应对这种情况，在 v0.0.59 版本中，我们加入`post`和`boot`。其中`post`可以用来定义值，而`boot`则用来调用`post`方法。
+许多配置的值是依赖于其他值的，在 v0.0.34 中我们介绍了`Variable`来实现值同步，但他无法表征运算关系。
+比如， Transformer 的`ffn.hidden_dim`通常是`hidden_dim * 4`。
+为了应对这种情况，在 v0.0.59 版本中，我们加入`post`和`boot`。其中`post`可以用来执行一些后处理，而`boot`则用来调用`post`方法。在本例中，我们可以在`post`里定义`ffn.hidden_dim = hidden_dim * 4`来实现动态计算。
 
 ### 元类
 
 在即将到来的 v0.0.90 中，我们更进一步的替换了元类。
 在最近版本中被介绍的`dataclass`已经吸引了增长的注意力。其中有两个功能我很喜欢：
 
-1. 类型注解检查 2.`__post_init__`
+1. 类型注解检查
+2. `__post_init__`
 
-类型注解检查则是一位微软的院友老哥提出的[议题](https://github.com/ZhiyuanChen/CHANfiG/issues/7)。
+类型注解检查是一位微软的院友老哥提出的[议题](https://github.com/ZhiyuanChen/CHANfiG/issues/7)。
 这允许你在类中通过类型注解来定义变量的类型，并在创建对象之后检查成员是否符合所定义的类型。
 
 `__post_init__`则提供了一个`post`的替代。不同的是，`__post_init__`会在对象初始化之后立即被自动调用（这个行为是无法修改的），而`post`则需要手动调用（当然目前在调用`parse`之后也会被自动调用）。
@@ -54,7 +55,7 @@ tags:
 
 ## Variable
 
-我们在过去的一年当中做出了许多努力来让他`Variable`变得更加普通。
+我们在过去的一年当中做出了许多努力来让`Variable`变得更加普通。
 比如`f"result: {Variable(1.0):.4f}"`的输出是`'result: 1.0000'`，`isinstance(Variable(10), int)`也是正确的。相比之下，ml_collections 的`FieldReference`只会报告一个错误。
 尽管如此，这种伪装只能针对遵循惯例的用法。比如在`type(Variable(10)) != int`时就会变得力不从行 -- 并不是我们不能，但是我认为伪装应该有一个边界，而这就是边界。
 
@@ -93,9 +94,9 @@ tags:
 
 为此，我们引入了`empty`和`empty_like`方法来创建空对象，避免在`load`、`merge`等需要创建新的`Dict`时候出现问题。
 
-这导致了一个最近的 bug：在过去的版本中，我们通过`empty_like`来创建控对象。
-之后，我们就发现一些`property`在创建空对象之后没有正确的指向新对象。
-我花了很久才发现`property`是存储在`__dict__`当中的，而因为`empty_like`会拷贝`__dict__`，所以`property`也会被拷贝，因此仍旧指向原来的对象。
+这导致了一个最近的 bug：在过去的版本中，我们通过`empty_like`来创建空对象。
+之后，我们发现一些`property`在创建空对象之后没有正确的指向新对象的属性。
+我花了很久才注意到`property`是存储在`__dict__`当中的，而因为`empty_like`会拷贝`__dict__`，所以`property`也会被拷贝，因此仍旧指向原来的对象。
 
 我最近也在思考，是否可以有一个更优雅的方式来解决这个问题 -- 毕竟在初始化的结尾调用父类的`__init__`也有很多缺陷。
 
@@ -112,5 +113,7 @@ tags:
 ## 总结
 
 道虽迩 不行不至
+
 事虽小 不为不成
+
 其为人也多暇日者 其出入不远矣
