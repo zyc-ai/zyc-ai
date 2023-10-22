@@ -14,7 +14,7 @@ My research areas include AI4Science, computer vision, and deep learning.
 I received my Bachelor's degree from the Australian National University in 2022.
 
 Before joining DP in 2022, I used to be extremely lucky to work as a research assistant of StarBridge program & research intern of Star of Tomorrow program under the guidance of [Dr. Pan Deng](https://www.microsoft.com/en-us/research/people/paden/) at Microsoft Research Asia & Microsoft Research AI for Science from 2021-2022, where I worked on Computational Biology.
-Before MSR, I was very lucky to work as a research intern at SenseTime supervised by [Mr. Yue Liao](https://liaoyue.net/), where I worked on self-supervised learning, transformer in vision, and large-scale neural networks.
+Before MSR, I was very lucky to work as a research intern at SenseTime supervised by [Dr. Yue Liao](https://liaoyue.net/), where I worked on self-supervised learning, transformer in vision, and large-scale neural networks.
 Before these, I used to work at Westlake University, SenseTime, and Peking University.
 
 Coding could be the thing I love most, I have some open source projects, including [DanLing](https://github.com/ZhiyuanChen/DanLing) & [CHANfiG](https://github.com/ZhiyuanChen/CHANfiG), I'm currently the maintainer of [PySOT](https://github.com/STVIR/PySOT) & [iCrawler](https://github.com/hellock/icrawler), and I have contributed to multiple repositories, including [Accelerate](https://github.com/huggingface/accelerate), [OpenCV](https://github.com/opencv/opencv), [PyTorch](https://github.com/pytorch/pytorch).
