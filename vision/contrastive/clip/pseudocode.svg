@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 569.33331 526.66669"
+   height="526.66669"
+   width="569.33331"
+   xml:space="preserve"
+   id="svg2"
+   version="1.1"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs6"><clipPath
+       id="clipPath14"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path12"
+         d="M 0,0 H 720 V 405 H 0 Z" /></clipPath><clipPath
+       id="clipPath24"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path22"
+         d="M 0,0 H 365760 V 205740 H 0 Z" /></clipPath></defs><g
+     clip-path="url(#clipPath14)"
+     transform="matrix(1.3333333,0,0,-1.3333333,-8,529.33333)"
+     id="g10"><g
+       transform="matrix(1,0,0,-1,0,405)"
+       id="g16"><g
+         transform="scale(0.0019685)"
+         id="g18"><g
+           clip-path="url(#clipPath24)"
+           id="g20"><g
+             id="g26"><g
+               id="g28"><path
+                 id="path30"
+                 style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none"
+                 d="M 0,0 H 365760 V 205740 H 0 Z" /></g></g><g
+             id="g32"><g
+               id="g34"><g
+                 id="g36"><path
+                   id="path38"
+                   style="fill:#000000;fill-opacity:0;fill-rule:evenodd;stroke:none"
+                   d="M 0,0 H 365760 V 205740 H 0 Z" /></g></g></g><g
+             transform="scale(381)"
+             id="g40"><g
+               id="g42"><g
+                 id="g44"><text
+                   id="text48"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#4a86e8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,26.919998)"><tspan
+                     id="tspan46"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999 280 291.19998 302.39999 313.59998 324.79999 336 347.19998 358.39999 369.59998 380.79999 392 403.19998 414.39999 425.59998 436.79999 447.99997 459.19998 470.39999 481.59998 492.79999 503.99997"># image_encoder - ResNet or Vision Transformer</tspan></text>
+<text
+                   id="text52"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#4a86e8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,48.92)"><tspan
+                     id="tspan50"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999 280 291.19998 302.39999 313.59998 324.79999 336 347.19998 358.39999 369.59998 380.79999 392 403.19998 414.39999 425.59998 436.79999 447.99997 459.19998"># text_encoder - CBOW or Text Transformer</tspan></text>
+<text
+                   id="text56"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#4a86e8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,70.92)"><tspan
+                     id="tspan54"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999 280 291.19998 302.39999 313.59998 324.79999 336 347.19998 358.39999 369.59998 380.79999 392 403.19998 414.39999 425.59998 436.79999 447.99997 459.19998 470.39999 481.59998 492.79999"># I[n, h, w, c] - minibatch of aligned images</tspan></text>
+<text
+                   id="text60"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#4a86e8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,92.92)"><tspan
+                     id="tspan58"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999 280 291.19998 302.39999 313.59998 324.79999 336 347.19998 358.39999 369.59998 380.79999 392 403.19998 414.39999 425.59998 436.79999 447.99997 459.19998 470.39999 481.59998"># T[n, l] - minibatch of aligned texts</tspan></text>
+<text
+                   id="text64"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#4a86e8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,114.92)"><tspan
+                     id="tspan62"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999 280 291.19998 302.39999 313.59998 324.79999 336 347.19998 358.39999 369.59998 380.79999 392 403.19998 414.39999 425.59998 436.79999 447.99997 459.19998 470.39999 481.59998 492.79999 503.99997 515.19995 526.39996"># W_i[d_i, d_e] - learned proj of image to embed</tspan></text>
+<text
+                   id="text68"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#4a86e8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,136.92)"><tspan
+                     id="tspan66"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999 280 291.19998 302.39999 313.59998 324.79999 336 347.19998 358.39999 369.59998 380.79999 392 403.19998 414.39999 425.59998 436.79999 447.99997 459.19998 470.39999 481.59998 492.79999 503.99997 515.19995"># W_t[d_t, d_e] - learned proj of text to embed</tspan></text>
+<text
+                   id="text72"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#4a86e8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,158.92)"><tspan
+                     id="tspan70"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999 280 291.19998 302.39999 313.59998 324.79999 336 347.19998 358.39999 369.59998 380.79999 392 403.19998 414.39999 425.59998 436.79999 447.99997 459.19998 470.39999 481.59998 492.79999 503.99997 515.19995"># t - learned temperature parameter</tspan></text>
+<text
+                   id="text76"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#4a86e8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,202.92)"><tspan
+                     id="tspan74"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999 280 291.19998 302.39999 313.59998 324.79999 336 347.19998 358.39999 369.59998 380.79999 392 403.19998 414.39999 425.59998 436.79999 447.99997 459.19998 470.39999 481.59998 492.79999 503.99997 515.19995 526.39996 537.59998 548.79999"># extract feature representations of each modality</tspan></text>
+<text
+                   id="text80"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,224.92)"><tspan
+                     id="tspan78"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999">I_f = image_encoder(I) </tspan></text>
+<text
+                   id="text84"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#4a86e8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(266.49817,224.92)"><tspan
+                     id="tspan82"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998">#[n, d_i]</tspan></text>
+<text
+                   id="text88"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,246.92)"><tspan
+                     id="tspan86"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998 235.2">T_f = text_encoder(T) </tspan></text>
+<text
+                   id="text92"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#4a86e8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(266.49817,246.92)"><tspan
+                     id="tspan90"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998">#[n, d_t]</tspan></text>
+<text
+                   id="text96"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#4a86e8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,290.91998)"><tspan
+                     id="tspan94"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999 280 291.19998 302.39999 313.59998 324.79999 336 347.19998 358.39999 369.59998 380.79999 392 403.19998"># joint multimodal embedding [n, d_e]</tspan></text>
+<text
+                   id="text100"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,312.91998)"><tspan
+                     id="tspan98"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999 280 291.19998 302.39999 313.59998 324.79999 336 347.19998 358.39999 369.59998 380.79999 392 403.19998 414.39999 425.59998 436.79999 447.99997 459.19998 470.39999 481.59998">I_e = l2_normalize(np.dot(I_f, W_i), axis=1)</tspan></text>
+<text
+                   id="text104"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,334.91998)"><tspan
+                     id="tspan102"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999 280 291.19998 302.39999 313.59998 324.79999 336 347.19998 358.39999 369.59998 380.79999 392 403.19998 414.39999 425.59998 436.79999 447.99997 459.19998 470.39999 481.59998">T_e = l2_normalize(np.dot(T_f, W_t), axis=1)</tspan></text>
+<text
+                   id="text108"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#4a86e8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,378.91998)"><tspan
+                     id="tspan106"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999 280 291.19998 302.39999 313.59998 324.79999 336 347.19998 358.39999 369.59998 380.79999 392 403.19998 414.39999 425.59998 436.79999 447.99997 459.19998 470.39999 481.59998"># scaled pairwise cosine similarities [n, n]</tspan></text>
+<text
+                   id="text112"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,400.91998)"><tspan
+                     id="tspan110"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999 280 291.19998 302.39999 313.59998 324.79999 336 347.19998 358.39999 369.59998 380.79999 392 403.19998 414.39999 425.59998">logits = np.dot(I_e, T_e.T) * np.exp(t)</tspan></text>
+<text
+                   id="text116"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#4a86e8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,444.91998)"><tspan
+                     id="tspan114"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999"># symmetric loss function</tspan></text>
+<text
+                   id="text120"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,466.91998)"><tspan
+                     id="tspan118"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998">labels = np.arange(n)</tspan></text>
+<text
+                   id="text124"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,488.91998)"><tspan
+                     id="tspan122"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999 280 291.19998 302.39999 313.59998 324.79999 336 347.19998 358.39999 369.59998 380.79999 392 403.19998 414.39999 425.59998 436.79999 447.99997 459.19998 470.39999 481.59998 492.79999 503.99997 515.19995 526.39996 537.59998 548.79999 560">loss_i = cross_entropy_loss(logits, labels, axis=0)</tspan></text>
+<text
+                   id="text128"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,510.91998)"><tspan
+                     id="tspan126"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 55.999996 67.199997 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999 280 291.19998 302.39999 313.59998 324.79999 336 347.19998 358.39999 369.59998 380.79999 392 403.19998 414.39999 425.59998 436.79999 447.99997 459.19998 470.39999 481.59998 492.79999 503.99997 515.19995 526.39996 537.59998 548.79999 560">loss_t = cross_entropy_loss(logits, labels, axis=1)</tspan></text>
+<text
+                   id="text132"
+                   style="font-variant:normal;font-weight:normal;font-size:18.66666603px;font-family:RobotoMono;-inkscape-font-specification:RobotoMono-Regular;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   transform="translate(9,532.92)"><tspan
+                     id="tspan130"
+                     y="0"
+                     x="0 11.2 22.4 33.599998 44.799999 78.399994 89.599998 100.8 111.99999 123.2 134.39999 145.59999 156.79999 168 179.2 190.39999 201.59999 212.79999 223.99998 235.2 246.39999 257.59998 268.79999 280 291.19998 302.39999">loss = (loss_i + loss_t)/2</tspan></text>
+</g></g></g><g
+             transform="scale(381)"
+             id="g134" /></g></g></g></g></svg>
