@@ -23,8 +23,8 @@ I am also passionate about public welfare, I am a volunteer with various NGOs.
 
 Believing in the power of coding for social good, I founded [wuhan.support](https://github.com/wuhan-support) in January 2020 for COVID-19.
 
-<a href="https://github.com/ZhiyuanChen"><img align="center" alt="Zhiyuan's GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=ZhiyuanChen&custom_title=Zhiyuan's GitHub Stats&show_icons=true&count_private=true&theme=panda"/></a>
-<a href="https://github.com/ZhiyuanChent"><img align="center" alt="Zhiyuan's WakaTime Stats" src="https://github-readme-stats.vercel.app/api/wakatime?username=@ZhiyuanChen&custom_title=Zhiyuan's WakaTime Stats&layout=compact&time_range=last_year&theme=panda&langs_count=10"/></a>
+<a href="https://github.com/ZhiyuanChen"><img align="center" alt="Zhiyuan's GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=ZhiyuanChen&custom_title=Zhiyuan%27s%20GitHub%20Stats&show_icons=true&count_private=true&theme=panda"/></a>
+<a href="https://github.com/ZhiyuanChent"><img align="center" alt="Zhiyuan's WakaTime Stats" src="https://github-readme-stats.vercel.app/api/wakatime?username=@ZhiyuanChen&custom_title=Zhiyuan%27s%20WakaTime%20Stats&layout=compact&time_range=last_year&theme=panda&langs_count=10"/></a>
 
 I'm always open to discussions and collaborations.
 If my work resonates with you, feel free to connect via [email](mailto:this@zyc.ai), [Messenger](https://m.me/zyc.fb), or WeChat (zyc-ml).
