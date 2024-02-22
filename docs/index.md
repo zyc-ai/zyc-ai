@@ -9,29 +9,30 @@ date: 2020-07-22 13:07:56
 G' day mate, how are you doing?
 
 My name is Zhiyuan (pronounces as ˈʤ-jʊˈɑːn).
-I am a researcher at Deep Potential, where I work on macro molecules.
-My research areas include AI4Science, computer vision, and deep learning.
-I received my Bachelor's degree from the Australian National University in 2022.
+I am a MPhil student in the joint program of the HKU-MMLab and the Shanghai AI Lab, supervised by [Prof. Xihui Liu](https://xh-liu.github.io).
+My current research interests focus on building advanced machine learning models and toolkits to solve scientific problems.
 
-Before joining DP in 2022, I used to be extremely lucky to work as a research assistant of StarBridge program & research intern of Star of Tomorrow program under the guidance of [Dr. Pan Deng](https://www.microsoft.com/en-us/research/people/paden/) at Microsoft Research Asia & Microsoft Research AI for Science from 2021-2022, where I worked on Computational Biology.
-Before MSR, I was very lucky to work as a research intern at SenseTime supervised by [Dr. Yue Liao](https://liaoyue.net/), where I worked on self-supervised learning, transformer in vision, and large-scale neural networks.
-Before these, I used to work at Westlake University, SenseTime, and Peking University.
+Before pursuing my graduate studies, I was a researcher with DP Tech, where I worked on macro molecules.
+Prior to joining DP in 2022, I had the privilege of being a research assistant of StarBridge program & research intern of Star of Tomorrow program under the guidance of [Dr. Pan Deng](https://www.microsoft.com/en-us/research/people/paden/) at Microsoft Research Asia & Microsoft Research AI for Science from 2021-2022, where I worked on Computational Biology.
+Preceding my time at MSR, I was very fortunate to work as a research intern at SenseTime supervised by [Dr. Yue Liao](https://liaoyue.net/), where I worked on self-supervised learning, transformer in vision, and large-scale neural networks.
+I also worked at Shanghai AI Lab, Westlake University, SenseTime, and Peking University.
 
-Coding could be the thing I love most, I have some open source projects, including [DanLing](https://github.com/ZhiyuanChen/DanLing) & [CHANfiG](https://github.com/ZhiyuanChen/CHANfiG), I'm currently the maintainer of [PySOT](https://github.com/STVIR/PySOT) & [iCrawler](https://github.com/hellock/icrawler), and I have contributed to multiple repositories, including [Accelerate](https://github.com/huggingface/accelerate), [OpenCV](https://github.com/opencv/opencv), [PyTorch](https://github.com/pytorch/pytorch).
+Coding could be the thing I love most, I have initiated several open source projects, including [DanLing](https://github.com/ZhiyuanChen/DanLing) & [CHANfiG](https://github.com/ZhiyuanChen/CHANfiG), I am the maintainer of [PySOT](https://github.com/STVIR/PySOT) & [iCrawler](https://github.com/hellock/icrawler), and I have contributed to many other repositories, including [Accelerate](https://github.com/huggingface/accelerate), [OpenCV](https://github.com/opencv/opencv), [PyTorch](https://github.com/pytorch/pytorch), etc.
 
-I am passionate about public welfare, I was a volunteer with the human settlement program of the Australian Red Cross.
+I am also passionate about public welfare, I am a volunteer with various NGOs.
 
-And I believe the world would be better if we apply coding in public welfare, I founded [wuhan.support](https://github.com/wuhan-support) in January 2020 for COVID-19.
+Believing in the power of coding for social good, I founded [wuhan.support](https://github.com/wuhan-support) in January 2020 for COVID-19.
 
 <a href="https://github.com/ZhiyuanChen"><img align="center" alt="Zhiyuan's GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=ZhiyuanChen&custom_title=Zhiyuan's GitHub Stats&show_icons=true&count_private=true&theme=panda"/></a>
 <a href="https://github.com/ZhiyuanChent"><img align="center" alt="Zhiyuan's WakaTime Stats" src="https://github-readme-stats.vercel.app/api/wakatime?username=@ZhiyuanChen&custom_title=Zhiyuan's WakaTime Stats&layout=compact&time_range=last_year&theme=panda&langs_count=10"/></a>
 
-I am looking for PhD opportunities, please drop me an [email](mailto:this@zyc.ai) if you are interested, you may also add me on [Messenger](https://m.me/zyc.fb) or WeChat: zyc-ml.
+I'm always open to discussions and collaborations.
+If my work resonates with you, feel free to connect via [email](mailto:this@zyc.ai), [Messenger](https://m.me/zyc.fb), or WeChat (zyc-ml).
 
-**We ([Deep Potential](https://dp.tech/)) are looking for highly self-motivated and talented interns. Please [contact us](mailto:chenzhiyuan@dp.tech) if you are interested.**
+**We ([Shanghai AI Lab](https://www.shlab.org.cn)) are looking for highly passionate and talented interns. Don't hesitate to [get in touch](mailto:chenzhiyuan@pjlab.org.cn) if you are interested.**
 
-Please do NOT send me emails if you are having troubles to run some code or cannot reproduce some results, instead, you are more than welcome to create an issue or start a discussion and @me. I will not be answering any question via email, since it would be unfair to others.
+For code-related inquiries or discussions, I encourage to use GitHub issues or discussions rather than email, to ensure fairness and collective troubleshooting.
 
-You are welcome to join me for some gaming~
+And if you're into gaming, let's team up~
 
 <a href="https://github.com/ZhiyuanChen"><img align="center" width=40% alt="Zhiyuan's Steam Stats" src="https://steam-stat.vercel.app/api?profileName=zyc-ai"/></a>
