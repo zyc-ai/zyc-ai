@@ -151,6 +151,66 @@
   year       = {2022}
 }
 
+@inproceedings{DeepLab,
+  author    = {Liang{-}Chieh Chen and George Papandreou and Iasonas Kokkinos and Kevin Murphy and Alan L. Yuille},
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  biburl    = {https://dblp.org/rec/journals/corr/ChenPKMY14.bib},
+  booktitle = {3rd International Conference on Learning Representations, {ICLR} 2015, San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings},
+  editor    = {Yoshua Bengio and Yann LeCun},
+  timestamp = {Thu, 25 Jul 2019 14:25:40 +0200},
+  title     = {Semantic Image Segmentation with Deep Convolutional Nets and Fully Connected CRFs},
+  url       = {http://arxiv.org/abs/1412.7062},
+  year      = {2015}
+}
+
+@article{DeepLabv2,
+  author  = {Chen, Liang-Chieh and Papandreou, George and Kokkinos, Iasonas and Murphy, Kevin and Yuille, Alan L.},
+  doi     = {10.1109/TPAMI.2017.2699184},
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  number  = {4},
+  pages   = {834-848},
+  title   = {{DeepLab}: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs},
+  volume  = {40},
+  year    = {2018}
+}
+
+@article{DeepLabv3,
+  author     = {Liang{-}Chieh Chen and George Papandreou and Florian Schroff and Hartwig Adam},
+  bibsource  = {dblp computer science bibliography, https://dblp.org},
+  biburl     = {https://dblp.org/rec/journals/corr/ChenPSA17.bib},
+  eprint     = {1706.05587},
+  eprinttype = {arXiv},
+  journal    = {CoRR},
+  timestamp  = {Mon, 13 Aug 2018 16:48:07 +0200},
+  title      = {Rethinking Atrous Convolution for Semantic Image Segmentation},
+  url        = {http://arxiv.org/abs/1706.05587},
+  volume     = {abs/1706.05587},
+  year       = {2017}
+}
+
+@inproceedings{DeepLabv3+,
+  author    = {Chen, Liang-Chieh and Zhu, Yukun and Papandreou, George and Schroff, Florian and Adam, Hartwig},
+  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+  month     = {September},
+  title     = {Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation},
+  year      = {2018}
+}
+
+@inproceedings{DeepStruct,
+  abstract  = {We introduce a method for improving the structural understanding abilities of language models. Unlike previous approaches that finetune the models with task-specific augmentation, we pretrain language models to generate structures from the text on a collection of task-agnostic corpora. Our structure pretraining enables zero-shot transfer of the learned knowledge that models have about the structure tasks. We study the performance of this approach on 28 datasets, spanning 10 structure prediction tasks including open information extraction, joint entity and relation extraction, named entity recognition, relation classification, semantic role labeling, event extraction, coreference resolution, factual probe, intent detection, and dialogue state tracking. We further enhance the pretraining with the task-specific training sets. We show that a 10B parameter language model transfers non-trivially to most tasks and obtains state-of-the-art performance on 21 of 28 datasets that we evaluate. Our code and datasets will be made publicly available.},
+  address   = {Dublin, Ireland},
+  author    = {Wang, Chenguang and Liu, Xiao and Chen, Zui and Hong, Haoyun and Tang, Jie and Song, Dawn},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2022},
+  doi       = {10.18653/v1/2022.findings-acl.67},
+  editor    = {Muresan, Smaranda and Nakov, Preslav and Villavicencio, Aline},
+  month     = may,
+  pages     = {803--823},
+  publisher = {Association for Computational Linguistics},
+  title     = {{D}eep{S}truct: Pretraining of Language Models for Structure Prediction},
+  url       = {https://aclanthology.org/2022.findings-acl.67},
+  year      = {2022}
+}
+
 @inproceedings{DeiT,
   abstract  = {Recently, neural networks purely based on attention were shown to address image understanding tasks such as image classification. These high-performing vision transformers are pre-trained with hundreds of millions of images using a large infrastructure, thereby limiting their adoption. In this work, we produce competitive convolution-free transformers trained on ImageNet only using a single computer in less than 3 days. Our reference vision transformer (86M parameters) achieves top-1 accuracy of 83.1% (single-crop) on ImageNet with no external data. We also introduce a teacher-student strategy specific to transformers. It relies on a distillation token ensuring that the student learns from the teacher through attention, typically from a convnet teacher. The learned transformers are competitive (85.2% top-1 acc.) with the state of the art on ImageNet, and similarly when transferred to other tasks. We will share our code and models.},
   author    = {Touvron, Hugo and Cord, Matthieu and Douze, Matthijs and Massa, Francisco and Sablayrolles, Alexandre and Jegou, Herve},
@@ -165,6 +225,26 @@
   url       = {https://proceedings.mlr.press/v139/touvron21a.html},
   volume    = {139},
   year      = {2021}
+}
+
+@inproceedings{DenseNet,
+  author    = {Huang, Gao and Liu, Zhuang and van der Maaten, Laurens and Weinberger, Kilian Q.},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {July},
+  title     = {Densely Connected Convolutional Networks},
+  year      = {2017}
+}
+
+@inproceedings{Diffusion,
+  author    = {Ho, Jonathan and Jain, Ajay and Abbeel, Pieter},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor    = {H. Larochelle and M. Ranzato and R. Hadsell and M.F. Balcan and H. Lin},
+  pages     = {6840--6851},
+  publisher = {Curran Associates, Inc.},
+  title     = {Denoising Diffusion Probabilistic Models},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2020/file/4c5bcfec8584af0d967f1ab10179ca4b-Paper.pdf},
+  volume    = {33},
+  year      = {2020}
 }
 
 @inproceedings{EfficientNet,
@@ -211,6 +291,42 @@
   year      = {2019}
 }
 
+@inproceedings{FasterRcnn,
+  author    = {Ren, Shaoqing and He, Kaiming and Girshick, Ross and Sun, Jian},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor    = {C. Cortes and N. Lawrence and D. Lee and M. Sugiyama and R. Garnett},
+  pages     = {},
+  publisher = {Curran Associates, Inc.},
+  title     = {{Faster R-CNN}: Towards Real-Time Object Detection with Region Proposal Networks},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2015/file/14bfa6bb14875e45bba028a21ed38046-Paper.pdf},
+  volume    = {28},
+  year      = {2015}
+}
+
+@inproceedings{FastRcnn,
+  author    = {Girshick, Ross},
+  booktitle = {Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
+  month     = {December},
+  title     = {{Fast R-CNN}},
+  year      = {2015}
+}
+
+@inproceedings{FCN,
+  author    = {Long, Jonathan and Shelhamer, Evan and Darrell, Trevor},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  title     = {Fully Convolutional Networks for Semantic Segmentation},
+  year      = {2015}
+}
+
+@article{FoundationModel,
+  author  = {Rishi Bommasani and Drew A. Hudson and Ehsan Adeli and Russ Altman and Simran Arora and Sydney von Arx and Michael S. Bernstein and Jeannette Bohg and Antoine Bosselut and Emma Brunskill and Erik Brynjolfsson and S. Buch and Dallas Card and Rodrigo Castellon and Niladri S. Chatterji and Annie S. Chen and Kathleen A. Creel and Jared Davis and Dora Demszky and Chris Donahue and Moussa Doumbouya and Esin Durmus and Stefano Ermon and John Etchemendy and Kawin Ethayarajh and Li Fei-Fei and Chelsea Finn and Trevor Gale and Lauren E. Gillespie and Karan Goel and Noah D. Goodman and Shelby Grossman and Neel Guha and Tatsunori Hashimoto and Peter Henderson and John Hewitt and Daniel E. Ho and Jenny Hong and Kyle Hsu and Jing Huang and Thomas F. Icard and Saahil Jain and Dan Jurafsky and Pratyusha Kalluri and Siddharth Karamcheti and Geoff Keeling and Fereshte Khani and O. Khattab and Pang Wei Koh and Mark S. Krass and Ranjay Krishna and Rohith Kuditipudi and Ananya Kumar and Faisal Ladhak and Mina Lee and Tony Lee and Jure Leskovec and Isabelle Levent and Xiang Lisa Li and Xuechen Li and Tengyu Ma and Ali Malik and Christopher D. Manning and Suvir P. Mirchandani and Eric Mitchell and Zanele Munyikwa and Suraj Nair and Avanika Narayan and Deepak Narayanan and Benjamin Newman and Allen Nie and Juan Carlos Niebles and Hamed Nilforoshan and J. F. Nyarko and Giray Ogut and Laurel Orr and Isabel Papadimitriou and Joon Sung Park and Chris Piech and Eva Portelance and Christopher Potts and Aditi Raghunathan and Robert Reich and Hongyu Ren and Frieda Rong and Yusuf H. Roohani and Camilo Ruiz and Jack Ryan and Christopher R'e and Dorsa Sadigh and Shiori Sagawa and Keshav Santhanam and Andy Shih and Krishna Parasuram Srinivasan and Alex Tamkin and Rohan Taori and Armin W. Thomas and Florian Tram{\`e}r and Rose E. Wang and William Wang and Bohan Wu and Jiajun Wu and Yuhuai Wu and Sang Michael Xie and Michihiro Yasunaga and Jiaxuan You and Matei A. Zaharia and Michael Zhang and Tianyi Zhang and Xikun Zhang and Yuhui Zhang and Lucia Zheng and Kaitlyn Zhou and Percy Liang},
+  journal = {ArXiv},
+  title   = {On the Opportunities and Risks of Foundation Models},
+  url     = {https://crfm.stanford.edu/assets/report.pdf},
+  year    = {2021}
+}
+
 @article{GPT,
   author    = {Radford, Alec and Narasimhan, Karthik and Salimans, Tim and Sutskever, Ilya and others},
   publisher = {OpenAI},
@@ -235,6 +351,15 @@
   url       = {https://proceedings.neurips.cc/paper/2020/file/1457c0d6bfcb4967418bfb8ac142f64a-Paper.pdf},
   volume    = {33},
   year      = {2020}
+}
+
+@inproceedings{GraphFormers,
+  author    = {Junhan Yang and Zheng Liu and Shitao Xiao and Chaozhuo Li and Defu Lian and Sanjay Agrawal and Amit S and Guangzhong Sun and Xing Xie},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor    = {A. Beygelzimer and Y. Dauphin and P. Liang and J. Wortman Vaughan},
+  title     = {GraphFormers: {GNN}-nested Transformers for Representation Learning on Textual Graph},
+  url       = {https://openreview.net/forum?id=yILzFBjR0Y},
+  year      = {2021}
 }
 
 @article{hestness2017deep,
@@ -284,7 +409,7 @@
 }
 
 @inproceedings{ImageNet,
-  author    = {Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Fei-Fei, Li},
+  author    = {Deng, Jia and Dong, Wei and Socher, Richard and Li, Li-Jia and Li, Kai and Li, Fei-Fei},
   booktitle = {Proceedings of the IEEE conference on computer vision and pattern recognition (CVPR)},
   month     = {June},
   pages     = {248-255},
@@ -360,6 +485,14 @@
   year      = {2022}
 }
 
+@inproceedings{MaskRCNN,
+  author    = {He, Kaiming and Gkioxari, Georgia and Dollar, Piotr and Girshick, Ross},
+  booktitle = {Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
+  month     = {Oct},
+  title     = {{Mask R-CNN}},
+  year      = {2017}
+}
+
 @inproceedings{MCNNSIA,
   abstract  = {Modern convolutional networks are not shift-invariant, as small input shifts or translations can cause drastic changes in the output. Commonly used downsampling methods, such as max-pooling, strided-convolution, and average-pooling, ignore the sampling theorem. The well-known signal processing fix is anti-aliasing by low-pass filtering before downsampling. However, simply inserting this module into deep networks leads to performance degradation; as a result, it is seldomly used today. We show that when integrated correctly, it is compatible with existing architectural components, such as max-pooling. The technique is general and can be incorporated across layer types and applications, such as image classification and conditional image generation. In addition to increased shift-invariance, we also observe, surprisingly, that anti-aliasing boosts accuracy in ImageNet classification, across several commonly-used architectures. This indicates that anti-aliasing serves as effective regularization. Our results demonstrate that this classical signal processing technique has been undeservingly overlooked in modern deep networks.},
   author    = {Zhang, Richard},
@@ -373,6 +506,36 @@
   title     = {Making Convolutional Networks Shift-Invariant Again},
   url       = {https://proceedings.mlr.press/v97/zhang19a.html},
   volume    = {97},
+  year      = {2019}
+}
+
+@article{MobileNet,
+  author     = {Andrew G. Howard and Menglong Zhu and Bo Chen and Dmitry Kalenichenko and Weijun Wang and Tobias Weyand and Marco Andreetto and Hartwig Adam},
+  bibsource  = {dblp computer science bibliography, https://dblp.org},
+  biburl     = {https://dblp.org/rec/journals/corr/HowardZCKWWAA17.bib},
+  eprint     = {1704.04861},
+  eprinttype = {arXiv},
+  journal    = {CoRR},
+  timestamp  = {Thu, 27 May 2021 16:20:51 +0200},
+  title      = {MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications},
+  url        = {http://arxiv.org/abs/1704.04861},
+  volume     = {abs/1704.04861},
+  year       = {2017}
+}
+
+@inproceedings{MobileNetv2,
+  author    = {Sandler, Mark and Howard, Andrew and Zhu, Menglong and Zhmoginov, Andrey and Chen, Liang-Chieh},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  title     = {MobileNetV2: Inverted Residuals and Linear Bottlenecks},
+  year      = {2018}
+}
+
+@inproceedings{MobileNetv3,
+  author    = {Howard, Andrew and Sandler, Mark and Chu, Grace and Chen, Liang-Chieh and Chen, Bo and Tan, Mingxing and Wang, Weijun and Zhu, Yukun and Pang, Ruoming and Vasudevan, Vijay and Le, Quoc V. and Adam, Hartwig},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  month     = {October},
+  title     = {Searching for MobileNetV3},
   year      = {2019}
 }
 
@@ -426,6 +589,14 @@
   url       = {https://proceedings.mlr.press/v162/wang22al.html},
   volume    = {162},
   year      = {2022}
+}
+
+@inproceedings{RCNN,
+  author    = {Girshick, Ross and Donahue, Jeff and Darrell, Trevor and Malik, Jitendra},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  title     = {Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation},
+  year      = {2014}
 }
 
 @inproceedings{ResNet,
@@ -482,6 +653,15 @@
   url       = {https://proceedings.neurips.cc/paper/2020/file/fcbc95ccdd551da181207c0c1400c655-Paper.pdf},
   volume    = {33},
   year      = {2020}
+}
+
+@inproceedings{StableDiffusion,
+  author    = {Rombach, Robin and Blattmann, Andreas and Lorenz, Dominik and Esser, Patrick and Ommer, Bj\"orn},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  pages     = {10684-10695},
+  title     = {High-Resolution Image Synthesis With Latent Diffusion Models},
+  year      = {2022}
 }
 
 @inproceedings{Subword,
@@ -557,6 +737,38 @@
   title     = {Universal Language Model Fine-tuning for Text Classification},
   url       = {https://aclanthology.org/P18-1031},
   year      = {2018}
+}
+
+@inproceedings{UnifiedIO,
+  author    = {Jiasen Lu and Christopher Clark and Rowan Zellers and Roozbeh Mottaghi and Aniruddha Kembhavi},
+  booktitle = {The Eleventh International Conference on Learning Representations},
+  title     = {{UNIFIED}-{IO}: A Unified Model for Vision, Language, and Multi-modal Tasks},
+  url       = {https://openreview.net/forum?id=E01k9048soZ},
+  year      = {2023}
+}
+
+@inproceedings{UniLM,
+  author    = {Dong, Li and Yang, Nan and Wang, Wenhui and Wei, Furu and Liu, Xiaodong and Wang, Yu and Gao, Jianfeng and Zhou, Ming and Hon, Hsiao-Wuen},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor    = {H. Wallach and H. Larochelle and A. Beygelzimer and F. d\textquotesingle Alch\'{e}-Buc and E. Fox and R. Garnett},
+  pages     = {},
+  publisher = {Curran Associates, Inc.},
+  title     = {Unified Language Model Pre-training for Natural Language Understanding and Generation},
+  url       = {https://proceedings.neurips.cc/paper_files/paper/2019/file/c20bb2d9a50d5ac1f713f8b34d9aac5a-Paper.pdf},
+  volume    = {32},
+  year      = {2019}
+}
+
+@inproceedings{UniLMv2,
+  abstract  = {We propose to pre-train a unified language model for both autoencoding and partially autoregressive language modeling tasks using a novel training procedure, referred to as a pseudo-masked language model (PMLM). Given an input text with masked tokens, we rely on conventional masks to learn inter-relations between corrupted tokens and context via autoencoding, and pseudo masks to learn intra-relations between masked spans via partially autoregressive modeling. With well-designed position embeddings and self-attention masks, the context encodings are reused to avoid redundant computation. Moreover, conventional masks used for autoencoding provide global masking information, so that all the position embeddings are accessible in partially autoregressive language modeling. In addition, the two tasks pre-train a unified language model as a bidirectional encoder and a sequence-to-sequence decoder, respectively. Our experiments show that the unified language models pretrained using PMLM achieve new state-of-the-art results on a wide range of language understanding and generation tasks across several widely used benchmarks.},
+  articleno = {60},
+  author    = {Bao, Hangbo and Dong, Li and Wei, Furu and Wang, Wenhui and Yang, Nan and Liu, Xiaodong and Wang, Yu and Piao, Songhao and Gao, Jianfeng and Zhou, Ming and Hon, Hsiao-Wuen},
+  booktitle = {Proceedings of the 37th International Conference on Machine Learning},
+  numpages  = {11},
+  publisher = {JMLR.org},
+  series    = {ICML'20},
+  title     = {UNILMv2: Pseudo-Masked Language Models for Unified Language Model Pre-Training},
+  year      = {2020}
 }
 
 @inproceedings{UniPerceiver,
@@ -670,6 +882,15 @@
   year      = {2021}
 }
 
+@inproceedings{VLMo,
+  author    = {Hangbo Bao and Wenhui Wang and Li Dong and Qiang Liu and Owais Khan Mohammed and Kriti Aggarwal and Subhojit Som and Songhao Piao and Furu Wei},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor    = {Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+  title     = {{VLM}o: Unified Vision-Language Pre-Training with Mixture-of-Modality-Experts},
+  url       = {https://openreview.net/forum?id=bydKs84JEyw},
+  year      = {2022}
+}
+
 @article{VT,
   author     = {Bichen Wu and Chenfeng Xu and Xiaoliang Dai and Alvin Wan and Peizhao Zhang and Masayoshi Tomizuka and Kurt Keutzer and Peter Vajda},
   eprint     = {2006.03677},
@@ -704,6 +925,59 @@
   url        = {https://doi.org/10.1145/2812802},
   volume     = {59},
   year       = {2016}
+}
+
+@inproceedings{YOLO,
+  author    = {Redmon, Joseph and Divvala, Santosh and Girshick, Ross and Farhadi, Ali},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  title     = {You Only Look Once: Unified, Real-Time Object Detection},
+  year      = {2016}
+}
+
+@inproceedings{YOLOv2,
+  author    = {Redmon, Joseph and Farhadi, Ali},
+  booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {July},
+  title     = {{YOLO9000}: Better, Faster, Stronger},
+  year      = {2017}
+}
+
+@article{YOLOv3,
+  author     = {Redmon, Joseph and Farhadi, Ali},
+  bibsource  = {dblp computer science bibliography, https://dblp.org},
+  biburl     = {https://dblp.org/rec/journals/corr/abs-1804-02767.bib},
+  eprint     = {1804.02767},
+  eprinttype = {arXiv},
+  journal    = {CoRR},
+  timestamp  = {Mon, 13 Aug 2018 16:48:24 +0200},
+  title      = {{YOLOv3}: An Incremental Improvement},
+  url        = {http://arxiv.org/abs/1804.02767},
+  volume     = {abs/1804.02767},
+  year       = {2018}
+}
+
+@article{YOLOv4,
+  author     = {Alexey Bochkovskiy and Chien{-}Yao Wang and Hong{-}Yuan Mark Liao},
+  bibsource  = {dblp computer science bibliography, https://dblp.org},
+  biburl     = {https://dblp.org/rec/journals/corr/abs-2004-10934.bib},
+  eprint     = {2004.10934},
+  eprinttype = {arXiv},
+  journal    = {CoRR},
+  timestamp  = {Tue, 28 Apr 2020 16:10:02 +0200},
+  title      = {{YOLOv4}: Optimal Speed and Accuracy of Object Detection},
+  url        = {https://arxiv.org/abs/2004.10934},
+  volume     = {abs/2004.10934},
+  year       = {2020}
+}
+
+@misc{YOLOv7,
+  archiveprefix = {arXiv},
+  author        = {Chien-Yao Wang and Alexey Bochkovskiy and Hong-Yuan Mark Liao},
+  eprint        = {2207.02696},
+  primaryclass  = {cs.CV},
+  title         = {{YOLOv7}: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors},
+  year          = {2022}
 }
 
 @inproceedings{zhu2015aligning,
