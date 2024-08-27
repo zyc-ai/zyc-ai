@@ -1,244 +1,137 @@
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KV83JWN');</script>
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "GTM-KV83JWN");
+</script>
 <!-- End Google Tag Manager -->
+<!DOCTYPE html>
 
-
-<!doctype html>
-<html lang="zh" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-        <meta name="description" content="The website of Zhiyuan Chen">
-      
-      
-        <meta name="author" content="Zhiyuan Chen">
-      
-      
-        <link rel="canonical" href="https://zyc.ai/container/docker/dockerfile/">
-      
-      
-        <link rel="prev" href="../command_line_interface/">
-      
-      
-        <link rel="next" href="../../../sketch/chanfig/">
-      
-      
-        <link rel="alternate" type="application/rss+xml" title="RSS 订阅" href="../../../feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="已更新内容的 RSS 订阅" href="../../../feed_rss_updated.xml">
-      
-      <link rel="icon" href="../../../assets/images/logo.ico">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.19">
-    
-    
-      
-        <title>Dockerfile - Zhiyuan Chen</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
-      
-        
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
-      
-      
-
-
-    
-    
-      
-    
-    
-      
-    
-    
-      <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
-    
-    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-  
-
-
-  
-  
-
+<html class="no-js" lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="The website of Zhiyuan Chen" name="description"/>
+<meta content="Zhiyuan Chen" name="author"/>
+<link href="https://zyc.ai/container/docker/dockerfile/" rel="canonical"/>
+<link href="../command_line_interface/" rel="prev"/>
+<link href="../../../sketch/chanfig/" rel="next"/>
+<link href="../../../feed_rss_created.xml" rel="alternate" title="RSS 订阅" type="application/rss+xml"/>
+<link href="../../../feed_rss_updated.xml" rel="alternate" title="已更新内容的 RSS 订阅" type="application/rss+xml"/>
+<link href="../../../assets/images/logo.ico" rel="icon"/>
+<meta content="mkdocs-1.6.0, mkdocs-material-9.5.33" name="generator"/>
+<title>Dockerfile - Zhiyuan Chen</title>
+<link href="../../../assets/stylesheets/main.3cba04c6.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link href="../../../assets/css/fonts.css" rel="stylesheet"/>
+<link href="../../../assets/css/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-HJPHFP4Y4Y"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-HJPHFP4Y4Y",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-HJPHFP4Y4Y",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
-  
-    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
-  
-
-    
-    
-    
-  </head>
-  
-  
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="teal">
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#dockerfile" class="md-skip">
+<script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+</head>
+<body data-md-color-accent="teal" data-md-color-primary="blue-grey" data-md-color-scheme="slate" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#dockerfile">
           跳转至
         </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
-  
-
+</div>
+<div data-md-component="announce">
+</div>
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../.." title="Zhiyuan Chen" class="md-header__button md-logo" aria-label="Zhiyuan Chen" data-md-component="logo">
-      
-  <img src="../../../assets/images/logo.png" alt="logo">
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
+<nav aria-label="页眉" class="md-header__inner md-grid">
+<a aria-label="Zhiyuan Chen" class="md-header__button md-logo" data-md-component="logo" href="../../.." title="Zhiyuan Chen">
+<img alt="logo" src="../../../assets/images/logo.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
             Zhiyuan Chen
           </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
             
               Dockerfile
             
           </span>
-        </div>
-      </div>
-    </div>
-    
-      
-        <form class="md-header__option" data-md-component="palette">
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue-grey" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-      </label>
-    
-  
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="teal" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="blue-grey" data-md-color-scheme="slate" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="teal" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="blue-grey" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
 </form>
-      
-    
-    
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="查找">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" title="分享" aria-label="分享" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
+<script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="搜索" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="搜索" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="查找" class="md-search__options">
+<a aria-label="分享" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="分享">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"></path></svg>
+</a>
+<button aria-label="清空当前内容" class="md-search__icon md-icon" tabindex="-1" title="清空当前内容" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
             正在初始化搜索引擎
           </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+<ol class="md-search-result__list" role="presentation"></ol>
 </div>
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/ZhiyuanChen" title="前往仓库" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
-  </div>
-  <div class="md-source__repository">
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/ZhiyuanChen" title="前往仓库">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
     Zhiyuan Chen
   </div>
 </a>
-      </div>
-    
-  </nav>
-  
-    
-      
-<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
+</div>
+</nav>
+<nav aria-label="标签" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../..">
         
   
     
@@ -246,18 +139,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   Zhiyuan Chen
 
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../pytorch/nn/Module/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../pytorch/nn/Module/">
           
   
     
@@ -265,19 +149,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   PyTorch
 
         </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../stat/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../stat/">
           
   
     
@@ -285,19 +159,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   统计
 
         </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../optimisation/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../optimisation/">
           
   
     
@@ -305,19 +169,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   优化
 
         </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../transformer/attention/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../transformer/attention/">
           
   
     
@@ -325,25 +179,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   变换网络
 
         </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../vision/backbone/big_transfer/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../vision/backbone/big_transfer/">
           
   
     
@@ -351,22 +189,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   视觉计算
 
         </a>
-      </li>
-    
-  
-
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../language/word_processing/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../language/word_processing/">
           
   
     
@@ -374,19 +199,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   自然语言计算
 
         </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../algorithm/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../algorithm/">
           
   
     
@@ -394,29 +209,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   算法
 
         </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-    
-  
-  
-    
-    
-      
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../../k8s/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../../k8s/">
           
   
     
@@ -424,22 +219,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   容器
 
         </a>
-      </li>
-    
-  
-
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../sketch/chanfig/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../sketch/chanfig/">
           
   
     
@@ -447,19 +229,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   随笔
 
         </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../../about/zen/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../about/zen/">
           
   
     
@@ -467,1415 +239,548 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   关于
 
         </a>
-      </li>
-    
-  
-
-      
-    </ul>
-  </div>
+</li>
+</ul>
+</div>
 </nav>
-    
-  
 </header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-  
-
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Zhiyuan Chen" class="md-nav__button md-logo" aria-label="Zhiyuan Chen" data-md-component="logo">
-      
-  <img src="../../../assets/images/logo.png" alt="logo">
-
-    </a>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="导航栏" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Zhiyuan Chen" class="md-nav__button md-logo" data-md-component="logo" href="../../.." title="Zhiyuan Chen">
+<img alt="logo" src="../../../assets/images/logo.png"/>
+</a>
     Zhiyuan Chen
   </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/ZhiyuanChen" title="前往仓库" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
-  </div>
-  <div class="md-source__repository">
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/ZhiyuanChen" title="前往仓库">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
     Zhiyuan Chen
   </div>
 </a>
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../..">
+<span class="md-ellipsis">
     Zhiyuan Chen
   </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../../pytorch/nn/Module/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../pytorch/nn/Module/">
+<span class="md-ellipsis">
     PyTorch
   </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../../stat/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../stat/">
+<span class="md-ellipsis">
     统计
   </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../../optimisation/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../optimisation/">
+<span class="md-ellipsis">
     优化
   </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../../transformer/attention/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../transformer/attention/">
+<span class="md-ellipsis">
     变换网络
   </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    
-  
-  
-    <a href="../../../vision/backbone/big_transfer/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../vision/backbone/big_transfer/">
+<span class="md-ellipsis">
     视觉计算
   </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../../language/word_processing/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../language/word_processing/">
+<span class="md-ellipsis">
     自然语言计算
   </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../../algorithm/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../algorithm/">
+<span class="md-ellipsis">
     算法
   </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_9" type="checkbox"/>
+<label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+<span class="md-ellipsis">
     容器
   </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_9">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_9_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_9">
+<span class="md-nav__icon md-icon"></span>
             容器
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_1" >
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../k8s/" class="md-nav__link ">
-              
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_9_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../k8s/">
+<span class="md-ellipsis">
     Kubernetes
   </span>
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_9_1" id="__nav_9_1_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_9_1">
-            <span class="md-nav__icon md-icon"></span>
+</a>
+<label class="md-nav__link" for="__nav_9_1" id="__nav_9_1_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_9_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_9_1">
+<span class="md-nav__icon md-icon"></span>
             Kubernetes
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../k8s/component/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../k8s/component/">
+<span class="md-ellipsis">
     组件
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../k8s/installation/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../k8s/installation/">
+<span class="md-ellipsis">
     安装
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../k8s/pods/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../k8s/pods/">
+<span class="md-ellipsis">
     Pods
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../k8s/deployments/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../k8s/deployments/">
+<span class="md-ellipsis">
     Deployments
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-      
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" checked>
-        
-          
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
-              
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_9_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
     Docker
   </span>
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_9_2" id="__nav_9_2_label" tabindex="">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_9_2">
-            <span class="md-nav__icon md-icon"></span>
+</a>
+<label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_9_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_9_2">
+<span class="md-nav__icon md-icon"></span>
             Docker
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../installation/">
+<span class="md-ellipsis">
     安装
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../command_line_interface/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../command_line_interface/">
+<span class="md-ellipsis">
     命令行接口
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
     Dockerfile
   </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
     Dockerfile
   </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+</a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       目录
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
       指令
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="指令">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#from" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="指令" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#from">
+<span class="md-ellipsis">
       FROM
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#label" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#label">
+<span class="md-ellipsis">
       LABEL
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#arg-env" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#arg-env">
+<span class="md-ellipsis">
       ARG 和 ENV
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#workdir-user" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#workdir-user">
+<span class="md-ellipsis">
       WORKDIR 和 USER
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#run" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#run">
+<span class="md-ellipsis">
       RUN
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#copy-add" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#copy-add">
+<span class="md-ellipsis">
       COPY 和 ADD
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#expose" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#expose">
+<span class="md-ellipsis">
       EXPOSE
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#volume" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#volume">
+<span class="md-ellipsis">
       VOLUME
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#healthcheck-stopsignal" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#healthcheck-stopsignal">
+<span class="md-ellipsis">
       HEALTHCHECK 和 STOPSIGNAL
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#onbuild" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#onbuild">
+<span class="md-ellipsis">
       ONBUILD
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#cmd-entrypoint" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cmd-entrypoint">
+<span class="md-ellipsis">
       CMD 和 ENTRYPOINT
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
       分析
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="分析">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#101-cudnn7-devel-ubuntu1804" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="分析" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#101-cudnn7-devel-ubuntu1804">
+<span class="md-ellipsis">
       10.1-cudnn7-devel-ubuntu18.04
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#101-devel-ubuntu1804" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#101-devel-ubuntu1804">
+<span class="md-ellipsis">
       10.1-devel-ubuntu18.04
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#101-runtime-ubuntu1804" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#101-runtime-ubuntu1804">
+<span class="md-ellipsis">
       10.1-runtime-ubuntu18.04
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#101-base-ubuntu1804" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#101-base-ubuntu1804">
+<span class="md-ellipsis">
       10.1-base-ubuntu18.04
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#ubuntu1804" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ubuntu1804">
+<span class="md-ellipsis">
       ubuntu:18.04
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
+</ul>
 </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../../sketch/chanfig/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../sketch/chanfig/">
+<span class="md-ellipsis">
     随笔
   </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../../about/zen/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../../about/zen/">
+<span class="md-ellipsis">
     关于
   </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-    
-  </ul>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       目录
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
       指令
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="指令">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#from" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="指令" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#from">
+<span class="md-ellipsis">
       FROM
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#label" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#label">
+<span class="md-ellipsis">
       LABEL
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#arg-env" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#arg-env">
+<span class="md-ellipsis">
       ARG 和 ENV
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#workdir-user" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#workdir-user">
+<span class="md-ellipsis">
       WORKDIR 和 USER
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#run" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#run">
+<span class="md-ellipsis">
       RUN
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#copy-add" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#copy-add">
+<span class="md-ellipsis">
       COPY 和 ADD
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#expose" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#expose">
+<span class="md-ellipsis">
       EXPOSE
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#volume" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#volume">
+<span class="md-ellipsis">
       VOLUME
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#healthcheck-stopsignal" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#healthcheck-stopsignal">
+<span class="md-ellipsis">
       HEALTHCHECK 和 STOPSIGNAL
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#onbuild" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#onbuild">
+<span class="md-ellipsis">
       ONBUILD
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#cmd-entrypoint" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#cmd-entrypoint">
+<span class="md-ellipsis">
       CMD 和 ENTRYPOINT
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
       分析
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="分析">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#101-cudnn7-devel-ubuntu1804" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="分析" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#101-cudnn7-devel-ubuntu1804">
+<span class="md-ellipsis">
       10.1-cudnn7-devel-ubuntu18.04
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#101-devel-ubuntu1804" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#101-devel-ubuntu1804">
+<span class="md-ellipsis">
       10.1-devel-ubuntu18.04
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#101-runtime-ubuntu1804" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#101-runtime-ubuntu1804">
+<span class="md-ellipsis">
       10.1-runtime-ubuntu18.04
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#101-base-ubuntu1804" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#101-base-ubuntu1804">
+<span class="md-ellipsis">
       10.1-base-ubuntu18.04
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#ubuntu1804" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ubuntu1804">
+<span class="md-ellipsis">
       ubuntu:18.04
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-  
-                  
-  
-<nav class="md-tags" >
-  
-    
-    
-    
-      <span class="md-tag">容器化</span>
-    
-  
-    
-    
-    
-      <span class="md-tag">Docker</span>
-    
-  
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<nav class="md-tags">
+<span class="md-tag">容器化</span>
+<span class="md-tag">Docker</span>
 </nav>
-
-
-  
-  
-
-
-<h1 id="dockerfile">Dockerfile<a class="headerlink" href="#dockerfile" title="Permanent link">&para;</a></h1>
+<h1 id="dockerfile">Dockerfile<a class="headerlink" href="#dockerfile" title="Permanent link">¶</a></h1>
 <p>Dockerfile可以说是Docker最重要的一部分。Docker依据Dockerfile的描述构建出一个又一个Docker镜像，使之得以运行。也是因此，我们可以将软件交付从数十GiB的代码缩减到数百KiB。</p>
 <p>本文将简要介绍Dockerfile的内容，并将对nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04的Dockerfile进行分析。</p>
-<h2 id="_1">指令<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">指令<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <p>首先，我们从Dockerfile的指令开始。Dockerfile有十几种指令，其中只有六种指令会创建一个新的层。他们是**ADD**、<strong>CMD</strong>、<strong>COPY</strong>、<strong>ENTRYPOINT</strong>、<strong>FROM**和**RUN</strong>。这六种指令在运行当中会创建新的层，在实践过程当中我们需要特别关注这些指令，错误的使用这些指令将可能造成容器未按期待运行。对于其他所有指令，Docker都将只会构建一个中间镜像，这既不会增加容器的大小，也不会对容器的性能产生任何影响。</p>
-<h3 id="from">FROM<a class="headerlink" href="#from" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<h3 id="from">FROM<a class="headerlink" href="#from" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>FROM &lt;image&gt;[:&lt;tag&gt;] [AS &lt;name&gt;]
 FROM &lt;image&gt;[@&lt;digest&gt;] [AS &lt;name&gt;]
 </code></pre></div></td></tr></table></div>
-<p>通常情况下，Dockerfile的第一行是FROM，也即代表其将基于一个另一个Docker（当然，极少数情况下也可能是scratch）构建。你可以将其理解为继承&ndash;子类将实现父类的全部功能。如果你希望对你的容器具有完全的掌控的话，你也可以省略掉FROM或者直接FROM scratch来构建一个基镜像。这将很可能耗去你大量的精力却无法带来任何收益，我们强烈推荐你不要这么做，除非你很确定你自己想做些什么。</p>
+<p>通常情况下，Dockerfile的第一行是FROM，也即代表其将基于一个另一个Docker（当然，极少数情况下也可能是scratch）构建。你可以将其理解为继承–子类将实现父类的全部功能。如果你希望对你的容器具有完全的掌控的话，你也可以省略掉FROM或者直接FROM scratch来构建一个基镜像。这将很可能耗去你大量的精力却无法带来任何收益，我们强烈推荐你不要这么做，除非你很确定你自己想做些什么。</p>
 <p>在上古时代（Docker 17.05之前），Docker是不支持多个FROM语句的。即Docker是单一继承的。但Docker 17.05添加了多阶段构建（multi-stage builds）。如果你在容器当中需要编译什么东西的话，使用多阶段构建创建一个新的容器进行编译并将结果复制到本容器当中将对于降低容器大小非常有利。我们会在稍后的例子当中进行演示。</p>
-<h3 id="label">LABEL<a class="headerlink" href="#label" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>LABEL &lt;key&gt;=&lt;value&gt;
+<h3 id="label">LABEL<a class="headerlink" href="#label" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>LABEL &lt;key&gt;=&lt;value&gt;
 </code></pre></div></td></tr></table></div>
 <p>LABEL对镜像进行标签，这个似乎没什么需要多说的。</p>
-<h3 id="arg-env">ARG 和 ENV<a class="headerlink" href="#arg-env" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<h3 id="arg-env">ARG 和 ENV<a class="headerlink" href="#arg-env" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>ARG &lt;name&gt;[=&lt;default value&gt;]
@@ -1883,12 +788,12 @@ FROM &lt;image&gt;[@&lt;digest&gt;] [AS &lt;name&gt;]
 ENV &lt;key&gt; &lt;value&gt;
 ENV &lt;key&gt;=&lt;value&gt;
 </code></pre></div></td></tr></table></div>
-<p>ARG指令设置参数，参数只能在构建镜像时使用，镜像创建完毕即丢失。ENV指令设置的则是环境变量，在容器创建好后仍然存在。这两个指令都对接下来的ADD、CMD、COPY、ENV、EXPOSE、ENTRYPOINT、FROM、LABEL、RUN、STOPSIGNAL、USER、VOLUME和WORKDIR生效。此外，对于Docker 1.4之后的版本来说，如果ONBUILD与上述十个指令联用，那他们也将对ONBUILD指令生效。对于Docker 1.13之后的版本来说，如果 docker build &ndash;build-arg 传递的参数在Dockerfile当中没有使用，Docker将会产生如下警告：</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>[Warning] One or more build-args [foo] were not consumed.
+<p>ARG指令设置参数，参数只能在构建镜像时使用，镜像创建完毕即丢失。ENV指令设置的则是环境变量，在容器创建好后仍然存在。这两个指令都对接下来的ADD、CMD、COPY、ENV、EXPOSE、ENTRYPOINT、FROM、LABEL、RUN、STOPSIGNAL、USER、VOLUME和WORKDIR生效。此外，对于Docker 1.4之后的版本来说，如果ONBUILD与上述十个指令联用，那他们也将对ONBUILD指令生效。对于Docker 1.13之后的版本来说，如果 docker build –build-arg 传递的参数在Dockerfile当中没有使用，Docker将会产生如下警告：</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>[Warning] One or more build-args [foo] were not consumed.
 </code></pre></div></td></tr></table></div>
 <p>这两个指令的区别主要在于作用域。如果需要在构建镜像时创建环境变量，也可这么写：</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>ARG ZC=&quot;Zhiyuan Chen&quot;
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>ARG ZC="Zhiyuan Chen"
 ENV ${ZC}
 </code></pre></div></td></tr></table></div>
 <p>Docker有如下的预定义参数，可以直接调用：
@@ -1901,8 +806,8 @@ ENV ${ZC}
     NO_PROXY
     no_proxy</p>
 <p>此外，ARG是唯一一个允许在第一个 FROM 指令之前出现的指令。</p>
-<h3 id="workdir-user">WORKDIR 和 USER<a class="headerlink" href="#workdir-user" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<h3 id="workdir-user">WORKDIR 和 USER<a class="headerlink" href="#workdir-user" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>WORKDIR /path/to/workdir
@@ -1912,44 +817,44 @@ USER &lt;UID&gt;[:&lt;GID&gt;]
 </code></pre></div></td></tr></table></div>
 <p>WORKDIR指令设置当前的工作目录。该指令将对接下来的ADD、CMD、COPY、ENTRYPOINT和RUN指令产生影响。</p>
 <p>USER指令设置当前的操作用户。该指令将对接下来的RUN、CMD和ENTRYPOINT指令产生影响。</p>
-<h3 id="run">RUN<a class="headerlink" href="#run" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<h3 id="run">RUN<a class="headerlink" href="#run" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>RUN &lt;command&gt;
-RUN [&quot;executable&quot;, &quot;param1&quot;, &quot;param2&quot;]
+RUN ["executable", "param1", "param2"]
 </code></pre></div></td></tr></table></div>
 <p>RUN指令有两种格式，第一种是shell格式，在Linux系统下默认使用 <strong>/bin/sh -c</strong> ， 在Windows系统下则默认使用 <strong>cmd /S /C</strong> 。第二种则是exec格式。需要注意的是，在exec格式之下，将由shell来处理环境变量而不是Docker，所以在Dockerfile当中定义的环境变量通常无效。一般情况下，我们不会使用第二种格式，除非必须显式指定shell。</p>
 <p>RUN应该是使用最多的Dockerfile指令了，无论是下载还是运行，一切都少不了RUN的幕后黑手。这也导致RUN成了最容易出错的地方。</p>
 <p>**&amp;&amp;**关键字允许你在一个RUN当中执行多条命令。由于RUN指令执行的过程当中会创建一个新的层，所以我们需要按照需求对指令进行合并或者拆分。</p>
 <p>比如说在初始的apt-get当中，如果我们错误的将指令拆分成：</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>RUN apt-get update          # layer x
 RUN apt-get install -y git  # layer x + 1
 </code></pre></div></td></tr></table></div>
 <p>那么在执行完第一个指令之后，x层就会被缓存下来，随后倘若我们对第二行指令进行更改，那他可能就会获取到过时的软件。因此，apt-get一定要写成如下形式：</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>RUN apt-get update &amp;&amp; apt-get install -y \
     git
 </code></pre></div></td></tr></table></div>
-<h3 id="copy-add">COPY 和 ADD<a class="headerlink" href="#copy-add" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<h3 id="copy-add">COPY 和 ADD<a class="headerlink" href="#copy-add" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code>COPY [--chown=&lt;user&gt;:&lt;group&gt;] &lt;src&gt;... &lt;dest&gt;
 COPY &lt;src&gt; &lt;dest&gt;
 </code></pre></div></td></tr></table></div>
 <p>这两个指令的功能非常相似，都是将文件从容器之外复制到容器之内。但COPY指令更简单也更透明一些，也更经常被使用。ADD指令增加了对url的支持使得其可以从网上下载文件，同时它也可以直接将文件解压。但是由于ADD指令从网上下载的文件会自动设置权限为600，而调整权限还需要一个RUN指令。不如直接通过RUN下载文件来的方便。因此，请只在需要解压文件的时候才使用ADD指令。</p>
-<p>需要注意的是，<src>为源于Dockfile所在文件夹的相对路径，<dest>则是目标容器内的绝对路径。此外，这两个指令同时支持通配符，即</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>COPY zc* /usr/local/docker
+<p>需要注意的是，<src>为源于Dockfile所在文件夹的相对路径，<dest>则是目标容器内的绝对路径。此外，这两个指令同时支持通配符，即</dest></src></p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>COPY zc* /usr/local/docker
 </code></pre></div></td></tr></table></div>
 <p>将会把当前目录下所有以zc开头的文件复制到容器的/usr/local/docker目录当中。</p>
-<h3 id="expose">EXPOSE<a class="headerlink" href="#expose" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>EXPOSE &lt;port&gt; [&lt;port&gt;/&lt;protocol&gt;...]
+<h3 id="expose">EXPOSE<a class="headerlink" href="#expose" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>EXPOSE &lt;port&gt; [&lt;port&gt;/&lt;protocol&gt;...]
 </code></pre></div></td></tr></table></div>
 <p>EXPOSE指令暴露容器对应的端口。默认情况下，EXPOSE指令将假设TCP协议，如果使用UDP协议需要显式声明。</p>
-<h3 id="volume">VOLUME<a class="headerlink" href="#volume" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>VOLUME [&quot;/zc&quot;]
+<h3 id="volume">VOLUME<a class="headerlink" href="#volume" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>VOLUME ["/zc"]
 </code></pre></div></td></tr></table></div>
 <p>VOLUME指令和前文所述的使用 docker run -v 但只指定容器内目录完全一样。他会给这个挂载随机一个名字，然后再本机/var/lib/docker/volumes目录之下创建一个与挂载名字相同的文件夹。也就是说，虽然它的名字叫卷，但创建的实际上是一个捆绑挂载……这个指令我从来没有用过，还专门为这篇文章查了半天资料顺带做了两个实验。我完全无法理解这种设计的用意，也强烈建议大家都不要使用。docker run 命令多打两句能实现的要比他优雅的多，建议使用。值得一提的是，如果在VOLUME里和在 docker run 里同时挂载了目录，则只有 docker run 挂载的目录会生效。</p>
-<h3 id="healthcheck-stopsignal">HEALTHCHECK 和 STOPSIGNAL<a class="headerlink" href="#healthcheck-stopsignal" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<h3 id="healthcheck-stopsignal">HEALTHCHECK 和 STOPSIGNAL<a class="headerlink" href="#healthcheck-stopsignal" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>HEALTHCHECK [OPTIONS] CMD command
@@ -1960,7 +865,7 @@ STOPSIGNAL signal
 <p>HEALTHCHECK指令告诉容器如何运行健康检查。如果容器的Dockerfile中指定了HEALTHCHECK方法，在运行 docker ps 命令时，容器的状态一栏中会显示容器当前是否健康。</p>
 <p>STOPSIGNAL指令重写在 docker stop 命令执行时发送给容器的信号。</p>
 <p>HEALTHCHECK指令有如下参数：</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>--interval=DURATION     # 两次健康检查的间隔，默认30秒。
@@ -1968,33 +873,33 @@ STOPSIGNAL signal
 --start-period=DURATION # 容器启动多久之后开始健康检查，默认0秒。
 --retries=N             # 健康检查失败之后显示容器不健康时经过多少次重试，默认3次。
 </code></pre></div></td></tr></table></div>
-<h3 id="onbuild">ONBUILD<a class="headerlink" href="#onbuild" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>ONBUILD [INSTRUCTION]
+<h3 id="onbuild">ONBUILD<a class="headerlink" href="#onbuild" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>ONBUILD [INSTRUCTION]
 </code></pre></div></td></tr></table></div>
 <p>ONBUILD指令后跟其他指令。ONBUILD指令的内容将不会在这个Docker构建的时候执行，但是如果其他Docker继承这个Docker，ONBUILD后跟的指令会在FROM结束之后立即执行。</p>
-<h3 id="cmd-entrypoint">CMD 和 ENTRYPOINT<a class="headerlink" href="#cmd-entrypoint" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<h3 id="cmd-entrypoint">CMD 和 ENTRYPOINT<a class="headerlink" href="#cmd-entrypoint" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>CMD [&quot;executable&quot;,&quot;param1&quot;,&quot;param2&quot;]
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>CMD ["executable","param1","param2"]
 CMD command param1 param2
-CMD [&quot;param1&quot;,&quot;param2&quot;]
+CMD ["param1","param2"]
 
-ENTRYPOINT [&quot;executable&quot;, &quot;param1&quot;, &quot;param2&quot;]
+ENTRYPOINT ["executable", "param1", "param2"]
 ENTRYPOINT command param1 param2
 </code></pre></div></td></tr></table></div>
-<p>CMD指令和ENTRYPOINT指令几乎没有区别，他们的作用都是在容器构建之后执行其中的命令。他们也都有两种格式&ndash;shell和exec，正如RUN指令一样。区别在于CMD指令多一种参数模式，在参数模式下，CMD指令后跟的参数将作为默认参数传递给ENTRYPOINT指令执行。即下列两个指令在实际上是等价的：</p>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<p>CMD指令和ENTRYPOINT指令几乎没有区别，他们的作用都是在容器构建之后执行其中的命令。他们也都有两种格式–shell和exec，正如RUN指令一样。区别在于CMD指令多一种参数模式，在参数模式下，CMD指令后跟的参数将作为默认参数传递给ENTRYPOINT指令执行。即下列两个指令在实际上是等价的：</p>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>ENTRYPOINT [&quot;/start.sh&quot;]
-CMD [&quot;aptly&quot;, &quot;api&quot;, &quot;serve&quot;]
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code>ENTRYPOINT ["/start.sh"]
+CMD ["aptly", "api", "serve"]
 
-ENTRYPOINT[&quot;/start.sh&quot;, &quot;aptly&quot;, &quot;api&quot;, &quot;serve&quot;]
+ENTRYPOINT["/start.sh", "aptly", "api", "serve"]
 </code></pre></div></td></tr></table></div>
-<p>他们的区别除此之外主要在于CMD指令会更容易的在 docker run 命令当中被重写，而ENTRYPOINT需要显式指定 &ndash;entrypoint 参数才能重写。</p>
+<p>他们的区别除此之外主要在于CMD指令会更容易的在 docker run 命令当中被重写，而ENTRYPOINT需要显式指定 –entrypoint 参数才能重写。</p>
 <p>ENTRYPOINT指令和CMD指令之间的具体区别在网上五花八门，却很少有正确的。可以肯定的是，ENTRYPOINT指令的优先级要比CMD指令更高。这里按照Docker官方的说法：</p>
 <p><strong>使用容器作为可执行文件时，应使用ENTRYPOINT指令。CMD应当被用于为ENTRYPOINT指令提供默认参数，或在容器中执行ad-hoc命令。</strong></p>
 <p>下表列出了ENTRYPOINT指令和CMD指令不同组合时的实际执行情况：</p>
@@ -2036,10 +941,10 @@ ENTRYPOINT[&quot;/start.sh&quot;, &quot;aptly&quot;, &quot;api&quot;, &quot;serv
 </table>
 <p>最后，还有一点需要强调：</p>
 <p><strong>Dockerfile应至少指定一个CMD或ENTRYPOINT指令！</strong></p>
-<h2 id="_2">分析<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_2">分析<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <p>了解了Docerfile的组成部分，让我们来分析一下别人家都是怎么写Dockerfile的。以下是nvidia/cuda:10.1-cudnn7-devel-ubuntu18.04及其继承的Dockerfile。</p>
-<h3 id="101-cudnn7-devel-ubuntu1804">10.1-cudnn7-devel-ubuntu18.04<a class="headerlink" href="#101-cudnn7-devel-ubuntu1804" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<h3 id="101-cudnn7-devel-ubuntu1804">10.1-cudnn7-devel-ubuntu18.04<a class="headerlink" href="#101-cudnn7-devel-ubuntu1804" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2053,10 +958,10 @@ ENTRYPOINT[&quot;/start.sh&quot;, &quot;aptly&quot;, &quot;api&quot;, &quot;serv
 <span class="normal">12</span>
 <span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code>ARG IMAGE_NAME
 FROM ${IMAGE_NAME}:10.1-devel-ubuntu18.04
-LABEL maintainer &quot;NVIDIA CORPORATION &lt;cudatools@nvidia.com&gt;&quot;
+LABEL maintainer "NVIDIA CORPORATION &lt;cudatools@nvidia.com&gt;"
 
 ENV CUDNN_VERSION 7.6.3.30
-LABEL com.nvidia.cudnn.version=&quot;${CUDNN_VERSION}&quot;
+LABEL com.nvidia.cudnn.version="${CUDNN_VERSION}"
 
 RUN apt-get update &amp;&amp; apt-get install -y --no-install-recommends \
     libcudnn7=$CUDNN_VERSION-1+cuda10.1 \
@@ -2067,8 +972,8 @@ libcudnn7-dev=$CUDNN_VERSION-1+cuda10.1 \
 </code></pre></div></td></tr></table></div>
 <p>首先，第一行ARG指令描述了镜像的名字，并在随后的FROM指令当中应用到。</p>
 <p>nvidia/cuda的Dockerfile都是层层继承的，这非常值得学习。</p>
-<h3 id="101-devel-ubuntu1804">10.1-devel-ubuntu18.04<a class="headerlink" href="#101-devel-ubuntu1804" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<h3 id="101-devel-ubuntu1804">10.1-devel-ubuntu18.04<a class="headerlink" href="#101-devel-ubuntu1804" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2083,7 +988,7 @@ libcudnn7-dev=$CUDNN_VERSION-1+cuda10.1 \
 <span class="normal">13</span>
 <span class="normal">14</span></pre></div></td><td class="code"><div><pre><span></span><code>ARG IMAGE_NAME
 FROM ${IMAGE_NAME}:10.1-runtime-ubuntu18.04
-LABEL maintainer &quot;NVIDIA CORPORATION &lt;cudatools@nvidia.com&gt;&quot;
+LABEL maintainer "NVIDIA CORPORATION &lt;cudatools@nvidia.com&gt;"
 
 RUN apt-get update &amp;&amp; apt-get install -y --no-install-recommends \
         cuda-nvml-dev-$CUDA_PKG_VERSION \
@@ -2096,8 +1001,8 @@ cuda-libraries-dev-$CUDA_PKG_VERSION \
 
 ENV LIBRARY_PATH /usr/local/cuda/lib64/stubs
 </code></pre></div></td></tr></table></div>
-<h3 id="101-runtime-ubuntu1804">10.1-runtime-ubuntu18.04<a class="headerlink" href="#101-runtime-ubuntu1804" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<h3 id="101-runtime-ubuntu1804">10.1-runtime-ubuntu18.04<a class="headerlink" href="#101-runtime-ubuntu1804" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2110,7 +1015,7 @@ ENV LIBRARY_PATH /usr/local/cuda/lib64/stubs
 <span class="normal">11</span>
 <span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code>ARG IMAGE_NAME
 FROM ${IMAGE_NAME}:10.1-base-ubuntu18.04
-LABEL maintainer &quot;NVIDIA CORPORATION &lt;cudatools@nvidia.com&gt;&quot;
+LABEL maintainer "NVIDIA CORPORATION &lt;cudatools@nvidia.com&gt;"
 
 ENV NCCL_VERSION 2.4.8
 
@@ -2121,8 +1026,8 @@ libnccl2=$NCCL_VERSION-1+cuda10.1 &amp;&amp; \
     apt-mark hold libnccl2 &amp;&amp; \
     rm -rf /var/lib/apt/lists/*
 </code></pre></div></td></tr></table></div>
-<h3 id="101-base-ubuntu1804">10.1-base-ubuntu18.04<a class="headerlink" href="#101-base-ubuntu1804" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<h3 id="101-base-ubuntu1804">10.1-base-ubuntu18.04<a class="headerlink" href="#101-base-ubuntu1804" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2155,13 +1060,13 @@ libnccl2=$NCCL_VERSION-1+cuda10.1 &amp;&amp; \
 <span class="normal">31</span>
 <span class="normal">32</span>
 <span class="normal">33</span></pre></div></td><td class="code"><div><pre><span></span><code>FROM ubuntu:18.04
-LABEL maintainer &quot;NVIDIA CORPORATION &lt;cudatools@nvidia.com&gt;&quot;
+LABEL maintainer "NVIDIA CORPORATION &lt;cudatools@nvidia.com&gt;"
 
 RUN apt-get update &amp;&amp; apt-get install -y --no-install-recommends \
 gnupg2 curl ca-certificates &amp;&amp; \
     curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub | apt-key add - &amp;&amp; \
-    echo &quot;deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64 /&quot; &gt; /etc/apt/sources.list.d/cuda.list &amp;&amp; \
-    echo &quot;deb https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64 /&quot; &gt; /etc/apt/sources.list.d/nvidia-ml.list &amp;&amp; \
+    echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64 /" &gt; /etc/apt/sources.list.d/cuda.list &amp;&amp; \
+    echo "deb https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64 /" &gt; /etc/apt/sources.list.d/nvidia-ml.list &amp;&amp; \
     apt-get purge --autoremove -y curl &amp;&amp; \
 rm -rf /var/lib/apt/lists/*
 
@@ -2177,8 +1082,8 @@ ln -s cuda-10.1 /usr/local/cuda &amp;&amp; \
     rm -rf /var/lib/apt/lists/*
 
 # Required for nvidia-docker v1
-RUN echo &quot;/usr/local/nvidia/lib&quot; &gt;&gt; /etc/ld.so.conf.d/nvidia.conf &amp;&amp; \
-    echo &quot;/usr/local/nvidia/lib64&quot; &gt;&gt; /etc/ld.so.conf.d/nvidia.conf
+RUN echo "/usr/local/nvidia/lib" &gt;&gt; /etc/ld.so.conf.d/nvidia.conf &amp;&amp; \
+    echo "/usr/local/nvidia/lib64" &gt;&gt; /etc/ld.so.conf.d/nvidia.conf
 
 ENV PATH /usr/local/nvidia/bin:/usr/local/cuda/bin:${PATH}
 ENV LD_LIBRARY_PATH /usr/local/nvidia/lib:/usr/local/nvidia/lib64
@@ -2186,10 +1091,10 @@ ENV LD_LIBRARY_PATH /usr/local/nvidia/lib:/usr/local/nvidia/lib64
 # nvidia-container-runtime
 ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
-ENV NVIDIA_REQUIRE_CUDA &quot;cuda&gt;=10.1 brand=tesla,driver&gt;=384,driver&lt;385 brand=tesla,driver&gt;=396,driver&lt;397 brand=tesla,driver&gt;=410,driver&lt;411&quot;
+ENV NVIDIA_REQUIRE_CUDA "cuda&gt;=10.1 brand=tesla,driver&gt;=384,driver&lt;385 brand=tesla,driver&gt;=396,driver&lt;397 brand=tesla,driver&gt;=410,driver&lt;411"
 </code></pre></div></td></tr></table></div>
-<h3 id="ubuntu1804">ubuntu:18.04<a class="headerlink" href="#ubuntu1804" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<h3 id="ubuntu1804">ubuntu:18.04<a class="headerlink" href="#ubuntu1804" title="Permanent link">¶</a></h3>
+<div class="language-text highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -2234,7 +1139,7 @@ ENV NVIDIA_REQUIRE_CUDA &quot;cuda&gt;=10.1 brand=tesla,driver&gt;=384,driver&lt
 <span class="normal">43</span></pre></div></td><td class="code"><div><pre><span></span><code>FROM scratch
 ADD ubuntu-bionic-core-cloudimg-amd64-root.tar.gz /
 # verify that the APT lists files do not exist
-RUN [ -z &quot;$(apt-get indextargets)&quot; ]
+RUN [ -z "$(apt-get indextargets)" ]
 # (see https://bugs.launchpad.net/cloud-images/+bug/1699913)
 
 # a few minor docker-specific tweaks
@@ -2242,320 +1147,186 @@ RUN [ -z &quot;$(apt-get indextargets)&quot; ]
 RUN set -xe \
     \
 # https://github.com/docker/docker/blob/9a9fc01af8fb5d98b8eec0740716226fadb3735c/contrib/mkimage/debootstrap#L40-L48
-    &amp;&amp; echo &#39;#!/bin/sh&#39; &gt; /usr/sbin/policy-rc.d \
-    &amp;&amp; echo &#39;exit 101&#39; &gt;&gt; /usr/sbin/policy-rc.d \
+    &amp;&amp; echo '#!/bin/sh' &gt; /usr/sbin/policy-rc.d \
+    &amp;&amp; echo 'exit 101' &gt;&gt; /usr/sbin/policy-rc.d \
     &amp;&amp; chmod +x /usr/sbin/policy-rc.d \
     \
 # https://github.com/docker/docker/blob/9a9fc01af8fb5d98b8eec0740716226fadb3735c/contrib/mkimage/debootstrap#L54-L56
     &amp;&amp; dpkg-divert --local --rename --add /sbin/initctl \
     &amp;&amp; cp -a /usr/sbin/policy-rc.d /sbin/initctl \
-    &amp;&amp; sed -i &#39;s/^exit.*/exit 0/&#39; /sbin/initctl \
+    &amp;&amp; sed -i 's/^exit.*/exit 0/' /sbin/initctl \
     \
 # https://github.com/docker/docker/blob/9a9fc01af8fb5d98b8eec0740716226fadb3735c/contrib/mkimage/debootstrap#L71-L78
-    &amp;&amp; echo &#39;force-unsafe-io&#39; &gt; /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \
+    &amp;&amp; echo 'force-unsafe-io' &gt; /etc/dpkg/dpkg.cfg.d/docker-apt-speedup \
     \
 # https://github.com/docker/docker/blob/9a9fc01af8fb5d98b8eec0740716226fadb3735c/contrib/mkimage/debootstrap#L85-L105
-    &amp;&amp; echo &#39;DPkg::Post-Invoke { &quot;rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true&quot;; };&#39; &gt; /etc/apt/apt.conf.d/docker-clean \
-    &amp;&amp; echo &#39;APT::Update::Post-Invoke { &quot;rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true&quot;; };&#39; &gt;&gt; /etc/apt/apt.conf.d/docker-clean \
-    &amp;&amp; echo &#39;Dir::Cache::pkgcache &quot;&quot;; Dir::Cache::srcpkgcache &quot;&quot;;&#39; &gt;&gt; /etc/apt/apt.conf.d/docker-clean \
+    &amp;&amp; echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' &gt; /etc/apt/apt.conf.d/docker-clean \
+    &amp;&amp; echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' &gt;&gt; /etc/apt/apt.conf.d/docker-clean \
+    &amp;&amp; echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' &gt;&gt; /etc/apt/apt.conf.d/docker-clean \
     \
 # https://github.com/docker/docker/blob/9a9fc01af8fb5d98b8eec0740716226fadb3735c/contrib/mkimage/debootstrap#L109-L115
-    &amp;&amp; echo &#39;Acquire::Languages &quot;none&quot;;&#39; &gt; /etc/apt/apt.conf.d/docker-no-languages \
+    &amp;&amp; echo 'Acquire::Languages "none";' &gt; /etc/apt/apt.conf.d/docker-no-languages \
     \
 # https://github.com/docker/docker/blob/9a9fc01af8fb5d98b8eec0740716226fadb3735c/contrib/mkimage/debootstrap#L118-L130
-    &amp;&amp; echo &#39;Acquire::GzipIndexes &quot;true&quot;; Acquire::CompressionTypes::Order:: &quot;gz&quot;;&#39; &gt; /etc/apt/apt.conf.d/docker-gzip-indexes \
+    &amp;&amp; echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' &gt; /etc/apt/apt.conf.d/docker-gzip-indexes \
     \
 # https://github.com/docker/docker/blob/9a9fc01af8fb5d98b8eec0740716226fadb3735c/contrib/mkimage/debootstrap#L134-L151
-    &amp;&amp; echo &#39;Apt::AutoRemove::SuggestsImportant &quot;false&quot;;&#39; &gt; /etc/apt/apt.conf.d/docker-autoremove-suggests
+    &amp;&amp; echo 'Apt::AutoRemove::SuggestsImportant "false";' &gt; /etc/apt/apt.conf.d/docker-autoremove-suggests
 
-# make systemd-detect-virt return &quot;docker&quot;
+# make systemd-detect-virt return "docker"
 # See: https://github.com/systemd/systemd/blob/aa0c34279ee40bce2f9681b496922dedbadfca19/src/basic/virt.c#L434
-RUN mkdir -p /run/systemd &amp;&amp; echo &#39;docker&#39; &gt; /run/systemd/container
+RUN mkdir -p /run/systemd &amp;&amp; echo 'docker' &gt; /run/systemd/container
 
-# overwrite this with &#39;CMD []&#39; in a dependent Dockerfile
-CMD [&quot;/bin/bash&quot;]
+# overwrite this with 'CMD []' in a dependent Dockerfile
+CMD ["/bin/bash"]
 </code></pre></div></td></tr></table></div>
+<!-- Giscus -->
+<script async="" crossorigin="anonymous" data-category="General" data-category-id="DIC_kwDOGv-RWM4CTx_d" data-emit-metadata="1" data-input-position="top" data-lang="en" data-loading="lazy" data-mapping="pathname" data-reactions-enabled="1" data-repo="ZhiyuanChen/DanLing" data-repo-id="R_kgDOGv-RWA" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js"></script>
+<!-- Reload on palette change -->
+<script>
+  var palette = __md_get("__palette");
+  if (palette && typeof palette.color === "object")
+    if (palette.color.scheme === "slate") {
+      var giscus = document.querySelector("script[src*=giscus]");
+      giscus.setAttribute("data-theme", "dark");
+    }
 
+  /* Register event handlers after documented loaded */
+  document.addEventListener("DOMContentLoaded", function () {
+    var ref = document.querySelector("[data-md-component=palette]");
+    ref.addEventListener("change", function () {
+      var palette = __md_get("__palette");
+      if (palette && typeof palette.color === "object") {
+        var theme = palette.color.scheme === "slate" ? "dark" : "light";
 
-
-
-
-
-
-  
-  
-
-
-
-  
-
-
-
-
-                
-
-  <!-- Giscus -->
-  <script src="https://giscus.app/client.js"
-    data-repo="zyc-ai/zyc-ai"
-    data-repo-id="MDEwOlJlcG9zaXRvcnk5OTQ5NTIwMg=="
-    data-category="General"
-    data-category-id="DIC_kwDOBe4tIs4CBXji"
-    data-mapping="pathname"
-    data-strict="0"
-    data-reactions-enabled="1"
-    data-emit-metadata="1"
-    data-input-position="top"
-    data-theme="dark"
-    data-lang="en"
-    data-loading="lazy"
-    crossorigin="anonymous"
-    async>
-  </script>
-
-  <!-- Reload on palette change -->
-  <script>
-    var palette = __md_get("__palette")
-    if (palette && typeof palette.color === "object")
-      if (palette.color.scheme === "slate") {
-        var giscus = document.querySelector("script[src*=giscus]")
-        giscus.setAttribute("data-theme", "dark") 
+        /* Instruct Giscus to change theme */
+        var frame = document.querySelector(".giscus-frame");
+        frame.contentWindow.postMessage(
+          { giscus: { setConfig: { theme } } },
+          "https://giscus.app",
+        );
       }
-
-    /* Register event handlers after documented loaded */
-    document.addEventListener("DOMContentLoaded", function() {
-      var ref = document.querySelector("[data-md-component=palette]")
-      ref.addEventListener("change", function() {
-        var palette = __md_get("__palette")
-        if (palette && typeof palette.color === "object") {
-          var theme = palette.color.scheme === "slate" ? "dark" : "light"
-
-          /* Instruct Giscus to change theme */
-          var frame = document.querySelector(".giscus-frame")
-          frame.contentWindow.postMessage(
-            { giscus: { setConfig: { theme } } },
-            "https://giscus.app"
-          )
-        }
-      })
-    })
-  </script>
-
-              </article>
-            </div>
-          
-          
-  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
-
+    });
+  });
+</script>
+<a class="md-content__icon pdf-download-btn" download href="../../../pandoc/container/docker/dockerfile/dockerfile.pdf" title="Download"><i class="fa fas fa-download"></i><small> dockerfile.pdf </small></a></article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
-        </div>
-        
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
   回到页面顶部
 </button>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
-      All rights reserved &copy; Zhiyuan Chen 2017-2022
-    </div>
-  
-  
+</main>
+<footer class="md-footer">
+<nav aria-label="页脚" class="md-footer__inner md-grid">
+<a aria-label="上一页: 命令行接口" class="md-footer__link md-footer__link--prev" href="../command_line_interface/">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
-      
-        <div class="md-social">
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://github.com/ZhiyuanChen" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://gitlab.com/ZhiyuanChen" target="_blank" rel="noopener" title="gitlab.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m503.5 204.6-.7-1.8-69.7-181.78c-1.4-3.57-3.9-6.59-7.2-8.64-2.4-1.55-5.1-2.515-8-2.81-2.9-.295-5.7.083-8.4 1.11-2.7 1.02-5.1 2.66-7.1 4.78-1.9 2.12-3.3 4.67-4.1 7.44l-47 144H160.8l-47.1-144c-.8-2.77-2.2-5.31-4.1-7.43-2-2.12-4.4-3.75-7.1-4.77a18.1 18.1 0 0 0-8.38-1.113 18.4 18.4 0 0 0-8.04 2.793 18.09 18.09 0 0 0-7.16 8.64L9.267 202.8l-.724 1.8a129.57 129.57 0 0 0-3.52 82c7.747 26.9 24.047 50.7 46.447 67.6l.27.2.59.4 105.97 79.5 52.6 39.7 32 24.2c3.7 1.9 8.3 4.3 13 4.3 4.7 0 9.3-2.4 13-4.3l32-24.2 52.6-39.7 106.7-79.9.3-.3c22.4-16.9 38.7-40.6 45.6-67.5 8.6-27 7.4-55.8-2.6-82z"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://bitbucket.org/ZhiyuanChen" target="_blank" rel="noopener" title="bitbucket.org" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M22.2 32A16 16 0 0 0 6 47.8a26.35 26.35 0 0 0 .2 2.8l67.9 412.1a21.77 21.77 0 0 0 21.3 18.2h325.7a16 16 0 0 0 16-13.4L505 50.7a16 16 0 0 0-13.2-18.3 24.58 24.58 0 0 0-2.8-.2L22.2 32zm285.9 297.8h-104l-28.1-147h157.3l-25.2 147z"/></svg>
-    </a>
-  
-    
-    
-    
-    
-    <a href="mailto:this@zyc.ai" target="_blank" rel="noopener" title="" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://www.facebook.com/zyc.fb" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256z"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://twitter.com/zyc_ai" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://instagram.com/zyc.ai" target="_blank" rel="noopener" title="instagram.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-    </a>
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://www.linkedin.com/in/%E9%99%9F%E5%8E%9F-%E9%99%88-0b473aa9/" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
-    </a>
-  
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                上一页
+              </span>
+<div class="md-ellipsis">
+                命令行接口
+              </div>
 </div>
-      
+</a>
+<a aria-label="下一页: CHANfiG" class="md-footer__link md-footer__link--next" href="../../../sketch/chanfig/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                下一页
+              </span>
+<div class="md-ellipsis">
+                CHANfiG
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      All rights reserved © Zhiyuan Chen 2017-2024
     </div>
-  </div>
+</div>
+<div class="md-social">
+<a class="md-social__link" href="https://github.com/ZhiyuanChen" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a>
+<a class="md-social__link" href="https://gitlab.com/ZhiyuanChen" rel="noopener" target="_blank" title="gitlab.com">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m503.5 204.6-.7-1.8-69.7-181.78c-1.4-3.57-3.9-6.59-7.2-8.64-2.4-1.55-5.1-2.515-8-2.81-2.9-.295-5.7.083-8.4 1.11-2.7 1.02-5.1 2.66-7.1 4.78-1.9 2.12-3.3 4.67-4.1 7.44l-47 144H160.8l-47.1-144c-.8-2.77-2.2-5.31-4.1-7.43-2-2.12-4.4-3.75-7.1-4.77a18.1 18.1 0 0 0-8.38-1.113 18.4 18.4 0 0 0-8.04 2.793 18.09 18.09 0 0 0-7.16 8.64L9.267 202.8l-.724 1.8a129.57 129.57 0 0 0-3.52 82c7.747 26.9 24.047 50.7 46.447 67.6l.27.2.59.4 105.97 79.5 52.6 39.7 32 24.2c3.7 1.9 8.3 4.3 13 4.3 4.7 0 9.3-2.4 13-4.3l32-24.2 52.6-39.7 106.7-79.9.3-.3c22.4-16.9 38.7-40.6 45.6-67.5 8.6-27 7.4-55.8-2.6-82z"></path></svg>
+</a>
+<a class="md-social__link" href="https://bitbucket.org/ZhiyuanChen" rel="noopener" target="_blank" title="bitbucket.org">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M22.2 32A16 16 0 0 0 6 47.8a26.35 26.35 0 0 0 .2 2.8l67.9 412.1a21.77 21.77 0 0 0 21.3 18.2h325.7a16 16 0 0 0 16-13.4L505 50.7a16 16 0 0 0-13.2-18.3 24.58 24.58 0 0 0-2.8-.2L22.2 32zm285.9 297.8h-104l-28.1-147h157.3l-25.2 147z"></path></svg>
+</a>
+<a class="md-social__link" href="mailto:this@zyc.ai" rel="noopener" target="_blank" title="">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.8l167.6-182.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"></path></svg>
+</a>
+<a class="md-social__link" href="https://www.facebook.com/zyc.fb" rel="noopener" target="_blank" title="www.facebook.com">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256z"></path></svg>
+</a>
+<a class="md-social__link" href="https://twitter.com/zyc_ai" rel="noopener" target="_blank" title="twitter.com">
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+</a>
+<a class="md-social__link" href="https://instagram.com/zyc.ai" rel="noopener" target="_blank" title="instagram.com">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+</a>
+<a class="md-social__link" href="https://www.linkedin.com/in/%E9%99%9F%E5%8E%9F-%E9%99%88-0b473aa9/" rel="noopener" target="_blank" title="www.linkedin.com">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
+</a>
+</div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    
-      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
-        <div class="md-consent__overlay"></div>
-        <aside class="md-consent__inner">
-          <form class="md-consent__form md-grid md-typeset" name="consent">
-            
-
-  
-    
-  
-
-
-  
-    
-  
-
-
-
-  
-
-
-<h4>Cookie consent</h4>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<div class="md-progress" data-md-component="progress" role="progressbar"></div>
+<div class="md-consent" data-md-component="consent" hidden="" id="__consent">
+<div class="md-consent__overlay"></div>
+<aside class="md-consent__inner">
+<form class="md-consent__form md-grid md-typeset" name="consent">
+<h4>Cookie Consent</h4>
 <p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better. Please check out our <a href="https://zyc.ai/about/privacy">Privacy Policy</a> for more information.</p>
-<input class="md-toggle" type="checkbox" id="__settings" >
+<input class="md-toggle" id="__settings" type="checkbox"/>
 <div class="md-consent__settings">
-  <ul class="task-list">
-    
-      
-      
-        
-        
-      
-      <li class="task-list-item">
-        <label class="task-list-control">
-          <input type="checkbox" name="analytics" checked>
-          <span class="task-list-indicator"></span>
+<ul class="task-list">
+<li class="task-list-item">
+<label class="task-list-control">
+<input checked="" name="analytics" type="checkbox"/>
+<span class="task-list-indicator"></span>
           Google Analytics
         </label>
-      </li>
-    
-      
-      
-        
-        
-      
-      <li class="task-list-item">
-        <label class="task-list-control">
-          <input type="checkbox" name="github" checked>
-          <span class="task-list-indicator"></span>
+</li>
+<li class="task-list-item">
+<label class="task-list-control">
+<input checked="" name="github" type="checkbox"/>
+<span class="task-list-indicator"></span>
           GitHub
         </label>
-      </li>
-    
-  </ul>
+</li>
+</ul>
 </div>
 <div class="md-consent__controls">
-  
-    
-      <button class="md-button md-button--primary">同意</button>
-    
-    
-    
-  
-    
-    
-    
-      <label class="md-button" for="__settings">管理设定</label>
-    
-  
+<button class="md-button md-button--primary">同意</button>
+<label class="md-button" for="__settings">管理设定</label>
 </div>
-          </form>
-        </aside>
-      </div>
-      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
-    
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.code.annotate", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.prune", "navigation.sections", "navigation.top", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
-    
-    
-      <script src="../../../assets/javascripts/bundle.dd8806f2.min.js"></script>
-      
-        <script src="../../../javascripts/mathjax.js"></script>
-      
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-      
-        <script src="../../../javascripts/shortcuts.js"></script>
-      
-    
-  </body>
+</form>
+</aside>
+</div>
+<script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.code.select", "content.tabs.link", "content.tooltips", "header.autohide", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+<script src="../../../assets/javascripts/bundle.af256bd8.min.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="../../../javascripts/shortcuts.js"></script>
+</body>
 </html>
