@@ -2,7 +2,7 @@ site_name: Zhiyuan Chen
 site_url: https://zyc.ai
 site_author: Zhiyuan Chen
 site_description: The website of Zhiyuan Chen
-copyright: All rights reserved &copy; Zhiyuan Chen 2017-2022
+copyright: All rights reserved &copy; Zhiyuan Chen 2017-2024
 
 repo_name: Zhiyuan Chen
 repo_url: https://github.com/ZhiyuanChen
@@ -107,8 +107,7 @@ nav:
           - 二〇二三年 十月 六日: sketch/diary/20231006.md
   - 关于:
       - 禅: about/zen.md
-      - 服务协议: about/sa.md
-      - 最终用户许可协议: about/eula.md
+      - 协议: about/license.md
       - 隐私声明: about/privacy.md
       - 评论政策: about/comment.md
       - 贡献: about/contribute.md
@@ -137,22 +136,31 @@ theme:
   favicon: "assets/images/logo.ico"
   features:
     - announce.dismiss
+    # - content.action.edit
+    # - content.action.view
     - content.code.annotate
+    - content.code.copy
+    - content.code.select
     - content.tabs.link
     - content.tooltips
     - header.autohide
-    - navigation.instant
-    - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.footer
     - navigation.indexes
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
     - navigation.prune
     - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
+    - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
+    # - toc.integrate
   font: false
 
 extra:
@@ -161,7 +169,7 @@ extra:
     provider: google
     property: "G-HJPHFP4Y4Y"
   consent:
-    title: Cookie consent
+    title: Cookie Consent
     description: >-
       We use cookies to recognize your repeated visits and preferences, as well
       as to measure the effectiveness of our documentation and whether users
@@ -192,7 +200,8 @@ extra:
   #   method: mike
 
 extra_css:
-  - assets/fonts/fonts.css
+  - assets/css/fonts.css
+  - assets/css/extra.css
 
 extra_javascript:
   - javascripts/mathjax.js
@@ -217,10 +226,12 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialy.emoji.gemoji
+      emoji_generator: !!python/name:materialy.emoji.to_svg
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
       auto_title: true
       linenums: true
   - pymdownx.inlinehilite
@@ -263,4 +274,5 @@ plugins:
   - search:
       separator: '[\s\u200b\-]'
   - tags
+  - pandoc
   # - markdown-exec
