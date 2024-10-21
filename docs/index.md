@@ -12,6 +12,9 @@ My name is Zhiyuan (pronounces as ˈʤ-jʊˈɑːn).
 I am a MPhil student in the joint program of the HKU-MMLab and the Shanghai AI Lab, supervised by [Prof. Xihui Liu](https://xh-liu.github.io).
 My current research interests focus on building advanced machine learning models and toolkits to solve scientific problems.
 
+**I'm looking for Ph.D. opportunities in machine learning and molecular biology.**
+Please feel free to [reach out](mailto:this@zyc.ai) if you have any opportunities or suggestions.
+
 Before pursuing my graduate studies, I was a researcher with DP Tech, where I worked on macro molecules.
 Prior to joining DP in 2022, I had the privilege of being a research assistant of StarBridge program & research intern of Star of Tomorrow program under the guidance of [Dr. Pan Deng](https://www.microsoft.com/en-us/research/people/paden/) at Microsoft Research Asia & Microsoft Research AI for Science from 2021-2022, where I worked on Computational Biology.
 Preceding my time at MSR, I was very fortunate to work as a research intern at SenseTime supervised by [Dr. Yue Liao](https://liaoyue.net/), where I worked on self-supervised learning, transformer in vision, and large-scale neural networks.
